@@ -11,7 +11,7 @@ import SwiftUI
 struct Tailor_PieceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Homescreen()
         }
     }
 }
