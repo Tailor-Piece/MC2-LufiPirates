@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Tailor_PieceApp: App {
+    @StateObject var router = Router()
     var body: some Scene {
         WindowGroup {
-            Homescreen()
+            Homescreen().environmentObject(router)
         }
     }
 }
