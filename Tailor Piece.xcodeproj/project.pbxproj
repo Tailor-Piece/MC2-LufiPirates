@@ -15,6 +15,13 @@
 		43874ED42A420565001403E7 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874ED32A420565001403E7 /* ColorTheme.swift */; };
 		43874ED82A42074C001403E7 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874ED72A42074C001403E7 /* ShimmerEffect.swift */; };
 		43874EDA2A420F4C001403E7 /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874ED92A420F4C001403E7 /* DummyView.swift */; };
+		43874EDC2A4212DD001403E7 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 43874EDB2A4212DD001403E7 /* Placeholder */; };
+		43874EDE2A42130E001403E7 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 43874EDD2A42130E001403E7 /* Placeholder */; };
+		43874EE02A421317001403E7 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 43874EDF2A421317001403E7 /* Placeholder */; };
+		43874EE22A42131E001403E7 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE12A42131E001403E7 /* Placeholder */; };
+		43874EE42A421329001403E7 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE32A421329001403E7 /* Placeholder */; };
+		43874EE62A421338001403E7 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE52A421338001403E7 /* Placeholder */; };
+		43874EE82A42133F001403E7 /* Placeholder in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE72A42133F001403E7 /* Placeholder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +34,13 @@
 		43874ED32A420565001403E7 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		43874ED72A42074C001403E7 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		43874ED92A420F4C001403E7 /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
+		43874EDB2A4212DD001403E7 /* Placeholder */ = {isa = PBXFileReference; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
+		43874EDD2A42130E001403E7 /* Placeholder */ = {isa = PBXFileReference; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
+		43874EDF2A421317001403E7 /* Placeholder */ = {isa = PBXFileReference; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
+		43874EE12A42131E001403E7 /* Placeholder */ = {isa = PBXFileReference; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
+		43874EE32A421329001403E7 /* Placeholder */ = {isa = PBXFileReference; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
+		43874EE52A421338001403E7 /* Placeholder */ = {isa = PBXFileReference; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
+		43874EE72A42133F001403E7 /* Placeholder */ = {isa = PBXFileReference; lastKnownFileType = text; path = Placeholder; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,7 @@
 		43874EBD2A4037AC001403E7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				43874EE32A421329001403E7 /* Placeholder */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -200,6 +215,7 @@
 		43874EC72A403884001403E7 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				43874EE12A42131E001403E7 /* Placeholder */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -207,6 +223,7 @@
 		43874EC82A40388C001403E7 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				43874EDF2A421317001403E7 /* Placeholder */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -214,6 +231,7 @@
 		43874EC92A403895001403E7 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				43874EDD2A42130E001403E7 /* Placeholder */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -221,6 +239,7 @@
 		43874ECA2A40389F001403E7 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
+				43874EE52A421338001403E7 /* Placeholder */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -228,6 +247,7 @@
 		43874ECB2A4038A7001403E7 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				43874EE72A42133F001403E7 /* Placeholder */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -243,6 +263,7 @@
 		43874ECD2A4038CA001403E7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				43874EDB2A4212DD001403E7 /* Placeholder */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -313,8 +334,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43874EE22A42131E001403E7 /* Placeholder in Resources */,
+				43874EDC2A4212DD001403E7 /* Placeholder in Resources */,
 				43874EB32A3C437E001403E7 /* Preview Assets.xcassets in Resources */,
+				43874EDE2A42130E001403E7 /* Placeholder in Resources */,
 				43874EB02A3C437D001403E7 /* Assets.xcassets in Resources */,
+				43874EE02A421317001403E7 /* Placeholder in Resources */,
+				43874EE82A42133F001403E7 /* Placeholder in Resources */,
+				43874EE62A421338001403E7 /* Placeholder in Resources */,
+				43874EE42A421329001403E7 /* Placeholder in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
