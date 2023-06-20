@@ -31,7 +31,32 @@ struct Homescreen: View {
                                 .fontWidth(.expanded)
                         }
                 }
+            
+            Text("Test Shimmer")
+                .bold()
+                .font(.largeTitle)
+                .shimmer(ShimmerConfig(tint: .white.opacity(0.2), highlight: .white))
+                .padding()
+                .background {
+                    RoundedRectangle(cornerRadius: 15)
+                        .fill(.red.gradient)
+                }
                 
+            VStack {
+                HStack {
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(height: 20)
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(height: 20)
+                    RoundedRectangle(cornerRadius: 15)
+                        .frame(height: 20)
+                }
+                RoundedRectangle(cornerRadius: 15)
+                    .frame(height: 20)
+                RoundedRectangle(cornerRadius: 15)
+                    .frame(height: 20)
+            }
+            .shimmer(ShimmerConfig(tint: .gray.opacity(0.2), highlight: .white))
         }
         .padding()
     }
@@ -42,3 +67,6 @@ struct ContentView_Previews: PreviewProvider {
         Homescreen()
     }
 }
+
+
+
