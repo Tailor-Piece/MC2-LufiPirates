@@ -6,13 +6,22 @@
 //
 
 import SwiftUI
+import CloudKit
 
 @main
 struct Tailor_PieceApp: App {
-    @StateObject var router = Router()
+    
+    //public container
+    let container = CKContainer(identifier: "iCloud.com.salsaachinanti.TailorPiece")
+//    @StateObject var router = Router()
+//    var body: some Scene {
+//        WindowGroup {
+//            Homescreen().environmentObject(router)
+//        }
+//    }
     var body: some Scene {
         WindowGroup {
-            Homescreen().environmentObject(router)
+            TestView(vm: OrderListViewModel(container: container))
         }
     }
 }
