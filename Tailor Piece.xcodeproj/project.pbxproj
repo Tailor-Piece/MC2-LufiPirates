@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300540E2A43FD5700474828 /* SketsaSubSection.swift */; };
+		430054112A4448E000474828 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430054102A4448E000474828 /* Placeholder.swift */; };
 		43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAB2A3C437D001403E7 /* Tailor_PieceApp.swift */; };
 		43874EAE2A3C437D001403E7 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAD2A3C437D001403E7 /* Homescreen.swift */; };
 		43874EB02A3C437D001403E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43874EAF2A3C437D001403E7 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		4300540E2A43FD5700474828 /* SketsaSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketsaSubSection.swift; sourceTree = "<group>"; };
+		430054102A4448E000474828 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EA82A3C437D001403E7 /* Tailor Piece.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tailor Piece.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43874EAB2A3C437D001403E7 /* Tailor_PieceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tailor_PieceApp.swift; sourceTree = "<group>"; };
 		43874EAD2A3C437D001403E7 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		4300540C2A43FCA900474828 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				430054102A4448E000474828 /* Placeholder.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				781CD6082A421C8600C491BC /* Router.swift in Sources */,
 				43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */,
 				4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */,
+				430054112A4448E000474828 /* Placeholder.swift in Sources */,
 				43874ED22A40394F001403E7 /* HomescreenViewModel.swift in Sources */,
 				43874ED82A42074C001403E7 /* ShimmerEffect.swift in Sources */,
 			);
