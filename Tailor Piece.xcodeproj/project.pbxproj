@@ -22,6 +22,7 @@
 		43874EE42A421329001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE32A421329001403E7 /* Placeholder.swift */; };
 		43874EE62A421338001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE52A421338001403E7 /* Placeholder.swift */; };
 		43874EE82A42133F001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE72A42133F001403E7 /* Placeholder.swift */; };
+		68D2F44D2A449A7A001D6F33 /* PilihBajuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2F44C2A449A7A001D6F33 /* PilihBajuView.swift */; };
 		781CD6082A421C8600C491BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6072A421C8600C491BC /* Router.swift */; };
 		781CD60A2A421CE500C491BC /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6092A421CE500C491BC /* SecondView.swift */; };
 		781CD60C2A421CF100C491BC /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD60B2A421CF100C491BC /* ThirdView.swift */; };
@@ -44,6 +45,7 @@
 		43874EE32A421329001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EE52A421338001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EE72A42133F001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		68D2F44C2A449A7A001D6F33 /* PilihBajuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilihBajuView.swift; sourceTree = "<group>"; };
 		781CD6072A421C8600C491BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		781CD6092A421CE500C491BC /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		781CD60B2A421CF100C491BC /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				43874EAD2A3C437D001403E7 /* Homescreen.swift */,
 				781CD6092A421CE500C491BC /* SecondView.swift */,
 				781CD60B2A421CF100C491BC /* ThirdView.swift */,
+				68D2F44C2A449A7A001D6F33 /* PilihBajuView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				43874ED42A420565001403E7 /* ColorTheme.swift in Sources */,
 				781CD6082A421C8600C491BC /* Router.swift in Sources */,
 				43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */,
+				68D2F44D2A449A7A001D6F33 /* PilihBajuView.swift in Sources */,
 				43874ED22A40394F001403E7 /* HomescreenViewModel.swift in Sources */,
 				43874ED82A42074C001403E7 /* ShimmerEffect.swift in Sources */,
 			);
