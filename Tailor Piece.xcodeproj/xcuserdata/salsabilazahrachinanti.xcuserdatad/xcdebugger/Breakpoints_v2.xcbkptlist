@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E4775412-90A9-45F0-885E-7B97196D4379"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "021FAA09-7CA1-46D7-B89F-5A7247DC9299"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Models/DesignViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "DesignViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "71B6CE53-18B2-4E98-A546-B4B8085FD9B6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Models/DesignViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "71B6CE53-18B2-4E98-A546-B4B8085FD9B6 - 4e31ac17105d96e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "71B6CE53-18B2-4E98-A546-B4B8085FD9B6 - 4e31ac17105d950c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F52D40C5-51B4-4024-9D77-E6E546F00E1B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Models/DesignViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F52D40C5-51B4-4024-9D77-E6E546F00E1B - 4e31ac17105d9627"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "360">
+               </Location>
+               <Location
+                  uuid = "F52D40C5-51B4-4024-9D77-E6E546F00E1B - 824296f99fcfcbb4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "F52D40C5-51B4-4024-9D77-E6E546F00E1B - d1f44c919142d425"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "F52D40C5-51B4-4024-9D77-E6E546F00E1B - 1849fcd351b1b524"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "F52D40C5-51B4-4024-9D77-E6E546F00E1B - 4e31ac17105d9627"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1326BA2E-BC0B-4809-A578-E1763EC0A179"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Models/DesignViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1326BA2E-BC0B-4809-A578-E1763EC0A179 - 25422a2d872b1ed4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.DesignViewModel.saveDesign(design: Tailor_Piece.DesignItem) async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "1326BA2E-BC0B-4809-A578-E1763EC0A179 - 25422a2d872b1ed4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.DesignViewModel.saveDesign(design: Tailor_Piece.DesignItem) async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "764">
+               </Location>
+               <Location
+                  uuid = "1326BA2E-BC0B-4809-A578-E1763EC0A179 - d1f44c919142d773"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "1326BA2E-BC0B-4809-A578-E1763EC0A179 - 468939db393a66aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((__C.CKRecordID, Swift.Result&lt;__C.CKRecord, Swift.Error&gt;)) -&gt; Swift.Optional&lt;__C.CKRecord&gt; in Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55A7E7F3-A5E2-4E9A-A411-C1E6CFA5585A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Models/DesignViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "55A7E7F3-A5E2-4E9A-A411-C1E6CFA5585A - 25422a2d872b1f16"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.DesignViewModel.saveDesign(design: Tailor_Piece.DesignItem) async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "55A7E7F3-A5E2-4E9A-A411-C1E6CFA5585A - d1f44c919142d6b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "272">
+               </Location>
+               <Location
+                  uuid = "55A7E7F3-A5E2-4E9A-A411-C1E6CFA5585A - 55eb74015d544df3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__C.CKRecord) -&gt; () in Tailor_Piece.DesignViewModel.populateDesign() async throws -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Models/DesignViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "17E2CECA-43D1-4DC8-B500-0340A2CC01F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Models/DesignViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A71303C6-DA81-4BE1-89B1-B52CA830A0B1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Mock/OrderListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A71303C6-DA81-4BE1-89B1-B52CA830A0B1 - 34ced6047a6aaf59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Result&lt;(matchResults: Swift.Array&lt;(__C.CKRecordID, Swift.Result&lt;__C.CKRecord, Swift.Error&gt;)&gt;, queryCursor: Swift.Optional&lt;__C.CKQueryCursor&gt;), Swift.Error&gt;) -&gt; () in Tailor_Piece.OrderListViewModel.populateOrder() -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/OrderListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "440">
+               </Location>
+               <Location
+                  uuid = "A71303C6-DA81-4BE1-89B1-B52CA830A0B1 - 26b32c2e367c59bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 ((__C.CKRecordID, Swift.Result&lt;__C.CKRecord, Swift.Error&gt;)) -&gt; Swift.Optional&lt;Swift.Result&lt;__C.CKRecord, Swift.Error&gt;&gt; in closure #1 @Sendable (Swift.Result&lt;(matchResults: Swift.Array&lt;(__C.CKRecordID, Swift.Result&lt;__C.CKRecord, Swift.Error&gt;)&gt;, queryCursor: Swift.Optional&lt;__C.CKQueryCursor&gt;), Swift.Error&gt;) -&gt; () in Tailor_Piece.OrderListViewModel.populateOrder() -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/OrderListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F610CB5-95A9-447C-9655-14DF83919BCA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Mock/OrderListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F610CB5-95A9-447C-9655-14DF83919BCA - a458f6f8a3b71491"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tailor_Piece.OrderListViewModel.populateOrder() -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/OrderListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "3F610CB5-95A9-447C-9655-14DF83919BCA - 34ced6047a6aae7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Result&lt;(matchResults: Swift.Array&lt;(__C.CKRecordID, Swift.Result&lt;__C.CKRecord, Swift.Error&gt;)&gt;, queryCursor: Swift.Optional&lt;__C.CKQueryCursor&gt;), Swift.Error&gt;) -&gt; () in Tailor_Piece.OrderListViewModel.populateOrder() -&gt; ()"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/OrderListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "288">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "708F8369-F3E7-451F-B14D-328D9BE2F1BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Mock/OrderListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "564BADEB-4626-44FA-9956-3CA6CB9132EE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Mock/View.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "564BADEB-4626-44FA-9956-3CA6CB9132EE - 3bfd3a617273120c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.OrderViewModel&gt;, Swift.Optional&lt;__C.CKRecordID&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Spacer, SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.OrderViewModel&gt;, Swift.Optional&lt;__C.CKRecordID&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt;&gt;)&gt; in Tailor_Piece.TestView.body.getter : some"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/View.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1340">
+               </Location>
+               <Location
+                  uuid = "564BADEB-4626-44FA-9956-3CA6CB9132EE - 6f0cfe765a2ae6a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Tailor_Piece.OrderViewModel) -&gt; SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt; in closure #2 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.OrderViewModel&gt;, Swift.Optional&lt;__C.CKRecordID&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Spacer, SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.OrderViewModel&gt;, Swift.Optional&lt;__C.CKRecordID&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt;&gt;)&gt; in Tailor_Piece.TestView.body.getter : some"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/View.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "136">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "110D6EE0-6EE6-46B6-A85D-C3101ED809D4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Entities/Design.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init(designId:dateCreated:gender:bodySize:clothingType:patterns:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C722B3AF-9E75-40FA-B2FD-23C6112201F9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/ViewModels/DesignViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "populateDesign()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FA2AA07-7A1E-4790-9723-99759758C1DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Mock/DesignView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "0FA2AA07-7A1E-4790-9723-99759758C1DA - 4358534a94d4abea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.Gender, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.Gender&gt;, Tailor_Piece.Gender, SwiftUI.Text&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.ClothingType, SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.Gender, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.Gender&gt;, Tailor_Piece.Gender, SwiftUI.Text&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.ClothingType, SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Spacer, SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.DesignItemViewModel&gt;, Swift.Optional&lt;__C.CKRecordID&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt;&gt;)&gt; in Tailor_Piece.TestView.body.getter : some"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/DesignView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "0FA2AA07-7A1E-4790-9723-99759758C1DA - 4358534a94d4abea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.Gender, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.Gender&gt;, Tailor_Piece.Gender, SwiftUI.Text&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.ClothingType, SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.Gender, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.Gender&gt;, Tailor_Piece.Gender, SwiftUI.Text&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.ClothingType, SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Spacer, SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.DesignItemViewModel&gt;, Swift.Optional&lt;__C.CKRecordID&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt;&gt;)&gt; in Tailor_Piece.TestView.body.getter : some"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/DesignView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "384">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
