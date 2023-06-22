@@ -20,9 +20,13 @@ let mockDesignType: [MockDesignType] = [
     MockDesignType(name: "Short Sleeve", clothingType: "Lengan", image: "lengan"),
     MockDesignType(name: "Long Sleeve", clothingType: "Lengan", image: "lengan"),
     MockDesignType(name: "Sleeve less", clothingType: "Lengan", image: "lengan"),
-    MockDesignType(name: "Short Sleeve", clothingType: "Lengan", image: "lengan"),
-    MockDesignType(name: "Long Sleeve", clothingType: "Lengan", image: "lengan"),
-    MockDesignType(name: "Sleeve less", clothingType: "Lengan", image: "lengan"),
+    MockDesignType(name: "Bulat", clothingType: "Leher", image: "kerah"),
+    MockDesignType(name: "V-Neck", clothingType: "Leher", image: "kerah"),
+    MockDesignType(name: "Kerah", clothingType: "Leher", image: "kerah"),
     
 ]
 
+func filterByClothingType(clothingType: String) -> [MockDesignType] {
+    let filteredDesigns = mockDesignType.filter { $0.self.clothingType == clothingType }
+    return filteredDesigns
+}

@@ -14,7 +14,7 @@ struct MockNeckForm: Identifiable, Hashable {
     let image: String
 }
 let mockNeckForm: [MockNeckForm] = [
-    MockNeckForm(name: "T-Shirt", clothingType: "Bentuk Pakaian", image: "baju"),
-    MockNeckForm(name: "Cardigan", clothingType: "Bentuk Pakaian", image: "baju"),
-    MockNeckForm(name: "Polo Shirt", clothingType: "Bentuk Pakaian", image: "baju"),
+    MockNeckForm(name: "Bulat", clothingType: "Neck", image: "kerah"),
+    MockNeckForm(name: "V-Neck", clothingType: "Neck", image: "kerah"),
+    MockNeckForm(name: "Kerah", clothingType: "Neck", image: "kerah"),
 ]
