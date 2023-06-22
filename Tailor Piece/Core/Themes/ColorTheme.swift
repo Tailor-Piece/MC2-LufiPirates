@@ -11,4 +11,6 @@ import SwiftUI
 // Dummy file
 struct ColorTheme {
     static let red = Color(.red)
+    static let borderColor =  Color(UIColor(hex: "C6C6C8"))
+    static let primary100 = Color(UIColor(hex: "5856D6"))
 }

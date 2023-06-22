@@ -11,17 +11,17 @@ import CloudKit
 @main
 struct Tailor_PieceApp: App {
     
-    //public container
-    let container = CKContainer(identifier: "iCloud.com.salsaachinanti.TailorPiece")
-//    @StateObject var router = Router()
-//    var body: some Scene {
-//        WindowGroup {
-//            Homescreen().environmentObject(router)
-//        }
-//    }
+//    //public container
+//    let container = CKContainer(identifier: "iCloud.com.salsaachinanti.TailorPiece")
+    @StateObject var router = Router()
     var body: some Scene {
         WindowGroup {
-            TestView(vm: OrderListViewModel(container: container))
+            Homescreen().environmentObject(router)
         }
     }
+//    var body: some Scene {
+//        WindowGroup {
+//            TestView(vm: OrderListViewModel(container: container))
+//        }
+//    }
 }
