@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300540E2A43FD5700474828 /* SketsaSubSection.swift */; };
 		43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAB2A3C437D001403E7 /* Tailor_PieceApp.swift */; };
 		43874EAE2A3C437D001403E7 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAD2A3C437D001403E7 /* Homescreen.swift */; };
 		43874EB02A3C437D001403E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43874EAF2A3C437D001403E7 /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4300540E2A43FD5700474828 /* SketsaSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketsaSubSection.swift; sourceTree = "<group>"; };
 		43874EA82A3C437D001403E7 /* Tailor Piece.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tailor Piece.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43874EAB2A3C437D001403E7 /* Tailor_PieceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tailor_PieceApp.swift; sourceTree = "<group>"; };
 		43874EAD2A3C437D001403E7 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
@@ -61,6 +63,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4300540A2A43FC8A00474828 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				4300540B2A43FC9B00474828 /* Presentation */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		4300540B2A43FC9B00474828 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4300540D2A43FCDF00474828 /* Components */,
+				4300540C2A43FCA900474828 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4300540C2A43FCA900474828 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4300540D2A43FCDF00474828 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4300540E2A43FD5700474828 /* SketsaSubSection.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		43874E9F2A3C437D001403E7 = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +211,7 @@
 		43874EC22A40382F001403E7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4300540A2A43FC8A00474828 /* Design */,
 				43874EC32A403836001403E7 /* Homescreen */,
 			);
 			path = Features;
@@ -371,6 +406,7 @@
 				43874ED42A420565001403E7 /* ColorTheme.swift in Sources */,
 				781CD6082A421C8600C491BC /* Router.swift in Sources */,
 				43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */,
+				4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */,
 				43874ED22A40394F001403E7 /* HomescreenViewModel.swift in Sources */,
 				43874ED82A42074C001403E7 /* ShimmerEffect.swift in Sources */,
 			);

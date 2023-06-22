@@ -18,7 +18,7 @@ fileprivate struct ShimmerEffectHelper: ViewModifier {
     
     var config: ShimmerConfig
     
-    @State var moveTo: CGFloat = -0.7
+    @State var moveTo: CGFloat = -5
     
     func body(content: Content) -> some View {
         content
@@ -44,6 +44,7 @@ fileprivate struct ShimmerEffectHelper: ViewModifier {
                                             ], startPoint: .top, endPoint: .bottom)
                                         )
                                         .blur(radius: config.blur)
+                                        .scaleEffect(4)
                                         .rotationEffect(Angle(degrees: 60))
                                         .offset(x: moveTo > 0 ? extraOffset : -extraOffset)
                                         .offset(x: size.width * moveTo)
@@ -54,7 +55,7 @@ fileprivate struct ShimmerEffectHelper: ViewModifier {
             }
             .onAppear {
                 DispatchQueue.main.async {
-                    moveTo = 0.7
+                    moveTo = 5
                 }
             }
             .animation(.linear(duration: config.speed).repeatForever(autoreverses: false), value: moveTo)
@@ -66,13 +67,19 @@ fileprivate struct ShimmerEffectHelper: ViewModifier {
 struct ShimmerConfig {
     var tint: Color
     var highlight: Color
-    var blur: CGFloat = 0
+    var blur: CGFloat = 3
     var highlightOpacity: CGFloat = 1
-    var speed: CGFloat = 1.5
+    var speed: CGFloat = 3
 }
 
 struct ShimmerEffect_Previews: PreviewProvider {
     static var previews: some View {
-        Homescreen()
+        SketsaSubSection()
+    }
+}
+
+struct ShimmerEffect2_Previews: PreviewProvider {
+    static var previews: some View {
+        Homescreen().environmentObject(Router())
     }
 }

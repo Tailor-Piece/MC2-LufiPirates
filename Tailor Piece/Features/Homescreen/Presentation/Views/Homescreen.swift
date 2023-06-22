@@ -19,6 +19,8 @@ struct Homescreen: View {
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
                 Text("Sang Penguasa UI/UX")
+                RoundedRectangle(cornerRadius: 15)
+                    .shimmer(ShimmerConfig(tint: .gray.opacity(0.2), highlight: .white))
                 Text("\(homescreenViewModel.message ?? "Ea")")
                     .opacity(0)
                     .font(.largeTitle)
@@ -84,7 +86,7 @@ struct Homescreen: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Homescreen()
+        Homescreen().environmentObject(Router())
     }
 }
 
