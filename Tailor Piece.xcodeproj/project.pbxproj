@@ -26,6 +26,7 @@
 		687EDBE92A42AC1200C606C2 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EDBE82A42AC1200C606C2 /* View.swift */; };
 		687EDBED2A42B29200C606C2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EDBEC2A42B29200C606C2 /* Order.swift */; };
 		687EDBF12A42BDCD00C606C2 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EDBF02A42BDCD00C606C2 /* OrderListViewModel.swift */; };
+		68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */; };
 		781CD6082A421C8600C491BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6072A421C8600C491BC /* Router.swift */; };
 		781CD60A2A421CE500C491BC /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6092A421CE500C491BC /* SecondView.swift */; };
 		781CD60C2A421CF100C491BC /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD60B2A421CF100C491BC /* ThirdView.swift */; };
@@ -61,6 +62,7 @@
 		687EDBE82A42AC1200C606C2 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		687EDBEC2A42B29200C606C2 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		687EDBF02A42BDCD00C606C2 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaPotonganSubSection.swift; sourceTree = "<group>"; };
 		781CD6072A421C8600C491BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		781CD6092A421CE500C491BC /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		781CD60B2A421CF100C491BC /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				43874EDB2A4212DD001403E7 /* Placeholder.swift */,
+				68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				43874ED42A420565001403E7 /* ColorTheme.swift in Sources */,
 				781D6FFB2A444B5F0063FF9C /* MockClothingForm.swift in Sources */,
 				781CD6082A421C8600C491BC /* Router.swift in Sources */,
+				68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */,
 				43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */,
 				4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */,
 				430054112A4448E000474828 /* Placeholder.swift in Sources */,
