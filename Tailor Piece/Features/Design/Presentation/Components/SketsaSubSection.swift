@@ -71,8 +71,6 @@ struct SketsaSubSection: View {
             
             
         }
-        // TODO: WILL BE DELETED!
-        .padding(.horizontal, 400)
     }
 }
 
