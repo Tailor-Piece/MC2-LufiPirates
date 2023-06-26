@@ -7,46 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300540E2A43FD5700474828 /* SketsaSubSection.swift */; };
 		43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAB2A3C437D001403E7 /* Tailor_PieceApp.swift */; };
-		43874EAE2A3C437D001403E7 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAD2A3C437D001403E7 /* Homescreen.swift */; };
+		43874EAE2A3C437D001403E7 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAD2A3C437D001403E7 /* DesignView.swift */; };
 		43874EB02A3C437D001403E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43874EAF2A3C437D001403E7 /* Assets.xcassets */; };
 		43874EB32A3C437E001403E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43874EB22A3C437E001403E7 /* Preview Assets.xcassets */; };
 		43874ED22A40394F001403E7 /* HomescreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874ED12A40394F001403E7 /* HomescreenViewModel.swift */; };
 		43874ED42A420565001403E7 /* ColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874ED32A420565001403E7 /* ColorTheme.swift */; };
 		43874ED82A42074C001403E7 /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874ED72A42074C001403E7 /* ShimmerEffect.swift */; };
 		43874EDA2A420F4C001403E7 /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874ED92A420F4C001403E7 /* DummyView.swift */; };
-		43874EDC2A4212DD001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EDB2A4212DD001403E7 /* Placeholder.swift */; };
 		43874EDE2A42130E001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EDD2A42130E001403E7 /* Placeholder.swift */; };
 		43874EE02A421317001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EDF2A421317001403E7 /* Placeholder.swift */; };
 		43874EE22A42131E001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE12A42131E001403E7 /* Placeholder.swift */; };
-		43874EE42A421329001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE32A421329001403E7 /* Placeholder.swift */; };
 		43874EE62A421338001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE52A421338001403E7 /* Placeholder.swift */; };
 		43874EE82A42133F001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE72A42133F001403E7 /* Placeholder.swift */; };
+		43BB82FA2A46FF490066EF55 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB82F92A46FF490066EF55 /* Placeholder.swift */; };
+		687EDBE92A42AC1200C606C2 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EDBE82A42AC1200C606C2 /* View.swift */; };
+		687EDBED2A42B29200C606C2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EDBEC2A42B29200C606C2 /* Order.swift */; };
+		687EDBF12A42BDCD00C606C2 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EDBF02A42BDCD00C606C2 /* OrderListViewModel.swift */; };
+		68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */; };
 		781CD6082A421C8600C491BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6072A421C8600C491BC /* Router.swift */; };
 		781CD60A2A421CE500C491BC /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6092A421CE500C491BC /* SecondView.swift */; };
 		781CD60C2A421CF100C491BC /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD60B2A421CF100C491BC /* ThirdView.swift */; };
+		781D6FE52A436AEF0063FF9C /* SidebarListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FE42A436AEF0063FF9C /* SidebarListComponent.swift */; };
+		781D6FF32A43F8B80063FF9C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FF22A43F8B80063FF9C /* UIColor.swift */; };
+		781D6FF92A444A310063FF9C /* MockDesignType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FF82A444A310063FF9C /* MockDesignType.swift */; };
+		781D6FFB2A444B5F0063FF9C /* MockClothingForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FFA2A444B5F0063FF9C /* MockClothingForm.swift */; };
+		781D6FFD2A444BA60063FF9C /* MockSleeveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FFC2A444BA60063FF9C /* MockSleeveForm.swift */; };
+		781D6FFF2A444BDA0063FF9C /* MockNeckForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FFE2A444BDA0063FF9C /* MockNeckForm.swift */; };
+		781D70012A444C240063FF9C /* MockListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D70002A444C240063FF9C /* MockListItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4300540E2A43FD5700474828 /* SketsaSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketsaSubSection.swift; sourceTree = "<group>"; };
 		43874EA82A3C437D001403E7 /* Tailor Piece.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tailor Piece.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43874EAB2A3C437D001403E7 /* Tailor_PieceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tailor_PieceApp.swift; sourceTree = "<group>"; };
-		43874EAD2A3C437D001403E7 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
+		43874EAD2A3C437D001403E7 /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
 		43874EAF2A3C437D001403E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43874EB22A3C437E001403E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43874ED12A40394F001403E7 /* HomescreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenViewModel.swift; sourceTree = "<group>"; };
 		43874ED32A420565001403E7 /* ColorTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
 		43874ED72A42074C001403E7 /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		43874ED92A420F4C001403E7 /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
-		43874EDB2A4212DD001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EDD2A42130E001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EDF2A421317001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EE12A42131E001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
-		43874EE32A421329001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EE52A421338001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EE72A42133F001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		43BB82F92A46FF490066EF55 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		43F851C32A430297009AFBB3 /* Tailor Piece.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tailor Piece.entitlements"; sourceTree = "<group>"; };
+		687EDBDF2A42968F00C606C2 /* Tailor Piece.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tailor Piece.entitlements"; sourceTree = "<group>"; };
+		687EDBE82A42AC1200C606C2 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		687EDBEC2A42B29200C606C2 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		687EDBF02A42BDCD00C606C2 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
+		68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaPotonganSubSection.swift; sourceTree = "<group>"; };
 		781CD6072A421C8600C491BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		781CD6092A421CE500C491BC /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		781CD60B2A421CF100C491BC /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		781D6FE42A436AEF0063FF9C /* SidebarListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarListComponent.swift; sourceTree = "<group>"; };
+		781D6FF22A43F8B80063FF9C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		781D6FF82A444A310063FF9C /* MockDesignType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDesignType.swift; sourceTree = "<group>"; };
+		781D6FFA2A444B5F0063FF9C /* MockClothingForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClothingForm.swift; sourceTree = "<group>"; };
+		781D6FFC2A444BA60063FF9C /* MockSleeveForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSleeveForm.swift; sourceTree = "<group>"; };
+		781D6FFE2A444BDA0063FF9C /* MockNeckForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNeckForm.swift; sourceTree = "<group>"; };
+		781D70002A444C240063FF9C /* MockListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +103,8 @@
 		43874EAA2A3C437D001403E7 /* Tailor Piece */ = {
 			isa = PBXGroup;
 			children = (
+				43F851C32A430297009AFBB3 /* Tailor Piece.entitlements */,
+				687EDBDF2A42968F00C606C2 /* Tailor Piece.entitlements */,
 				43874EC22A40382F001403E7 /* Features */,
 				43874EBC2A4037A2001403E7 /* Core */,
 				43874EB92A40376D001403E7 /* Config */,
@@ -132,7 +158,7 @@
 		43874EBD2A4037AC001403E7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				43874EE32A421329001403E7 /* Placeholder.swift */,
+				687EDBF22A42EB8500C606C2 /* Mock */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -149,6 +175,7 @@
 		43874EBF2A4037F1001403E7 /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
+				781D6FE32A436A300063FF9C /* Components */,
 				43874EC12A403800001403E7 /* Views */,
 				43874EC02A4037F9001403E7 /* Modifiers */,
 			);
@@ -160,6 +187,7 @@
 			children = (
 				43874ED72A42074C001403E7 /* ShimmerEffect.swift */,
 				781CD6072A421C8600C491BC /* Router.swift */,
+				781D6FF22A43F8B80063FF9C /* UIColor.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -175,19 +203,19 @@
 		43874EC22A40382F001403E7 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				43874EC32A403836001403E7 /* Homescreen */,
+				43874EC32A403836001403E7 /* Design */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		43874EC32A403836001403E7 /* Homescreen */ = {
+		43874EC32A403836001403E7 /* Design */ = {
 			isa = PBXGroup;
 			children = (
 				43874EC62A403862001403E7 /* Presentation */,
 				43874EC52A40385C001403E7 /* Domain */,
 				43874EC42A403856001403E7 /* Data */,
 			);
-			path = Homescreen;
+			path = Design;
 			sourceTree = "<group>";
 		};
 		43874EC42A403856001403E7 /* Data */ = {
@@ -262,7 +290,7 @@
 		43874ECC2A4038BA001403E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				43874EAD2A3C437D001403E7 /* Homescreen.swift */,
+				43874EAD2A3C437D001403E7 /* DesignView.swift */,
 				781CD6092A421CE500C491BC /* SecondView.swift */,
 				781CD60B2A421CF100C491BC /* ThirdView.swift */,
 			);
@@ -272,7 +300,9 @@
 		43874ECD2A4038CA001403E7 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				43874EDB2A4212DD001403E7 /* Placeholder.swift */,
+				781D6FE42A436AEF0063FF9C /* SidebarListComponent.swift */,
+				4300540E2A43FD5700474828 /* SketsaSubSection.swift */,
+				68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -283,6 +313,29 @@
 				43874ED12A40394F001403E7 /* HomescreenViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		687EDBF22A42EB8500C606C2 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				687EDBE82A42AC1200C606C2 /* View.swift */,
+				687EDBEC2A42B29200C606C2 /* Order.swift */,
+				687EDBF02A42BDCD00C606C2 /* OrderListViewModel.swift */,
+				781D6FF82A444A310063FF9C /* MockDesignType.swift */,
+				781D6FFA2A444B5F0063FF9C /* MockClothingForm.swift */,
+				781D6FFC2A444BA60063FF9C /* MockSleeveForm.swift */,
+				781D6FFE2A444BDA0063FF9C /* MockNeckForm.swift */,
+				781D70002A444C240063FF9C /* MockListItem.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		781D6FE32A436A300063FF9C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				43BB82F92A46FF490066EF55 /* Placeholder.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,14 +397,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				43874EE22A42131E001403E7 /* Placeholder.swift in Resources */,
-				43874EDC2A4212DD001403E7 /* Placeholder.swift in Resources */,
 				43874EB32A3C437E001403E7 /* Preview Assets.xcassets in Resources */,
 				43874EDE2A42130E001403E7 /* Placeholder.swift in Resources */,
 				43874EB02A3C437D001403E7 /* Assets.xcassets in Resources */,
 				43874EE02A421317001403E7 /* Placeholder.swift in Resources */,
 				43874EE82A42133F001403E7 /* Placeholder.swift in Resources */,
 				43874EE62A421338001403E7 /* Placeholder.swift in Resources */,
-				43874EE42A421329001403E7 /* Placeholder.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,15 +413,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43874EAE2A3C437D001403E7 /* Homescreen.swift in Sources */,
+				781D6FF92A444A310063FF9C /* MockDesignType.swift in Sources */,
+				43874EAE2A3C437D001403E7 /* DesignView.swift in Sources */,
 				781CD60C2A421CF100C491BC /* ThirdView.swift in Sources */,
+				687EDBED2A42B29200C606C2 /* Order.swift in Sources */,
 				43874EDA2A420F4C001403E7 /* DummyView.swift in Sources */,
 				781CD60A2A421CE500C491BC /* SecondView.swift in Sources */,
 				43874ED42A420565001403E7 /* ColorTheme.swift in Sources */,
+				781D6FFB2A444B5F0063FF9C /* MockClothingForm.swift in Sources */,
 				781CD6082A421C8600C491BC /* Router.swift in Sources */,
+				68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */,
 				43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */,
+				4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */,
+				781D6FF32A43F8B80063FF9C /* UIColor.swift in Sources */,
+				781D6FE52A436AEF0063FF9C /* SidebarListComponent.swift in Sources */,
+				781D70012A444C240063FF9C /* MockListItem.swift in Sources */,
 				43874ED22A40394F001403E7 /* HomescreenViewModel.swift in Sources */,
+				687EDBF12A42BDCD00C606C2 /* OrderListViewModel.swift in Sources */,
+				781D6FFF2A444BDA0063FF9C /* MockNeckForm.swift in Sources */,
+				687EDBE92A42AC1200C606C2 /* View.swift in Sources */,
+				43BB82FA2A46FF490066EF55 /* Placeholder.swift in Sources */,
 				43874ED82A42074C001403E7 /* ShimmerEffect.swift in Sources */,
+				781D6FFD2A444BA60063FF9C /* MockSleeveForm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +560,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tailor Piece/Tailor Piece.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tailor Piece/Preview Content\"";
@@ -515,6 +581,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.saepasomba.Tailor-Piece";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -529,6 +596,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tailor Piece/Tailor Piece.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tailor Piece/Preview Content\"";
@@ -548,6 +617,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.saepasomba.Tailor-Piece";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
