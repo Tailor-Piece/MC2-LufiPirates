@@ -2,32 +2,33 @@
 //  SketsaSubSection.swift
 //  Tailor Piece
 //
-//  Created by Sae Pasomba on 22/06/23.
+//  Created by Salsabila Zahra Chinanti on 22/06/23.
 //
 
 import SwiftUI
 
-enum SketsaTab {
-case tampakDepan, tampakBelakang
+enum PolaPotonganTab {
+    case bentukPakaian, lengan, leher
 }
 
-struct SketsaSubSection: View {
-    @State var sketsaCurrentTab: SketsaTab = .tampakDepan
+struct PolaPotonganSubSection: View {
+    @State var polaPotonganCurrentTab: PolaPotonganTab = .bentukPakaian
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 12) {
                 HStack {
-                    Text("Sketsa")
+                    Text("Pola Potongan")
                         .font(.largeTitle)
                         .bold()
                     Spacer()
                 }
                 .padding(.vertical, 16)
                 
-                Picker("Hello", selection: $sketsaCurrentTab) {
-                    Text("Tampak Depan").tag(SketsaTab.tampakDepan)
-                    Text("Tampak Belakang").tag(SketsaTab.tampakBelakang)
+                Picker("Hello", selection: $polaPotonganCurrentTab) {
+                    Text("Bentuk Pakaian").tag(PolaPotonganTab.bentukPakaian)
+                    Text("Lengan").tag(PolaPotonganTab.lengan)
+                    Text("Leher").tag(PolaPotonganTab.leher)
                 }
                 .pickerStyle(.segmented)
                 
@@ -37,20 +38,11 @@ struct SketsaSubSection: View {
                     .shimmer(ShimmerConfig(tint: .gray.opacity(0.3), highlight: .white))
                 
                 VStack(spacing: 8) {
-                    HStack {
-                        Text("Detail Ukuran Tubuh")
+                    HStack{
+                        Text("Detail Ukuran Pola")
                             .font(.title3)
                             .bold()
                         Spacer()
-                        Button {
-                            print("Edit sketsa clicked!")
-                        } label: {
-                            Label("Edit", systemImage: "pencil")
-                        }
-                        .font(.subheadline)
-                        .bold()
-                        .tint(.indigo)
-                        
                     }
                     
                     VStack(alignment: .leading, spacing: 12) {
@@ -71,11 +63,12 @@ struct SketsaSubSection: View {
                 
             }
         }
+
     }
 }
 
-struct SketsaSubSection_Previews: PreviewProvider {
+struct PolaPotonganSubSection_Previews: PreviewProvider {
     static var previews: some View {
-        SketsaSubSection()
+        PolaPotonganSubSection()
     }
 }

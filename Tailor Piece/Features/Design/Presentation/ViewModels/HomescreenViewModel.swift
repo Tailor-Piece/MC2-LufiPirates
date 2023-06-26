@@ -7,6 +7,6 @@
 
 import Foundation
 
-class HomeScreenViewModel: ObservableObject {
+class DesignViewModel: ObservableObject {
     @Published var message: String? = "ANDINI"
 }

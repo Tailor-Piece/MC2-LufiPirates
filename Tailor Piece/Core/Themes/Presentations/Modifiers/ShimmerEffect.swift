@@ -80,6 +80,6 @@ struct ShimmerEffect_Previews: PreviewProvider {
 
 struct ShimmerEffect2_Previews: PreviewProvider {
     static var previews: some View {
-        Homescreen().environmentObject(Router())
+        DesignView().environmentObject(Router())
     }
 }
