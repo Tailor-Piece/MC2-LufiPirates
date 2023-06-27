@@ -16,7 +16,7 @@ struct Tailor_PieceApp: App {
     @StateObject var router = Router()
     var body: some Scene {
         WindowGroup {
-            DesignView().environmentObject(router)
+            RootView().environmentObject(router)
         }
     }
 //    var body: some Scene {
