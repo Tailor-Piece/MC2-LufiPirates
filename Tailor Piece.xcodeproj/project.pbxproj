@@ -37,6 +37,11 @@
 		781D6FFD2A444BA60063FF9C /* MockSleeveForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FFC2A444BA60063FF9C /* MockSleeveForm.swift */; };
 		781D6FFF2A444BDA0063FF9C /* MockNeckForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FFE2A444BDA0063FF9C /* MockNeckForm.swift */; };
 		781D70012A444C240063FF9C /* MockListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D70002A444C240063FF9C /* MockListItem.swift */; };
+		787B1DE72A4AF63500FA8A3F /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B1DE62A4AF63500FA8A3F /* Homescreen.swift */; };
+		787B1DE92A4AF66400FA8A3F /* FocusedField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B1DE82A4AF66400FA8A3F /* FocusedField.swift */; };
+		787B1DEB2A4AF6A000FA8A3F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B1DEA2A4AF6A000FA8A3F /* OnboardingView.swift */; };
+		787B1DED2A4AF6C300FA8A3F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B1DEC2A4AF6C300FA8A3F /* RootView.swift */; };
+		787B1DEF2A4AF71F00FA8A3F /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B1DEE2A4AF71F00FA8A3F /* ButtonComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +78,11 @@
 		781D6FFC2A444BA60063FF9C /* MockSleeveForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSleeveForm.swift; sourceTree = "<group>"; };
 		781D6FFE2A444BDA0063FF9C /* MockNeckForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNeckForm.swift; sourceTree = "<group>"; };
 		781D70002A444C240063FF9C /* MockListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListItem.swift; sourceTree = "<group>"; };
+		787B1DE62A4AF63500FA8A3F /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
+		787B1DE82A4AF66400FA8A3F /* FocusedField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusedField.swift; sourceTree = "<group>"; };
+		787B1DEA2A4AF6A000FA8A3F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		787B1DEC2A4AF6C300FA8A3F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		787B1DEE2A4AF71F00FA8A3F /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +200,7 @@
 				43874ED72A42074C001403E7 /* ShimmerEffect.swift */,
 				781CD6072A421C8600C491BC /* Router.swift */,
 				781D6FF22A43F8B80063FF9C /* UIColor.swift */,
+				787B1DE82A4AF66400FA8A3F /* FocusedField.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -296,6 +307,11 @@
 				781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */,
 				434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */,
 				781CD60B2A421CF100C491BC /* HomeView.swift */,
+				781CD6092A421CE500C491BC /* SecondView.swift */,
+				781CD60B2A421CF100C491BC /* ThirdView.swift */,
+				787B1DE62A4AF63500FA8A3F /* Homescreen.swift */,
+				787B1DEA2A4AF6A000FA8A3F /* OnboardingView.swift */,
+				787B1DEC2A4AF6C300FA8A3F /* RootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				43BB82F92A46FF490066EF55 /* Placeholder.swift */,
+				787B1DEE2A4AF71F00FA8A3F /* ButtonComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -424,6 +441,7 @@
 				43874EDA2A420F4C001403E7 /* DummyView.swift in Sources */,
 				781CD60A2A421CE500C491BC /* SelectJenisPakaianView.swift in Sources */,
 				43874ED42A420565001403E7 /* ColorTheme.swift in Sources */,
+				787B1DEF2A4AF71F00FA8A3F /* ButtonComponent.swift in Sources */,
 				781D6FFB2A444B5F0063FF9C /* MockClothingForm.swift in Sources */,
 				781CD6082A421C8600C491BC /* Router.swift in Sources */,
 				68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */,
@@ -431,11 +449,15 @@
 				4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */,
 				781D6FF32A43F8B80063FF9C /* UIColor.swift in Sources */,
 				781D6FE52A436AEF0063FF9C /* SidebarListComponent.swift in Sources */,
+				787B1DE72A4AF63500FA8A3F /* Homescreen.swift in Sources */,
 				781D70012A444C240063FF9C /* MockListItem.swift in Sources */,
 				43874ED22A40394F001403E7 /* DesignViewModel.swift in Sources */,
 				687EDBF12A42BDCD00C606C2 /* OrderListViewModel.swift in Sources */,
+				787B1DEB2A4AF6A000FA8A3F /* OnboardingView.swift in Sources */,
+				787B1DE92A4AF66400FA8A3F /* FocusedField.swift in Sources */,
 				781D6FFF2A444BDA0063FF9C /* MockNeckForm.swift in Sources */,
 				687EDBE92A42AC1200C606C2 /* View.swift in Sources */,
+				787B1DED2A4AF6C300FA8A3F /* RootView.swift in Sources */,
 				43BB82FA2A46FF490066EF55 /* Placeholder.swift in Sources */,
 				43874ED82A42074C001403E7 /* ShimmerEffect.swift in Sources */,
 				781D6FFD2A444BA60063FF9C /* MockSleeveForm.swift in Sources */,
@@ -566,10 +588,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Tailor Piece/Tailor Piece.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tailor Piece/Preview Content\"";
-				DEVELOPMENT_TEAM = G4VYKVQHB6;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P48RXXD7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -583,9 +607,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saepasomba.Tailor-Piece";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salsaachinanti.Tailor-Piece";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AtipiPad;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -602,10 +627,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Tailor Piece/Tailor Piece.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tailor Piece/Preview Content\"";
-				DEVELOPMENT_TEAM = G4VYKVQHB6;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P48RXXD7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -619,9 +646,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.saepasomba.Tailor-Piece";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.salsaachinanti.Tailor-Piece";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AtipiPad;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
