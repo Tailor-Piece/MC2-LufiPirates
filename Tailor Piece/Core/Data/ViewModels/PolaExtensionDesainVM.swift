@@ -60,8 +60,6 @@ extension DesainViewModel {
         var pola2 = ["AB":3, "CD":4]
         
         //MARK: CALCULATION
-        
-        
         return ["pola1":pola1, "pola2":pola2]
     }
     
