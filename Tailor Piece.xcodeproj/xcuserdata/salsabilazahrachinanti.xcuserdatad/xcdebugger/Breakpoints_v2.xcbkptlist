@@ -488,72 +488,660 @@
             filePath = "Tailor Piece/Core/Data/Entities/Design.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "init(designId:dateCreated:gender:bodySize:clothingType:patterns:)"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "362FEF43-22B4-4C65-9BC1-BDC871AB9C37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Repository/BodySizeRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBC81388-4F66-4052-BBAA-0C11215CF261"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/ViewModels/BodySizeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18236573-1E9B-42AE-B08E-25B73F85EEF9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "Yes"
+            filePath = "Tailor Piece/Core/Data/Entities/Design.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init?(record:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C722B3AF-9E75-40FA-B2FD-23C6112201F9"
+            uuid = "3C11DC27-DF19-4ACE-8907-F490347B5D68"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tailor Piece/Core/Data/ViewModels/DesignViewModel.swift"
+            filePath = "Tailor Piece/Core/Data/Entities/Design.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "populateDesign()"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init?(record:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0FA2AA07-7A1E-4790-9723-99759758C1DA"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Tailor Piece/Core/Data/Mock/DesignView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "body"
-            landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "0FA2AA07-7A1E-4790-9723-99759758C1DA - 4358534a94d4abea"
+                  uuid = "3C11DC27-DF19-4ACE-8907-F490347B5D68 - 59082b3839acd9f0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.Gender, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.Gender&gt;, Tailor_Piece.Gender, SwiftUI.Text&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.ClothingType, SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.Gender, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.Gender&gt;, Tailor_Piece.Gender, SwiftUI.Text&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.ClothingType, SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Spacer, SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.DesignItemViewModel&gt;, Swift.Optional&lt;__C.CKRecordID&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt;&gt;)&gt; in Tailor_Piece.TestView.body.getter : some"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
                   moduleName = "Tailor Piece"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/DesignView.swift"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "352">
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "2476">
                </Location>
                <Location
-                  uuid = "0FA2AA07-7A1E-4790-9723-99759758C1DA - 4358534a94d4abea"
+                  uuid = "3C11DC27-DF19-4ACE-8907-F490347B5D68 - 33b8f4764cc92582"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.Gender, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.Gender&gt;, Tailor_Piece.Gender, SwiftUI.Text&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.ClothingType, SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.Gender, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.Gender&gt;, Tailor_Piece.Gender, SwiftUI.Text&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Picker&lt;SwiftUI.Text, Tailor_Piece.ClothingType, SwiftUI._ConditionalContent&lt;SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.ClothingType&gt;, Tailor_Piece.ClothingType, SwiftUI.Text&gt;&gt;&gt;, SwiftUI.Text)&gt;&gt;, SwiftUI.Text, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.TextField&lt;SwiftUI.Text&gt;, SwiftUI.Button&lt;SwiftUI.Text&gt;)&gt;&gt;, SwiftUI.Spacer, SwiftUI.List&lt;Swift.Never, SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.ForEach&lt;Swift.Array&lt;Tailor_Piece.DesignItemViewModel&gt;, Swift.Optional&lt;__C.CKRecordID&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt;)&gt;&gt;)&gt; in Tailor_Piece.TestView.body.getter : some"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
                   moduleName = "Tailor Piece"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Mock/DesignView.swift"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "384">
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "788">
+               </Location>
+               <Location
+                  uuid = "3C11DC27-DF19-4ACE-8907-F490347B5D68 - 796767177a9bf79d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "796">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BF251C4A-7B20-4795-AA7E-2775C1D5E14D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Entities/Design.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "init?(record:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BF251C4A-7B20-4795-AA7E-2775C1D5E14D - 59082b3839acd991"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "2520">
+               </Location>
+               <Location
+                  uuid = "BF251C4A-7B20-4795-AA7E-2775C1D5E14D - 33b8f4764cc925e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "832">
+               </Location>
+               <Location
+                  uuid = "BF251C4A-7B20-4795-AA7E-2775C1D5E14D - 796767177a9bf7fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "840">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C952D3D-3BED-4742-83DF-FD01E7DD4C13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Entities/Design.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init?(record:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C952D3D-3BED-4742-83DF-FD01E7DD4C13 - 59082b3839acd9b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "2560">
+               </Location>
+               <Location
+                  uuid = "8C952D3D-3BED-4742-83DF-FD01E7DD4C13 - 33b8f4764cc925c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "872">
+               </Location>
+               <Location
+                  uuid = "8C952D3D-3BED-4742-83DF-FD01E7DD4C13 - 796767177a9bf7df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "880">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DA6E601-7557-401E-A710-CAC38A411AF9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Entities/Design.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "init?(record:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4DA6E601-7557-401E-A710-CAC38A411AF9 - 59082b3839acdba2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "672">
+               </Location>
+               <Location
+                  uuid = "4DA6E601-7557-401E-A710-CAC38A411AF9 - 59082b3839acdba2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D5695B6-2F55-4B6D-AFBA-E2C040EA7637"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Entities/Design.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init?(record:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7D5695B6-2F55-4B6D-AFBA-E2C040EA7637 - 59082b3839acdb43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1048">
+               </Location>
+               <Location
+                  uuid = "7D5695B6-2F55-4B6D-AFBA-E2C040EA7637 - 59082b3839acdb43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.Design.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.Design&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/Design.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1688">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "96C1A9CC-BE5A-46A7-A51E-DE255A010408"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Repository/DesignRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "96C1A9CC-BE5A-46A7-A51E-DE255A010408 - 9a585f12c25ca6c1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tailor_Piece.DesignRepository.getDesignRecord(design: Tailor_Piece.DesignModel) async throws -&gt; Swift.Optional&lt;__C.CKRecord&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Repository/DesignRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "96C1A9CC-BE5A-46A7-A51E-DE255A010408 - c4dcf4223c3d8e93"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.DesignRepository.getDesignRecord(design: Tailor_Piece.DesignModel) async throws -&gt; Swift.Optional&lt;__C.CKRecord&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Repository/DesignRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D79FCCC-9EE5-4C4C-9934-427920F462C5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Repository/DesignTypeRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "save(typeCategory:previewImg:polaImg:bodySize:design:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1D79FCCC-9EE5-4C4C-9934-427920F462C5 - ed80acd7a65c809e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Tailor_Piece.DesignTypeRepository.save&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Tailor_Piece.DesignTypeProtocol&gt;(previewImg: Swift.String, polaImg: Swift.String, bodySize: Tailor_Piece.BodySizeModel, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) async throws -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Repository/DesignTypeRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "1D79FCCC-9EE5-4C4C-9934-427920F462C5 - fb891c197b4aeff3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) await resume partial function for Tailor_Piece.DesignTypeRepository.save&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Tailor_Piece.DesignTypeProtocol&gt;(previewImg: Swift.String, polaImg: Swift.String, bodySize: Tailor_Piece.BodySizeModel, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) async throws -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Repository/DesignTypeRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "1D79FCCC-9EE5-4C4C-9934-427920F462C5 - 2276c7cb0835c490"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for Tailor_Piece.DesignTypeRepository.save&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Tailor_Piece.DesignTypeProtocol&gt;(previewImg: Swift.String, polaImg: Swift.String, bodySize: Tailor_Piece.BodySizeModel, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) async throws -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Repository/DesignTypeRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "544536FE-2E27-4F35-9023-E24445DB5A93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Entities/DesignTypeModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "init?(record:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "544536FE-2E27-4F35-9023-E24445DB5A93 - c4db4b654f233121"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.BentukPakaian1.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.BentukPakaian1&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/DesignTypeModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "172">
+               </Location>
+               <Location
+                  uuid = "544536FE-2E27-4F35-9023-E24445DB5A93 - c4db4b654f233121"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.BentukPakaian1.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.BentukPakaian1&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/DesignTypeModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "592">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "612E5C42-F9A5-4E5D-8988-D86EE6D6DCD7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Entities/DesignTypeModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "init?(record:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "612E5C42-F9A5-4E5D-8988-D86EE6D6DCD7 - c4db4b654f2331c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.BentukPakaian1.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.BentukPakaian1&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/DesignTypeModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "612E5C42-F9A5-4E5D-8988-D86EE6D6DCD7 - c4db4b654f2331c0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.BentukPakaian1.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.BentukPakaian1&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/DesignTypeModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "996">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "66C10C4E-FE21-4686-8D45-F090CB7A3ED3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Entities/DesignTypeModels.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "init?(record:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "66C10C4E-FE21-4686-8D45-F090CB7A3ED3 - c4db4b654f2331e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.BentukPakaian1.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.BentukPakaian1&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/DesignTypeModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "940">
+               </Location>
+               <Location
+                  uuid = "66C10C4E-FE21-4686-8D45-F090CB7A3ED3 - c4db4b654f2331e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Tailor_Piece.BentukPakaian1.init(record: __C.CKRecord) async -&gt; Swift.Optional&lt;Tailor_Piece.BentukPakaian1&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Entities/DesignTypeModels.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1668">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD8CBBE4-FD45-4F84-9A17-98391CEE39EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Mock/MasukkanUkuranBadanView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36421520-DFE0-4F20-B842-04438FEAB6C1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tailor Piece/Core/Data/Repository/PolaPotonganRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "36421520-DFE0-4F20-B842-04438FEAB6C1 - a47c7dd2bfc9ef0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(5) suspend resume partial function for Tailor_Piece.PolaPotonganRepository.save&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Tailor_Piece.PolaPotonganProtocol&gt;(namaPola: Swift.String, ukuranBadan: Swift.Dictionary&lt;Swift.String, Swift.Int&gt;, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) async throws -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Repository/PolaPotonganRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "36421520-DFE0-4F20-B842-04438FEAB6C1 - c37b0591ed54890c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for Tailor_Piece.PolaPotonganRepository.save&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Tailor_Piece.PolaPotonganProtocol&gt;(namaPola: Swift.String, ukuranBadan: Swift.Dictionary&lt;Swift.String, Swift.Int&gt;, completion: (Swift.Result&lt;Swift.Bool, Swift.Error&gt;) -&gt; ()) async throws -&gt; Swift.Optional&lt;&#x3c4;_0_0&gt;"
+                  moduleName = "Tailor Piece"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salsabilazahrachinanti/Documents/MC2/MC2-LufiPirates/Tailor%20Piece/Core/Data/Repository/PolaPotonganRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "332">
                </Location>
             </Locations>
          </BreakpointContent>

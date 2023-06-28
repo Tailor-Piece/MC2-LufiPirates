@@ -13,6 +13,9 @@ struct Tailor_PieceApp: App {
 
     //public container
     let container = CKContainer(identifier: "iCloud.com.salsaachinanti.TailorPiece")
+    @StateObject var homePageViewModel = HomePageViewModel()
+
+
 //    @StateObject var router = Router()
 //    var body: some Scene {
 //        WindowGroup {
@@ -21,7 +24,8 @@ struct Tailor_PieceApp: App {
 //    }
     var body: some Scene {
         WindowGroup {
-            TestView(vmDesign: DesignViewModel(container: container), vmBodySize: BodySizeViewModel(container: container))
+            HomePageView()
+                .environmentObject(homePageViewModel)
         }
     }
 }
