@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300540E2A43FD5700474828 /* SketsaSubSection.swift */; };
+		434A9EAA2A4ACA74002A5FF7 /* InputUkuranBadanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */; };
 		43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAB2A3C437D001403E7 /* Tailor_PieceApp.swift */; };
 		43874EAE2A3C437D001403E7 /* DesignView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43874EAD2A3C437D001403E7 /* DesignView.swift */; };
 		43874EB02A3C437D001403E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43874EAF2A3C437D001403E7 /* Assets.xcassets */; };
@@ -27,8 +28,8 @@
 		687EDBF12A42BDCD00C606C2 /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EDBF02A42BDCD00C606C2 /* OrderListViewModel.swift */; };
 		68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */; };
 		781CD6082A421C8600C491BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6072A421C8600C491BC /* Router.swift */; };
-		781CD60A2A421CE500C491BC /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6092A421CE500C491BC /* SecondView.swift */; };
-		781CD60C2A421CF100C491BC /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD60B2A421CF100C491BC /* ThirdView.swift */; };
+		781CD60A2A421CE500C491BC /* SelectJenisPakaianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */; };
+		781CD60C2A421CF100C491BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD60B2A421CF100C491BC /* HomeView.swift */; };
 		781D6FE52A436AEF0063FF9C /* SidebarListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FE42A436AEF0063FF9C /* SidebarListComponent.swift */; };
 		781D6FF32A43F8B80063FF9C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FF22A43F8B80063FF9C /* UIColor.swift */; };
 		781D6FF92A444A310063FF9C /* MockDesignType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FF82A444A310063FF9C /* MockDesignType.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		4300540E2A43FD5700474828 /* SketsaSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketsaSubSection.swift; sourceTree = "<group>"; };
+		434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUkuranBadanView.swift; sourceTree = "<group>"; };
 		43874EA82A3C437D001403E7 /* Tailor Piece.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tailor Piece.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43874EAB2A3C437D001403E7 /* Tailor_PieceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tailor_PieceApp.swift; sourceTree = "<group>"; };
 		43874EAD2A3C437D001403E7 /* DesignView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignView.swift; sourceTree = "<group>"; };
@@ -62,8 +64,8 @@
 		687EDBF02A42BDCD00C606C2 /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 		68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaPotonganSubSection.swift; sourceTree = "<group>"; };
 		781CD6072A421C8600C491BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		781CD6092A421CE500C491BC /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		781CD60B2A421CF100C491BC /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
+		781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectJenisPakaianView.swift; sourceTree = "<group>"; };
+		781CD60B2A421CF100C491BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		781D6FE42A436AEF0063FF9C /* SidebarListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarListComponent.swift; sourceTree = "<group>"; };
 		781D6FF22A43F8B80063FF9C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		781D6FF82A444A310063FF9C /* MockDesignType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDesignType.swift; sourceTree = "<group>"; };
@@ -291,8 +293,9 @@
 			isa = PBXGroup;
 			children = (
 				43874EAD2A3C437D001403E7 /* DesignView.swift */,
-				781CD6092A421CE500C491BC /* SecondView.swift */,
-				781CD60B2A421CF100C491BC /* ThirdView.swift */,
+				781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */,
+				434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */,
+				781CD60B2A421CF100C491BC /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -413,12 +416,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434A9EAA2A4ACA74002A5FF7 /* InputUkuranBadanView.swift in Sources */,
 				781D6FF92A444A310063FF9C /* MockDesignType.swift in Sources */,
 				43874EAE2A3C437D001403E7 /* DesignView.swift in Sources */,
-				781CD60C2A421CF100C491BC /* ThirdView.swift in Sources */,
+				781CD60C2A421CF100C491BC /* HomeView.swift in Sources */,
 				687EDBED2A42B29200C606C2 /* Order.swift in Sources */,
 				43874EDA2A420F4C001403E7 /* DummyView.swift in Sources */,
-				781CD60A2A421CE500C491BC /* SecondView.swift in Sources */,
+				781CD60A2A421CE500C491BC /* SelectJenisPakaianView.swift in Sources */,
 				43874ED42A420565001403E7 /* ColorTheme.swift in Sources */,
 				781D6FFB2A444B5F0063FF9C /* MockClothingForm.swift in Sources */,
 				781CD6082A421C8600C491BC /* Router.swift in Sources */,

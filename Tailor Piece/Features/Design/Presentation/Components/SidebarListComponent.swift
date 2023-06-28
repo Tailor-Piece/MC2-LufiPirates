@@ -73,3 +73,20 @@ struct SidebarListComponent: View {
         return gridItems
     }
 }
+
+struct SidebarListComponent_Previews: PreviewProvider {
+    
+    static var previews: some View {
+        let filteredTypeClothing = filterByClothingType(clothingType: "Bentuk Pakaian")
+        SidebarListComponent(
+            items: filteredTypeClothing ,
+            frameSize: CGSize(width: 100, height: 100),
+            borderColor: Color.blue,
+            showCheckmark: true,
+            checkMarkColor: ColorTheme.primary100,
+            cornerRadius: 8,
+            fontSize: 20,
+            rowCount: 1
+        )
+    }
+}

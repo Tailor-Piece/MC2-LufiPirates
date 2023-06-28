@@ -54,25 +54,24 @@ struct DesignView: View {
                         .bold()
                         .font(.headline)
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    HStack(spacing: 16) {
-                        Button {
-                            print("Batal clicked")
-                        } label: {
-                            Text("Batal")
-                                .bold()
-                        }
-                        .cornerRadius(999)
-
-                        Button {
-                            print("Simpan clicked")
-                        } label: {
-                            Text("Simpan")
-                                .bold()
-                        }
-                        .cornerRadius(999)
-                        .buttonStyle(.borderedProminent)
+                
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button {
+                        print("Batal clicked")
+                    } label: {
+                        Text("Batal")
+                            .bold()
                     }
+                    .cornerRadius(999)
+                    
+                    Button {
+                        print("Simpan clicked")
+                    } label: {
+                        Text("Simpan")
+                            .bold()
+                    }
+                    .cornerRadius(999)
+                    .buttonStyle(.borderedProminent)
                 }
             }
         }
