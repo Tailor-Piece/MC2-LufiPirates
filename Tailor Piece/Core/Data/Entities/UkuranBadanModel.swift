@@ -93,30 +93,7 @@ extension UkuranBadanModel : Hashable {
         hasher.combine(recordId)
     }
     
-    func toList() -> [Int] {
-        var listUkuranBadan: [Int] = [
-            lingkarBadan,
-            panjangDada,
-            lebarDada,
-            tinggiDada,
-            panjangPunggung,
-            lebarPunggung,
-            lebarBahu,
-            panjangCelana,
-            panjangLutut,
-            lingkarPanggul,
-            lingkarPesak,
-            SetengahLingkarPaha,
-            SetengahLingkarLutut,
-            SetengahLingkarKaki,
-            lingkarPinggang,
-            lingkarPinggul
-        ]
-        listUkuranBadan.removeAll { $0 == 0 }
-        return listUkuranBadan
-    }
-    
-    func toDictionary() -> [String:Int] {
+    func toDictionaryAtasan() -> [String:Int] {
         let dict : [String:Int] = [
             "Lingkar Badan" : lingkarBadan,
             "Panjang Dada" : panjangDada,
@@ -125,6 +102,14 @@ extension UkuranBadanModel : Hashable {
             "Panjang Punggung" : panjangPunggung,
             "Lebar Punggung" : lebarPunggung,
             "Lebar Bahu" : lebarBahu,
+            "Lingkar Pinggang" : lingkarPinggang,
+            "Lingkar Pinggul" : lingkarPinggul
+        ]
+        return dict
+    }
+    
+    func toDictionaryBawahan() -> [String:Int] {
+        let dict : [String:Int] = [
             "Panjang Celana" : panjangCelana,
             "Panjang Lutut" : panjangLutut,
             "Lingkar Panggul" : lingkarPanggul,
@@ -135,7 +120,7 @@ extension UkuranBadanModel : Hashable {
             "Lingkar Pinggang" : lingkarPinggang,
             "Lingkar Pinggul" : lingkarPinggul
         ]
-        return dict.filter { $0.value != 0 }
+        return dict
     }
 }
 

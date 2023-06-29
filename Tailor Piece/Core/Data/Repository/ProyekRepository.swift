@@ -52,9 +52,10 @@ class ProyekRepository {
         }
     }
         
-    func save(dateCreated: Date, jenisPakaian: String, ukuranBadan: UkuranBadanModel?, tipeDesain:TipeDesainModel?, sketsa: SketsaModel?, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> ProyekModel? {
+    func save(namaProyek:String, dateCreated: Date, jenisPakaian: String, ukuranBadan: UkuranBadanModel?, tipeDesain:TipeDesainModel?, sketsa: SketsaModel?, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> ProyekModel? {
         do {
             let newProyek = CKRecord(recordType: ProyekModel.recordType)
+            newProyek.setValue(namaProyek, forKey: "namaProyek")
             newProyek.setValue(dateCreated, forKey: "dateCreated")
             newProyek.setValue(jenisPakaian, forKey: "jenisPakaian")
             

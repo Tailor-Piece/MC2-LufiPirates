@@ -36,6 +36,7 @@
 		68F808762A4B55E6002A4958 /* SketsaExtensionDesainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F808752A4B55E6002A4958 /* SketsaExtensionDesainVM.swift */; };
 		68F808782A4B5ACB002A4958 /* PolaExtensionDesainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F808772A4B5ACB002A4958 /* PolaExtensionDesainVM.swift */; };
 		68F8087C2A4BF94F002A4958 /* TipeDesainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F8087B2A4BF94F002A4958 /* TipeDesainModel.swift */; };
+		68F8087E2A4CA497002A4958 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F8087D2A4CA497002A4958 /* HistoryView.swift */; };
 		781CD6082A421C8600C491BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6072A421C8600C491BC /* Router.swift */; };
 		781CD60A2A421CE500C491BC /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6092A421CE500C491BC /* SecondView.swift */; };
 		781CD60C2A421CF100C491BC /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD60B2A421CF100C491BC /* ThirdView.swift */; };
@@ -73,6 +74,7 @@
 		68F808752A4B55E6002A4958 /* SketsaExtensionDesainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketsaExtensionDesainVM.swift; sourceTree = "<group>"; };
 		68F808772A4B5ACB002A4958 /* PolaExtensionDesainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaExtensionDesainVM.swift; sourceTree = "<group>"; };
 		68F8087B2A4BF94F002A4958 /* TipeDesainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipeDesainModel.swift; sourceTree = "<group>"; };
+		68F8087D2A4CA497002A4958 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		781CD6072A421C8600C491BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		781CD6092A421CE500C491BC /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		781CD60B2A421CF100C491BC /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
@@ -336,6 +338,7 @@
 				68F8084F2A49EF04002A4958 /* PilihJenisPakaianView.swift */,
 				68F808512A49F0A4002A4958 /* MasukkanUkuranBadanView.swift */,
 				68F808532A49F572002A4958 /* DesignView.swift */,
+				68F8087D2A4CA497002A4958 /* HistoryView.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				781CD60C2A421CF100C491BC /* ThirdView.swift in Sources */,
 				68F808542A49F572002A4958 /* DesignView.swift in Sources */,
 				43874EDA2A420F4C001403E7 /* DummyView.swift in Sources */,
+				68F8087E2A4CA497002A4958 /* HistoryView.swift in Sources */,
 				68F808602A4A5CD1002A4958 /* UkuranBadanModel.swift in Sources */,
 				781CD60A2A421CE500C491BC /* SecondView.swift in Sources */,
 				68F808662A4A6B3B002A4958 /* UkuranBadanViewModel.swift in Sources */,

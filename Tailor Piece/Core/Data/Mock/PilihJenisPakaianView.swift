@@ -11,24 +11,22 @@ import CloudKit
 
 struct PilihJenisPakaianView:View {
     
-//    @EnvironmentObject var proyekViewModel: ProyekViewModel
-//    @StateObject var pilihJenisPakaianViewModel = PilihJenisPakaianViewModel()
-//    @StateObject var proyekViewModel = ProyekViewModel(proyek: nil)
     @State private var jenisPakaian:[String] = ["Atasan", "Bawahan"]
+    @State private var namaProyek = ""
     @State private var jenisPakaianChosen = ""
 
     var body: some View {
         VStack {
             Picker("Pilih Jenis Pakaian", selection: $jenisPakaianChosen) {
-                Text("Pilih jenis pakaian").tag("")
                 ForEach(jenisPakaian, id: \.self) { cloth in
-                    Text(cloth)
+                    Text(cloth).tag(cloth)
                 }
             }
+            
+            TextField("Nama proyek", text: $namaProyek)
 
             NavigationLink("Next"){
-                MasukkanUkuranBadanView(jenisPakaian: jenisPakaianChosen)
-//                    .environmentObject(proyekViewModel)
+                MasukkanUkuranBadanView(namaProyek:namaProyek, jenisPakaian: jenisPakaianChosen)
             }
         }
     }

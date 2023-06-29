@@ -10,7 +10,6 @@ import CloudKit
 
 //store ProyekModels
 class HomePageViewModel: ObservableObject {
-//    @Published var viewState: BodySizeFormViewState
     @Published var proyek: [ProyekModel] = []
     @Published var isLoading = false
     

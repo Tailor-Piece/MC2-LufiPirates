@@ -10,12 +10,12 @@ import SwiftUI
 
 struct DesignView:View {
     
-//    @EnvironmentObject var proyekViewModel: ProyekViewModel
     @StateObject var homepageViewModel = HomePageViewModel()
     @StateObject var desainViewModel = DesainViewModel()
     @StateObject var ukuranBadanViewModel:UkuranBadanViewModel
+    @State var namaProyek:String
     var jenisPakaian:String
-    
+
     private let bentukPakaian:[String] = ["Classic Fit", "Modern Fit", "Slim Fit"]
     private let lengan:[String] = ["Long Sleeves", "3/4 Sleeves", "Short Sleeves"]
     private let leher:[String] = ["Short Collar", "Cut-Away Colar", "Classic Colar"]
@@ -25,7 +25,7 @@ struct DesignView:View {
     @State private var lenganChosen = ""
     @State private var leherChosen = ""
     @State private var celanaChosen = ""
-    
+        
     func changeSketsa() {
         let sketsa:[String]
         if(jenisPakaian == "Atasan"){
@@ -43,13 +43,14 @@ struct DesignView:View {
         ScrollView{
             HStack {
                 VStack{
+                    TextField("Nama proyek", text: $namaProyek)
+                        .padding(.bottom, 20)
+                    
                     Text("Tipe Desain")
                     
                     if (jenisPakaian == "Atasan"){
                         Picker("", selection: $bentukPakaianChosen) {
-//                            Text("Pilih Bentuk Pakaian").tag("")
                             ForEach(bentukPakaian, id: \.self) { cloth in
-    //                            Image(cloth)
                                 Text(cloth).tag(cloth)
                             }
                         }
@@ -59,9 +60,7 @@ struct DesignView:View {
                         }
                         
                         Picker("", selection: $lenganChosen) {
-//                            Text("Pilih Lengan").tag("")
                             ForEach(lengan, id: \.self) { cloth in
-    //                            Image(cloth)
                                 Text(cloth).tag(cloth)
                             }
                         }
@@ -71,9 +70,7 @@ struct DesignView:View {
                         }
                         
                         Picker("", selection: $leherChosen) {
-//                            Text("Pilih Leher").tag("")
                             ForEach(leher, id: \.self) { cloth in
-    //                            Image(cloth)
                                 Text(cloth).tag(cloth)
                             }
                         }
@@ -83,9 +80,7 @@ struct DesignView:View {
                         }
                     } else {
                         Picker("", selection: $celanaChosen) {
-//                            Text("Pilih Celana").tag("")
                             ForEach(celana, id: \.self) { cloth in
-    //                            Image(cloth)
                                 Text(cloth).tag(cloth)
                             }
                         }
@@ -107,8 +102,14 @@ struct DesignView:View {
                     }
 
                     Text("Detail Ukuran Tubuh")
-                    ForEach((ukuranBadanViewModel.toDictionary().sorted(by: <)), id: \.key) { key, value in
-                       Text("\(key) : \(value)")
+                    if(jenisPakaian == "Atasan"){
+                        ForEach((ukuranBadanViewModel.toDictionaryAtasan().sorted(by: <)), id: \.key) { key, value in
+                           Text("\(key) : \(value)")
+                        }
+                    } else {
+                        ForEach((ukuranBadanViewModel.toDictionaryBawahan().sorted(by: <)), id: \.key) { key, value in
+                           Text("\(key) : \(value)")
+                        }
                     }
                 }
                 VStack{
@@ -119,7 +120,7 @@ struct DesignView:View {
                                 Text("Bentuk Pakaian")
                                 Text(desainViewModel.tipeDesainAtasan["bentukPakaian"]!)
                                 Text("Detail Ukuran Pola")
-                                ForEach(desainViewModel.getPolaBentukPakaian(ukuranBadan: ukuranBadanViewModel.toDictionary()).sorted(by: { $0.key < $1.key }), id: \.key) { outerKey, innerDictionary in
+                                ForEach(desainViewModel.getPolaBentukPakaian(ukuranBadan: ukuranBadanViewModel.toDictionaryAtasan(), tipeDesain: desainViewModel.tipeDesainAtasan["bentukPakaian"]!).sorted(by: { $0.key < $1.key }), id: \.key) { outerKey, innerDictionary in
                                     Text("\(outerKey)")
                                     
                                     ForEach(innerDictionary.sorted(by: { $0.key < $1.key }), id: \.key) { innerKey, value in
@@ -132,7 +133,7 @@ struct DesignView:View {
                                 Text("Lengan")
                                 Text(desainViewModel.tipeDesainAtasan["lengan"]!)
                                 Text("Detail Ukuran Pola")
-                                ForEach(desainViewModel.getPolaLengan(ukuranBadan: ukuranBadanViewModel.toDictionary()).sorted(by: { $0.key < $1.key }), id: \.key) { outerKey, innerDictionary in
+                                ForEach(desainViewModel.getPolaLengan(ukuranBadan: ukuranBadanViewModel.toDictionaryAtasan(), tipeDesain: desainViewModel.tipeDesainAtasan["lengan"]!).sorted(by: { $0.key < $1.key }), id: \.key) { outerKey, innerDictionary in
                                     Text("\(outerKey)")
 
                                     ForEach(innerDictionary.sorted(by: { $0.key < $1.key }), id: \.key) { innerKey, value in
@@ -145,7 +146,7 @@ struct DesignView:View {
                                 Text("Leher")
                                 Text(desainViewModel.tipeDesainAtasan["leher"]!)
                                 Text("Detail Ukuran Pola")
-                                ForEach(desainViewModel.getPolaLeher(ukuranBadan: ukuranBadanViewModel.toDictionary()).sorted(by: { $0.key < $1.key }), id: \.key) { outerKey, innerDictionary in
+                                ForEach(desainViewModel.getPolaLeher(ukuranBadan: ukuranBadanViewModel.toDictionaryAtasan(), tipeDesain: desainViewModel.tipeDesainAtasan["leher"]!).sorted(by: { $0.key < $1.key }), id: \.key) { outerKey, innerDictionary in
                                     Text("\(outerKey)")
 
                                     ForEach(innerDictionary.sorted(by: { $0.key < $1.key }), id: \.key) { innerKey, value in
@@ -159,7 +160,7 @@ struct DesignView:View {
                             Text("Celana")
                             Image(desainViewModel.tipeDesainBawahan["celana"]!)
                             Text("Detail Ukuran Pola")
-                            ForEach(desainViewModel.getPolaCelana(ukuranBadan: ukuranBadanViewModel.toDictionary()).sorted(by: { $0.key < $1.key }), id: \.key) { outerKey, innerDictionary in
+                            ForEach(desainViewModel.getPolaCelana(ukuranBadan: ukuranBadanViewModel.toDictionaryBawahan(), tipeDesain: desainViewModel.tipeDesainBawahan["celana"]!).sorted(by: { $0.key < $1.key }), id: \.key) { outerKey, innerDictionary in
                                 Text("\(outerKey)")
 
                                 ForEach(innerDictionary.sorted(by: { $0.key < $1.key }), id: \.key) { innerKey, value in
@@ -169,22 +170,15 @@ struct DesignView:View {
                         }
                     }
                 }
-//                NavigationLink("Save"){
-//                    Task{
-//                        await ukuranBadanViewModel.save()
-//                        await desainViewModel.saveTipeDesain()
-//                        await desainViewModel.saveSketsa()
-//                        await desainViewModel.saveProyek(jenisPakaian: jenisPakaian, ukuranBadan: ukuranBadanViewModel.ukuranBadan!)
-//                    }
-//                }
                 Button() {
                     Task {
                         await ukuranBadanViewModel.save()
                         await desainViewModel.saveTipeDesain()
                         await desainViewModel.saveSketsa()
+                        self.desainViewModel.namaProyek = namaProyek
                         await desainViewModel.saveProyek(jenisPakaian: jenisPakaian, ukuranBadan: ukuranBadanViewModel.ukuranBadan!)
                     }
-//                    HomePageView()
+                    
                 } label: {
                     if ukuranBadanViewModel.isLoading {
                         ProgressView().progressViewStyle(.circular)
@@ -198,6 +192,7 @@ struct DesignView:View {
                             .cornerRadius(8)
                     }
                 }
+                
             }
         }
         

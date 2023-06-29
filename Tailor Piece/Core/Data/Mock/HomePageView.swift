@@ -11,7 +11,6 @@ import SwiftUI
 struct HomePageView : View {
     
     @EnvironmentObject var homePageViewModel: HomePageViewModel
-//    @StateObject var proyekViewModel = ProyekViewModel(proyek: nil)
     @State private var historyProyek:[ProyekModel] = []
     
     var body: some View {
@@ -22,10 +21,11 @@ struct HomePageView : View {
                 } else {
                     NavigationLink("Buat Proyek") {
                         PilihJenisPakaianView()
-//                                .environmentObject(proyekViewModel)
                     }
                     ForEach(historyProyek, id:\.self) { proyek in
-                        Text(proyek.recordId?.recordName ?? "nil")
+                        NavigationLink(proyek.namaProyek){
+                            HistoryView(proyek: proyek)
+                        }
                     }
                 }
             }

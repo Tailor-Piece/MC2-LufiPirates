@@ -11,6 +11,7 @@ import CloudKit
 class ProyekModel : Identifiable {
     static let recordType = "ProyekModel"
     var recordId: CKRecord.ID?
+    let namaProyek:String
     let dateCreated: Date
     let jenisPakaian: String
     var ukuranBadan: UkuranBadanModel? = nil
@@ -20,6 +21,7 @@ class ProyekModel : Identifiable {
     init?(record: CKRecord) async {
         
         guard
+            let namaProyek = record["namaProyek"] as? String,
             let dateCreated = record["dateCreated"] as? Date,
             let jenisPakaian = record["jenisPakaian"] as? String,
             let tipeDesainReference = record["tipeDesain"] as? CKRecord.Reference,
@@ -48,6 +50,7 @@ class ProyekModel : Identifiable {
         }
         
         recordId = record.recordID
+        self.namaProyek = namaProyek
         self.dateCreated = dateCreated
         self.jenisPakaian = jenisPakaian
     }

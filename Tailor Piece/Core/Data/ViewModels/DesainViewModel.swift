@@ -11,6 +11,7 @@ import CloudKit
 class DesainViewModel: ObservableObject {
     
     @Published var proyek:ProyekModel?
+    @Published var namaProyek:String
     
     //Tipe Desain
     @Published var tipeDesain:TipeDesainModel?
@@ -28,11 +29,15 @@ class DesainViewModel: ObservableObject {
     @Published var polaCelana: [String:[String:Int]]
     
     @Published var isLoading = false
-    @Published var successAdd = false
+    @Published var successAddTipeDesain = false
+    @Published var successAddSketsa = false
+    @Published var successAddProyek = false
+
     
     private let proyekRepository = ProyekRepository()
     
     init(
+        namaProyek: String = "",
         tipeDesainAtasan: [String:String] = ["bentukPakaian":"", "lengan":"", "leher":""],
         tipeDesainBawahan: [String:String] = ["celana":""],
         tampakSketsa:[String:String] = ["tampakDepan":"", "tampakBelakang":""],
@@ -41,6 +46,7 @@ class DesainViewModel: ObservableObject {
         polaLeher:[String:[String:Int]] = ["":["":0]],
         polaCelana:[String:[String:Int]] = ["":["":0]]
     ) {
+        self.namaProyek = ""
         self.tipeDesainAtasan = ["bentukPakaian":"", "lengan":"", "leher":""]
         self.tipeDesainBawahan = ["celana":""]
         self.tampakSketsa = ["tampakDepan":"", "tampakBelakang":""]
@@ -66,7 +72,7 @@ extension DesainViewModel {
             switch results {
             case .success(_):
                 DispatchQueue.main.async {
-                    self.successAdd = true
+                    self.successAddTipeDesain = true
                     self.isLoading = false
                     print("Success")
                 }
@@ -94,7 +100,7 @@ extension DesainViewModel {
             switch results {
             case .success(_):
                 DispatchQueue.main.async {
-                    self.successAdd = true
+                    self.successAddSketsa = true
                     self.isLoading = false
                     print("Success")
                 }
@@ -106,7 +112,7 @@ extension DesainViewModel {
         }) {
             DispatchQueue.main.async {
                 self.sketsa = sketsaNew
-                print("Success sketsa")
+                print("Success")
             }
         }
     }
@@ -117,13 +123,13 @@ extension DesainViewModel {
             self.isLoading = true
         }
         
-        if let proyekNew = try? await proyekRepository.save(dateCreated: Date(), jenisPakaian: jenisPakaian, ukuranBadan: ukuranBadan, tipeDesain: tipeDesain, sketsa: sketsa, completion: {
+        if let proyekNew = try? await proyekRepository.save(namaProyek:namaProyek, dateCreated: Date(), jenisPakaian: jenisPakaian, ukuranBadan: ukuranBadan, tipeDesain: tipeDesain, sketsa: sketsa, completion: {
             
             results in
             switch results {
             case .success(_):
                 DispatchQueue.main.async {
-                    self.successAdd = true
+                    self.successAddProyek = true
                     self.isLoading = false
                     print("Success")
                 }
@@ -140,51 +146,16 @@ extension DesainViewModel {
             }
         }
     }
-}
-
-//MARK: SAVE POLA
-//extension DesainViewModel {
-//
-//    func savePolaPotongan() async {
-//        if bentukPakaian != "" {
-//            if(bentukPakaian == "Classic Fit"){
-//                await savePolaClassicFit()
-//            } else if(bentukPakaian == "Modern Fit"){
-//
-//            } else {
-//
-//            }
-//        } else if lengan != "" {
-//            if(lengan == "Long Sleeves"){
-//
-//            } else if(lengan == "3/4 Sleeves"){
-//
-//            } else {
-//
-//            }
-//        } else if leher != "" {
-//            if(leher == "Short Collar"){
-//
-//            } else if(leher == "Cut Away Collar"){
-//
-//            }
-//        } else if celana != "" {
-//            if(celana == "celana 1"){
-//
-//            } else if(celana == "celana 2"){
-//
-//            } else {
-//            }
-//        }
-//    }
-//
-//    func savePolaClassicFit() async {
+    
+    //MARK: NOT DONE
+//    func changeNamaProyek(namaProyek: String) async {
 //
 //        DispatchQueue.main.async {
 //            self.isLoading = true
 //        }
 //
-//        if let newPola: ClassicFit = try? await polaPotonganRepository.save(namaPola: bentukPakaian, ukuranPola: getUkuranPolaBentukPakaian()!, completion: {
+//        if let newProyek = try? await proyekRepository.changeNamaProyek(namaProyek:namaProyek, completion: {
+//
 //            results in
 //            switch results {
 //            case .success(_):
@@ -198,11 +169,13 @@ extension DesainViewModel {
 //                    print("Error: \(error)")
 //                }
 //            }
-//        }){
+//        }) {
+//
 //            DispatchQueue.main.async {
-//                self.isLoading = false
-//                self.polaBentukPakaian = newPola
+//                self.proyek = newProyek
+//                self.namaProyek = namaProyek
+//                print("Success")
 //            }
 //        }
 //    }
-//}
+}
