@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SidebarListComponent: View {
-    let items: [MockDesignType]
+    let items: [String]
     let frameSize: CGSize
     let borderColor: Color
     let showCheckmark: Bool
@@ -22,11 +22,11 @@ struct SidebarListComponent: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: generateGridItems(), spacing: 16) {
-                ForEach(items, id: \.name) { item in
+                ForEach(items, id: \.self) { item in
                     VStack {
                         ZStack {
                             VStack {
-                                Image(item.image)
+                                Image(item)
                                     .resizable()
                                     .frame(
                                         width: 62,
@@ -37,10 +37,10 @@ struct SidebarListComponent: View {
                             .frame(width: frameSize.width, height: frameSize.height)
                             .overlay(
                                 RoundedRectangle(cornerRadius: cornerRadius)
-                                    .stroke(selectedItem == item.name ? borderColor : ColorTheme.borderColor, lineWidth: 2)
+                                    .stroke(selectedItem == item ? borderColor : ColorTheme.borderColor, lineWidth: 2)
                             )
                             .onTapGesture {
-                                selectedItem = selectedItem == item.name ? nil : item.name // Update selectedItem only if the current item is not selected or the same as the currently selected item
+                                selectedItem = selectedItem == item ? nil : item // Update selectedItem only if the current item is not selected or the same as the currently selected item
                             }
                             VStack {
                                 Spacer()
@@ -51,12 +51,12 @@ struct SidebarListComponent: View {
                                         Image(systemName: "checkmark.circle.fill")
                                             .padding(EdgeInsets(top: 0, leading: 8, bottom: 8, trailing: 8))
                                             .imageScale(.small)
-                                            .foregroundColor(selectedItem == item.name ? checkMarkColor : Color.clear)
+                                            .foregroundColor(selectedItem == item ? checkMarkColor : Color.clear)
                                     }
                                 }
                             }
                         }
-                        Text(item.name)
+                        Text(item)
                             .font(.system(size: fontSize))
                     }
                 }
@@ -77,9 +77,9 @@ struct SidebarListComponent: View {
 struct SidebarListComponent_Previews: PreviewProvider {
     
     static var previews: some View {
-        let filteredTypeClothing = filterByClothingType(clothingType: "Bentuk Pakaian")
+//        let filteredTypeClothing = filterByClothingType(clothingType: "Bentuk Pakaian")
         SidebarListComponent(
-            items: filteredTypeClothing ,
+            items: ["Classic Fit", "Modern Fit", "Slim Fit"],
             frameSize: CGSize(width: 100, height: 100),
             borderColor: Color.blue,
             showCheckmark: true,

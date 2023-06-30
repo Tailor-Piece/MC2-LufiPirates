@@ -9,28 +9,26 @@ import SwiftUI
 
 struct DesignView: View {
     
-    @StateObject var designViewModel = DesignViewModel()
+    @StateObject var desainViewModel = DesainViewModel()
     
     
     @EnvironmentObject var router: Router
-    let filteredTypeClothing = filterByClothingType(clothingType: "Bentuk Pakaian")
-    let filteredTypeSleeve = filterByClothingType(clothingType: "Lengan")
-    let filteredTypeNeck = filterByClothingType(clothingType: "Leher")
+    
     var body: some View {
         NavigationSplitView{
             List{
                 Section(header: Text("Bentuk Pakaian")) {
                     SidebarListComponent(
-                        items: filteredTypeClothing, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100,
+                        items: desainViewModel.listBentukPakaian, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100,
                         cornerRadius: 8, fontSize: 11, rowCount: 1)
                 }
                 
                 Section(header: Text("Panjang Lengan")) {
-                    SidebarListComponent(items: filteredTypeSleeve, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100, cornerRadius: 8, fontSize: 11, rowCount: 1)
+                    SidebarListComponent(items: desainViewModel.listLengan, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100, cornerRadius: 8, fontSize: 11, rowCount: 1)
                 }
                 
                 Section(header: Text("Leher")) {
-                    SidebarListComponent(items: filteredTypeNeck, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true, checkMarkColor: ColorTheme.primary100, cornerRadius: 8, fontSize: 11, rowCount: 1)
+                    SidebarListComponent(items: desainViewModel.listLeher, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true, checkMarkColor: ColorTheme.primary100, cornerRadius: 8, fontSize: 11, rowCount: 1)
                 }
             }
             .listStyle(.sidebar)
