@@ -9,6 +9,8 @@ import SwiftUI
 
 struct InputUkuranBadanView: View {
     
+    @EnvironmentObject var router: Router
+    
     @State var ukuranBadan: [String: Double?] = [
         "Lingkaran Badan": 0,
         "Lebar Dada": 0,
@@ -30,6 +32,8 @@ struct InputUkuranBadanView: View {
                 Spacer()
             }
             
+            Spacer()
+            
             HStack(spacing: 176) {
                 VStack(spacing: 24) {
                     RoundedRectangle(cornerRadius: 15)
@@ -43,12 +47,15 @@ struct InputUkuranBadanView: View {
                     ForEach(Array(ukuranBadan.keys.sorted()), id: \.self) { key in
                         HStack(spacing: 16) {
                             Text("\(key)")
+                                .foregroundColor(.secondary)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             
 //                            TextField(value: $ukuranBadan[key], format: NumberFormatter(), prompt: "Value")
                             TextField("Value", value: $misc, format: .number)
                                 .frame(width: 75)
+                                .multilineTextAlignment(.trailing)
                             Text("cm")
+                                .foregroundColor(.secondary)
                         }
                         .padding(.top, 24)
                         .padding(.bottom, 12)
@@ -57,10 +64,20 @@ struct InputUkuranBadanView: View {
                 }
                 .frame(maxWidth: 320)
             }
+            
+            Spacer()
         }
-        .padding(20)
-        .onChange(of: ukuranBadan) { newValue in
-            print(newValue)
+        .padding(.horizontal ,20)
+        .navigationTitle("Proyek Tanpa Judul")
+        .toolbar {
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button("Selanjutnya") {
+                    router.path.append(2.0)
+                }
+                .cornerRadius(999)
+                .buttonStyle(.borderedProminent)
+            }
         }
     }
 }

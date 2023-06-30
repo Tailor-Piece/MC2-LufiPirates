@@ -29,7 +29,6 @@
 		68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */; };
 		781CD6082A421C8600C491BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6072A421C8600C491BC /* Router.swift */; };
 		781CD60A2A421CE500C491BC /* SelectJenisPakaianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */; };
-		781CD60C2A421CF100C491BC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD60B2A421CF100C491BC /* HomeView.swift */; };
 		781D6FE52A436AEF0063FF9C /* SidebarListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FE42A436AEF0063FF9C /* SidebarListComponent.swift */; };
 		781D6FF32A43F8B80063FF9C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FF22A43F8B80063FF9C /* UIColor.swift */; };
 		781D6FF92A444A310063FF9C /* MockDesignType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781D6FF82A444A310063FF9C /* MockDesignType.swift */; };
@@ -70,7 +69,6 @@
 		68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaPotonganSubSection.swift; sourceTree = "<group>"; };
 		781CD6072A421C8600C491BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectJenisPakaianView.swift; sourceTree = "<group>"; };
-		781CD60B2A421CF100C491BC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		781D6FE42A436AEF0063FF9C /* SidebarListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarListComponent.swift; sourceTree = "<group>"; };
 		781D6FF22A43F8B80063FF9C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		781D6FF82A444A310063FF9C /* MockDesignType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDesignType.swift; sourceTree = "<group>"; };
@@ -304,11 +302,8 @@
 			isa = PBXGroup;
 			children = (
 				43874EAD2A3C437D001403E7 /* DesignView.swift */,
-				781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */,
 				434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */,
-				781CD60B2A421CF100C491BC /* HomeView.swift */,
-				781CD6092A421CE500C491BC /* SecondView.swift */,
-				781CD60B2A421CF100C491BC /* ThirdView.swift */,
+				781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */,
 				787B1DE62A4AF63500FA8A3F /* Homescreen.swift */,
 				787B1DEA2A4AF6A000FA8A3F /* OnboardingView.swift */,
 				787B1DEC2A4AF6C300FA8A3F /* RootView.swift */,
@@ -436,7 +431,6 @@
 				434A9EAA2A4ACA74002A5FF7 /* InputUkuranBadanView.swift in Sources */,
 				781D6FF92A444A310063FF9C /* MockDesignType.swift in Sources */,
 				43874EAE2A3C437D001403E7 /* DesignView.swift in Sources */,
-				781CD60C2A421CF100C491BC /* HomeView.swift in Sources */,
 				687EDBED2A42B29200C606C2 /* Order.swift in Sources */,
 				43874EDA2A420F4C001403E7 /* DummyView.swift in Sources */,
 				781CD60A2A421CE500C491BC /* SelectJenisPakaianView.swift in Sources */,

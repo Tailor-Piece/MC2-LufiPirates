@@ -30,30 +30,44 @@ struct Homescreen: View {
                 }
                 Spacer().frame(height: 38)
                 HStack(alignment: .top, spacing: 40){
-                    VStack(alignment: .center){
-                        ZStack{
-                            Image(systemName: "plus")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 25, height: 25)
-                                .foregroundColor(.blue)
-                        }.frame(width: 144, height: 144)
-                            .background(Color(red: 0.87, green: 0.87, blue: 1))
-                            .cornerRadius(4)
-                        Spacer().frame(height: 20)
-                        VStack (alignment: .center) {
-                            Text("Buat Project")
-                                .font(.system(size: 17))
-                                .fontWeight(.semibold)
-                                .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
-                                .foregroundColor(ColorTheme.primary100)
-                                .multilineTextAlignment(.center)
-                            Spacer()
+                    Button {
+                        router.path.append(0.0)
+                    } label: {
+                        VStack(alignment: .center){
+                            ZStack{
+                                Image(systemName: "plus")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 25, height: 25)
+                                    .foregroundColor(.blue)
+                            }.frame(width: 144, height: 144)
+                                .background(Color(red: 0.87, green: 0.87, blue: 1))
+                                .cornerRadius(4)
+                            Spacer().frame(height: 20)
+                            VStack (alignment: .center) {
+                                Text("Buat Project")
+                                    .font(.system(size: 17))
+                                    .fontWeight(.semibold)
+                                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+                                    .foregroundColor(ColorTheme.primary100)
+                                    .multilineTextAlignment(.center)
+                                Spacer()
+                            }
+                            .frame(width: 144)
                         }
-                        .frame(width: 144)
+                        .navigationDestination(for: Double.self, destination: { destination in
+                            switch destination {
+                            case 0.0: SelectJenisPakaianView().environmentObject(router)
+                            case 1.0: InputUkuranBadanView().environmentObject(router)
+                            case 2.0: DesignView().environmentObject(router)
+                            default: EmptyView()
+                            }
+                        })
+                        
+                        .frame(height: 250)
+
                     }
-                    .frame(height: 250)
-                    
+
                     VStack(alignment: .center){
                         ZStack{
                             RoundedRectangle(cornerRadius: 4)

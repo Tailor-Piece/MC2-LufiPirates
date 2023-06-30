@@ -19,6 +19,7 @@ struct SelectJenisPakaianView: View {
                     .font(.title.bold())
                 Spacer()
             }
+            Spacer()
             
             HStack(spacing: 32) {
                 ForEach(["Bawahan", "Atasan"], id: \.self) {jenisPakaian in
@@ -26,9 +27,19 @@ struct SelectJenisPakaianView: View {
                 }
                 
             }
+            Spacer()
         }
-        
-        .padding(.horizontal, 4)
+        .padding(.horizontal ,20)
+        .navigationTitle("Proyek Tanpa Judul")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button("Selanjutnya") {
+                    router.path.append(1.0)
+                }
+                .cornerRadius(999)
+                .buttonStyle(.borderedProminent)
+            }
+        }
     }
 }
 
@@ -66,15 +77,6 @@ struct JenisPakaianCard: View {
             selectedPakaian = selectedPakaian == jenisPakaian ? nil : jenisPakaian
         }
         .animation(.linear(duration: 0.08), value: isSelected)
-        
-        .navigationTitle("Proyek Tanpa Judul")
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Selanjutnya") {
-                    print("Selanjutnya")
-                }
-            }
-        }
     }
 }
 

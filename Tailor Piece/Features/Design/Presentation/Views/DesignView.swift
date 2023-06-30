@@ -48,6 +48,7 @@ struct DesignView: View {
                 }
                 .padding(.horizontal, 20)
             }
+            .navigationBarBackButtonHidden()
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Text("Projek Tanpa Nama")
@@ -57,7 +58,7 @@ struct DesignView: View {
                 
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     Button {
-                        print("Batal clicked")
+                        router.reset()
                     } label: {
                         Text("Batal")
                             .bold()
@@ -65,7 +66,7 @@ struct DesignView: View {
                     .cornerRadius(999)
                     
                     Button {
-                        print("Simpan clicked")
+                        router.reset()
                     } label: {
                         Text("Simpan")
                             .bold()
@@ -75,7 +76,6 @@ struct DesignView: View {
                 }
             }
         }
-        .tint(.indigo)
     }
 }
 
