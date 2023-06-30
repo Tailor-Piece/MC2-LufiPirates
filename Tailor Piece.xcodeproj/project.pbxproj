@@ -118,8 +118,7 @@
 				436AE7C32A4EC4D700522D0E /* Mock */,
 				436AE7C92A4EC4D700522D0E /* Entities */,
 			);
-			name = Data;
-			path = "../../../misc/MC2-LufiPirates/Tailor Piece/Core/Data";
+			path = Data;
 			sourceTree = "<group>";
 		};
 		436AE7BA2A4EC4D700522D0E /* ViewModels */ = {
