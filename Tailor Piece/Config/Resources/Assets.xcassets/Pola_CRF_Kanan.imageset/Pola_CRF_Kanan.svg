@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_12" data-name="Layer 12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #ed1c24;
+        stroke-dasharray: 0 1;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+
+      .cls-3 {
+        fill: #231f20;
+        font-family: SFPro-Semibold, 'SF Pro';
+        font-size: 4.45px;
+        font-variation-settings: 'wdth' 100, 'opsz' 28, 'wght' 590;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        stroke: #00000b;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-2" d="m29.74,30.24c9.86-1.39,9.8-7.48,10.88-12.56l1.75-8.51,21.3,4.85s-2.17,15.24-4.39,23.99c0,0-2.4,6.87-2.47,22.37l-.78,27.34h-19.08l-.91-32.51c.01-6.77-2.79-15.9-6.31-24.98Z"/>
+    <path class="cls-2" d="m28.65,29.77c10.25-1.85,9.72-6.38,11.21-12.21l1.85-9.26,22.92,5.1-1.45,9.16s-1.8,10.11-3,15.46c-1.12,4.82-1.92,9.83-2.45,14.99l-.99,34.71h-20.52l-1.16-34.86c-.47-6.44-2.93-14.38-6.41-23.09Z"/>
+    <rect class="cls-2" x="36.17" y="86.49" width="20.56" height="1.24"/>
+    <line class="cls-2" x1="53.22" y1="10.87" x2="53.13" y2="11.26"/>
+    <line class="cls-2" x1="53.01" y1="11.6" x2="52.88" y2="12.05"/>
+    <line class="cls-2" x1="35.13" y1="55.35" x2="35.59" y2="55.35"/>
+    <line class="cls-2" x1="36.06" y1="55.35" x2="36.5" y2="55.35"/>
+    <line class="cls-2" x1="56.93" y1="55.35" x2="56.46" y2="55.35"/>
+    <line class="cls-2" x1="57.65" y1="55.35" x2="57.3" y2="55.35"/>
+  </g>
+  <g>
+    <text class="cls-3" transform="translate(24.05 9.57) scale(1.05 1)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-3" transform="translate(65.71 9.73) scale(1.05 1)"><tspan x="0" y="0">B</tspan></text>
+    <rect class="cls-1" x="28.41" y="8.48" width="36.53" height="79.75"/>
+    <text class="cls-3" transform="translate(41.75 6.43) scale(1.05 1)"><tspan x="0" y="0">E</tspan></text>
+    <text class="cls-3" transform="translate(58.54 93) scale(1.05 1)"><tspan x="0" y="0">I</tspan></text>
+    <text class="cls-3" transform="translate(66.05 16.03) scale(1.05 1)"><tspan x="0" y="0">F</tspan></text>
+    <text class="cls-3" transform="translate(66.08 26.13) scale(1.05 1)"><tspan x="0" y="0">Cn</tspan></text>
+    <text class="cls-3" transform="translate(64.94 92.41) scale(1.05 1)"><tspan x="0" y="0">D</tspan></text>
+    <text class="cls-3" transform="translate(20.73 90.34) scale(1.05 1)"><tspan x="0" y="0">Ch</tspan></text>
+  </g>
+</svg>

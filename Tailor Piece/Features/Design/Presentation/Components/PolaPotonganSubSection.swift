@@ -13,6 +13,7 @@ enum PolaPotonganTab {
 
 struct PolaPotonganSubSection: View {
     @State var polaPotonganCurrentTab: PolaPotonganTab = .bentukPakaian
+    @EnvironmentObject var desainViewModel: DesainViewModel
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -32,10 +33,28 @@ struct PolaPotonganSubSection: View {
                 }
                 .pickerStyle(.segmented)
                 
-                RoundedRectangle(cornerRadius: 8)
-                    .frame(maxWidth: 436, maxHeight: 348)
-                    .aspectRatio(contentMode: .fit)
-                    .shimmer(ShimmerConfig(tint: .gray.opacity(0.3), highlight: .white))
+                switch polaPotonganCurrentTab {
+                case .bentukPakaian:
+                    Image("\(Array(self.desainViewModel.polaBentukPakaian.keys)[0])")
+                        .resizable()
+                        .frame(maxWidth: 436, maxHeight: 348)
+                        .aspectRatio(contentMode: .fit)
+                case .lengan:
+                    Image("\(self.desainViewModel.polaLengan["Pola_LS"])")
+                        .resizable()
+                        .frame(maxWidth: 436, maxHeight: 348)
+                        .aspectRatio(contentMode: .fit)
+                case .leher:
+                    Image("\(self.desainViewModel.polaLeher["Pola_SC"])")
+                        .resizable()
+                        .frame(maxWidth: 436, maxHeight: 348)
+                        .aspectRatio(contentMode: .fit)
+                }
+                
+//                RoundedRectangle(cornerRadius: 8)
+//                    .frame(maxWidth: 436, maxHeight: 348)
+//                    .aspectRatio(contentMode: .fit)
+//                    .shimmer(ShimmerConfig(tint: .gray.opacity(0.3), highlight: .white))
                 
                 VStack(spacing: 8) {
                     HStack{

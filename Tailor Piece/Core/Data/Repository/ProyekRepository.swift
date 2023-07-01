@@ -104,26 +104,26 @@ class ProyekRepository {
         }
     }
     
-    func updateNamaProyek(id:CKRecord.ID, namaProyek:String, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> [ProyekModel]? {
-        do {
-            let predicate = NSPredicate(value: true)
-            let query = CKQuery(recordType: ProyekModel.recordType, predicate: predicate)
-            let results = try await publicDB.records(matching: query)
-            let records = results.matchResults.compactMap { try? $0.1.get() }
-                    
-            var allProyek = [ProyekModel]()
-            for record in records {
-                if let proyek = await ProyekModel(record: record) {
-                    allProyek.append(proyek)
-                }
-            }
-            completion(Result.success(true))
-            return allProyek
-        } catch {
-            completion(Result.failure(error))
-            return nil
-        }
-    }
+//    func updateNamaProyek(id:CKRecord.ID, namaProyek:String, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> [ProyekModel]? {
+//        do {
+//            let predicate = NSPredicate(value: true)
+//            let query = CKQuery(recordType: ProyekModel.recordType, predicate: predicate)
+//            let results = try await publicDB.records(matching: query)
+//            let records = results.matchResults.compactMap { try? $0.1.get() }
+//                    
+//            var allProyek = [ProyekModel]()
+//            for record in records {
+//                if let proyek = await ProyekModel(record: record) {
+//                    allProyek.append(proyek)
+//                }
+//            }
+//            completion(Result.success(true))
+//            return allProyek
+//        } catch {
+//            completion(Result.failure(error))
+//            return nil
+//        }
+//    }
     
 }
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_3_4Sleeve-2" data-name="3/4Sleeve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: SFPro-Semibold, 'SF Pro';
+        font-size: 4.49px;
+        font-variation-settings: 'wdth' 100, 'opsz' 28, 'wght' 590;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        stroke: #ed1c24;
+        stroke-dasharray: 0 1;
+        stroke-width: .5px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #010101;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-3" d="m14.46,38.24s8.74,29.2,8.62,43.19h49.89c1.48-14.9,4.22-29.23,8.56-42.82-3.25-.73-7.03-4.1-10.84-7.58l-7.06-7.34c-5.63-6-12.55-9.73-19.2-9.05-6.12,1.5-10.51,4.48-13.58,9.52-5.18,9.88-10.67,14.16-16.39,14.08Z"/>
+    <path class="cls-3" d="m16.21,39.28c6.56-1.03,11.8-6.57,16.14-15.2,2.51-3.83,6.4-6.72,12.08-8.4,7.33.16,13.23,3.59,18.21,9.14,5.89,6.54,11.75,12.8,17.03,14.46-4.18,13.01-6.72,26.74-8,41.02H24.5c-.56-12.72-4.59-27.91-8.29-41.02Z"/>
+  </g>
+  <polyline class="cls-2" points="48 80 48 16 16.59 39.75 79.41 39.75 48 16"/>
+  <text class="cls-1" transform="translate(10.8 40.46)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-1" transform="translate(80.14 41.49)"><tspan x="0" y="0">B</tspan></text>
+  <text class="cls-1" transform="translate(44.95 9.57)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(45.74 85.74)"><tspan x="0" y="0">D</tspan></text>
+  <text class="cls-1" transform="translate(20.9 85.74)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-1" transform="translate(72.9 85.74)"><tspan x="0" y="0">F</tspan></text>
+</svg>

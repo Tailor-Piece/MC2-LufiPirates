@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="StandardFitKanan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: SFPro-Semibold, 'SF Pro';
+        font-size: 4.49px;
+        font-variation-settings: 'wdth' 100, 'opsz' 28, 'wght' 590;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        stroke: #ed1c24;
+        stroke-dasharray: 0 1;
+        stroke-width: .5px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #231f20;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <g id="Kiri">
+    <path class="cls-3" d="m65.49,30.32c-4.13-1.38-6.67-4.03-6.72-8.68l-.41-13-22.41-.47-5.43,16.07c.85,7.04,1.81,14.86,2.82,23.08,1.36,8.88,2.09,18.9,2.47,29.57l.42,9.88-.06,2.05h24.15l.06-2.05.42-9.88c.16-9.8.84-19.7,2.05-29.69l2.65-16.88Z"/>
+    <path class="cls-3" d="m64.48,31.01c-4.05-1.14-6.48-4.03-6.65-9.33l-.52-12.09-8.99-.18-11.67-.24-5.04,15.13,2.82,23.02,2.01,20.07.81,19.4-.04,2.02h22.08l-.07-2.01.84-19.54c.51-12.36,1.94-24.45,4.43-36.24Z"/>
+    <line class="cls-3" x1="48.32" y1="9.4" x2="48.31" y2="88.81"/>
+    <rect class="cls-3" x="37.21" y="86.79" width="22" height="2.01" transform="translate(96.42 175.6) rotate(180)"/>
+    <line class="cls-3" x1="60.51" y1="86.79" x2="59.71" y2="86.79"/>
+    <line class="cls-3" x1="36.22" y1="86.76" x2="36.73" y2="86.79"/>
+    <line class="cls-3" x1="60.05" y1="67.25" x2="59.58" y2="67.25"/>
+    <line class="cls-3" x1="61.11" y1="67.3" x2="60.59" y2="67.25"/>
+    <line class="cls-3" x1="36.44" y1="67.38" x2="36.92" y2="67.38"/>
+    <line class="cls-3" x1="35.24" y1="67.38" x2="35.85" y2="67.38"/>
+    <line class="cls-3" x1="30.51" y1="24.23" x2="30.99" y2="24.3"/>
+    <line class="cls-3" x1="31.61" y1="24.29" x2="32.19" y2="24.3"/>
+    <line class="cls-3" x1="58.76" y1="21.64" x2="58.35" y2="21.64"/>
+    <line class="cls-3" x1="57.83" y1="21.68" x2="57.27" y2="21.68"/>
+    <line class="cls-3" x1="48.31" y1="8.42" x2="48.31" y2="8.94"/>
+    <line class="cls-3" x1="43.02" y1="8.37" x2="43.02" y2="8.81"/>
+    <line class="cls-3" x1="42.38" y1="8.37" x2="42.38" y2="8.81"/>
+    <polyline class="cls-3" points="43.02 9.36 42.49 17.71 42.38 9.4"/>
+    <circle class="cls-3" cx="42.48" cy="17.57" r=".39"/>
+    <circle class="cls-3" cx="42.32" cy="10.31" r=".23"/>
+    <circle class="cls-3" cx="43.02" cy="10.31" r=".23"/>
+    <rect class="cls-3" x="46.13" y="8.5" width="1.07" height="2.03" transform="translate(93.33 19.04) rotate(180)"/>
+    <line class="cls-3" x1="46.66" y1="8.5" x2="46.66" y2="8.94"/>
+  </g>
+  <text class="cls-1" transform="translate(26.95 90.43)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(66.13 89.69)"><tspan x="0" y="0">D</tspan></text>
+  <g>
+    <text class="cls-1" transform="translate(26.24 9.26)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-1" transform="translate(66.13 9.42)"><tspan x="0" y="0">B</tspan></text>
+    <rect class="cls-2" x="30.42" y="8.15" width="34.98" height="80.44"/>
+    <text class="cls-1" transform="translate(34.36 7.14)"><tspan x="0" y="0">E</tspan></text>
+    <text class="cls-1" transform="translate(28 25.96)"><tspan x="0" y="0">I</tspan></text>
+    <text class="cls-1" transform="translate(58.55 6.25)"><tspan x="0" y="0">F</tspan></text>
+    <text class="cls-1" transform="translate(66.41 32.72)"><tspan x="0" y="0">J</tspan></text>
+  </g>
+</svg>

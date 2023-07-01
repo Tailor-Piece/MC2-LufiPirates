@@ -27,7 +27,7 @@ struct SidebarListComponent: View {
                     VStack {
                         ZStack {
                             VStack {
-                                Image(item)
+                                Image("Icon_\(getIconSVG(item: item))")
                                     .resizable()
                                     .frame(
                                         width: 62,
@@ -41,8 +41,8 @@ struct SidebarListComponent: View {
                                     .stroke(desainViewModel.tipeDesainChosen[self.tipeDesain] == item ? borderColor : ColorTheme.borderColor, lineWidth: 2)
                             )
                             .onTapGesture {
-                                desainViewModel.tipeDesainChosen[self.tipeDesain] = item // Update selectedItem only if the current item is not selected or the same as the currently selected item
-                                changeSketsa()
+                                desainViewModel.tipeDesainChosen[self.tipeDesain] = item
+                                changePolaPotongan()
                             }
                             VStack {
                                 Spacer()
@@ -66,6 +66,7 @@ struct SidebarListComponent: View {
             .padding()
             .onAppear {
                 changeSketsa()
+//                changePolaPotongan()
             }
         }
     }
@@ -79,7 +80,7 @@ struct SidebarListComponent: View {
     }
     
     func changeSketsa() {
-        let sketsa:[String]
+        let sketsa: [String]
         if(desainViewModel.jenisPakaian == "Atasan") {
             sketsa = desainViewModel.getSketsaAtasan(
                 bentukPakaian: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!,
@@ -90,6 +91,39 @@ struct SidebarListComponent: View {
         }
         desainViewModel.tampakSketsa = ["tampakDepan":sketsa[0], "tampakBelakang":sketsa[1]]
     }
+    
+    func changePolaPotongan() {
+        desainViewModel.setPola(ukuranBadan: desainViewModel.dictUkuranBadan)
+    }
+    
+    func getIconSVG(item: String) -> String {
+        if(item == "Classic Fit") {
+            return "CF"
+        } else if(item == "Modern Fit") {
+            return "MF"
+        } else if(item == "Slim Fit") {
+            return "SF"
+        } else if(item == "Long Sleeves") {
+            return "LS"
+        } else if(item == "3/4 Sleeves") {
+            return "3-4Sl"
+        } else if(item == "Short Sleeves") {
+            return "SS"
+        } else if(item == "Short Collar") {
+            return "SC"
+        } else if(item == "Cut-Away Collar") {
+            return "CAC"
+        } else if(item == "Classic Collar"){
+            return "CC"
+        } else if(item == "Loose Pants"){
+            return "LP"
+        } else if(item == "Relaxed Pants"){
+            return "RP"
+        } else {
+            return "SP"
+        }
+    }
+
 }
 
 struct SidebarListComponent_Previews: PreviewProvider {

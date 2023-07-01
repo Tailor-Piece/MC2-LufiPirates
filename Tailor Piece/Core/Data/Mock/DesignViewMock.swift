@@ -12,7 +12,7 @@
 //
 //    @StateObject var homepageViewModel = HomePageViewModel()
 //    @StateObject var desainViewModel = DesainViewModel()
-//    @StateObject var ukuranBadanViewModel:UkuranBadanViewModel
+//    @StateObject var ukuranBadanViewModel: UkuranBadanViewModel
 //    @State var namaProyek:String
 //    var jenisPakaian:String
 //
@@ -20,7 +20,7 @@
 //    private let lengan:[String] = ["Long Sleeves", "3/4 Sleeves", "Short Sleeves"]
 //    private let leher:[String] = ["Short Collar", "Cut-Away Colar", "Classic Colar"]
 //    private let celana:[String] = ["celana 1", "celana 2", "celana 3"]
-
+//
 //    @State private var bentukPakaianChosen = ""
 //    @State private var lenganChosen = ""
 //    @State private var leherChosen = ""

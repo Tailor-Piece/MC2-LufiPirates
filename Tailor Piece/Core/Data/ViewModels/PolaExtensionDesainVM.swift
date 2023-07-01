@@ -10,7 +10,17 @@ import Foundation
 //MARK: GET UKURAN POLA
 extension DesainViewModel {
     
-    func getPolaBentukPakaian(ukuranBadan:[String:Int], tipeDesain:String) -> [String:[String:Int]] {
+    func setPola(ukuranBadan:[String:Double?]){
+        if(jenisPakaian == "Atasan") {
+            self.polaBentukPakaian = getPolaBentukPakaian(ukuranBadan: ukuranBadan, tipeDesain: tipeDesainChosen["Bentuk Pakaian"]!)
+            self.polaLengan = getPolaLengan(ukuranBadan: ukuranBadan, tipeDesain: tipeDesainChosen["Lengan"]!)
+            self.polaLeher = getPolaBentukPakaian(ukuranBadan: ukuranBadan, tipeDesain: tipeDesainChosen["Leher"]!)
+        } else {
+            self.polaCelana = getPolaBentukPakaian(ukuranBadan: ukuranBadan, tipeDesain: tipeDesainChosen["Celana"]!)
+        }
+    }
+    
+    func getPolaBentukPakaian(ukuranBadan:[String:Double?], tipeDesain:String) -> [String:[String:Double]] {
         if tipeDesain == "Classic Fit"{
             return calculateClassicFit(ukuranBadan: ukuranBadan)
         } else if tipeDesain == "Modern Fit" {
@@ -20,7 +30,7 @@ extension DesainViewModel {
         }
     }
     
-    func getPolaLengan(ukuranBadan:[String:Int], tipeDesain:String) -> [String:[String:Int]] {
+    func getPolaLengan(ukuranBadan:[String:Double?], tipeDesain:String) -> [String:[String:Double]] {
         if tipeDesain == "Long Sleeves"{
             return calculateLongSleeves(ukuranBadan: ukuranBadan)
         } else if tipeDesain  == "3/4 Sleeves" {
@@ -30,7 +40,7 @@ extension DesainViewModel {
         }
     }
     
-    func getPolaLeher(ukuranBadan:[String:Int], tipeDesain:String) -> [String:[String:Int]] {
+    func getPolaLeher(ukuranBadan:[String:Double?], tipeDesain:String) -> [String:[String:Double]] {
         if tipeDesain  == "Short Collar"{
             return calculateShortCollar(ukuranBadan: ukuranBadan)
         } else if tipeDesain  == "Cut Away Collar" {
@@ -40,13 +50,13 @@ extension DesainViewModel {
         }
     }
     
-    func getPolaCelana(ukuranBadan:[String:Int], tipeDesain:String) -> [String:[String:Int]] {
+    func getPolaCelana(ukuranBadan:[String:Double?], tipeDesain:String) -> [String:[String:Double]] {
         if tipeDesain  == "celana 1"{
-            return calculateCelana1(ukuranBadan: ukuranBadan)
+            return calculateLoosePants(ukuranBadan: ukuranBadan)
         } else if tipeDesain  == "celana 2" {
-            return calculateCelana2(ukuranBadan: ukuranBadan)
+            return calculateRelaxedPants(ukuranBadan: ukuranBadan)
         } else {
-            return calculateCelana3(ukuranBadan: ukuranBadan)
+            return calculateStandardPants(ukuranBadan: ukuranBadan)
         }
     }
 }
@@ -54,79 +64,81 @@ extension DesainViewModel {
 //MARK: CALCULATION
 extension DesainViewModel {
     
-    func calculateClassicFit(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":1, "BC":2]
-        var pola2 = ["AB":3, "CD":4]
+    func calculateClassicFit(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
         
         //MARK: CALCULATION
-        return ["pola1":pola1, "pola2":pola2]
+        return ["Pola_CF_Depan":pola1, "Pola_CF_Belakang":pola2]
     }
     
-    func calculateModernFit(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":5, "BC":6]
-        var pola2 = ["AB":7, "CD":8]
-        return ["pola1":pola1, "pola2":pola2]
+    func calculateModernFit(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_MF_Depan":pola1, "Pola_MF_Belakang":pola2]
     }
     
-    func calculateSlimFit(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":9, "BC":10]
-        var pola2 = ["AB":11, "CD":12]
-        return ["pola1":pola1, "pola2":pola2]
+    func calculateSlimFit(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_SF_Depan":pola1, "Pola_SF_Belakang":pola2]
     }
     
-    func calculateLongSleeves(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":13, "BC":14]
-        var pola2 = ["AB":15, "CD":16]
+    func calculateLongSleeves(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
                 
-        return ["pola1":pola1, "pola2":pola2]
+        return ["Pola_LS":pola1]
     }
     
-    func calculateThreeQuartersSleeves(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":17, "BC":18]
-        var pola2 = ["AB":19, "CD":20]
-        return ["pola1":pola1, "pola2":pola2]
+    func calculateThreeQuartersSleeves(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_3-4S":pola1]
     }
     
-    func calculateShortSleeves(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":21, "BC":22]
-        var pola2 = ["AB":23, "CD":24]
-        return ["pola1":pola1, "pola2":pola2]
+    func calculateShortSleeves(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_SS":pola1]
     }
     
-    func calculateShortCollar(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":25, "BC":26]
-        var pola2 = ["AB":27, "CD":28]
+    func calculateShortCollar(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
                 
-        return ["pola1":pola1, "pola2":pola2]
+        return ["Pola_SC":pola1]
     }
     
-    func calculateCutAwayCollar(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":29, "BC":30]
-        var pola2 = ["AB":31, "CD":32]
-        return ["pola1":pola1, "pola2":pola2]
+    func calculateCutAwayCollar(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_CAC":pola1]
     }
     
-    func calculateClassicCollar(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":33, "BC":34]
-        var pola2 = ["AB":35, "CD":36]
-        return ["pola1":pola1, "pola2":pola2]
+    func calculateClassicCollar(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_CC":pola1]
     }
     
-    func calculateCelana1(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":37, "BC":38]
-        var pola2 = ["AB":39, "CD":40]
-        return ["pola1":pola1, "pola2":pola2]
+//    "Celana": ["Loose Pants", "Relaxed Pants", "Standard Pants"]
+    
+    func calculateLoosePants(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_CLF_Belt":pola1, "Pola_CLF_Kanan":pola2]
     }
     
-    func calculateCelana2(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":41, "BC":42]
-        var pola2 = ["AB":43, "CD":44]
-        return ["pola1":pola1, "pola2":pola2]
+    func calculateRelaxedPants(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_CRF_Belt":pola1, "Pola_CLF_Kanan":pola2]
     }
     
-    func calculateCelana3(ukuranBadan:[String:Int]) -> [String:[String:Int]] {
-        var pola1 = ["AB":45, "BC":46]
-        var pola2 = ["AB":47, "CD":48]
-        return ["pola1":pola1, "pola2":pola2]
+    func calculateStandardPants(ukuranBadan:[String:Double?]) -> [String:[String:Double]] {
+        var pola1:[String:Double] = ["AB":1, "BC":2]
+        var pola2:[String:Double] = ["AB":3, "CD":4]
+        return ["Pola_CSF_Belt":pola1, "Pola_CSF_Kanan":pola2]
     }
 }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Classic_Fit_baju_Belakang" data-name="Classic Fit baju Belakang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+        font-family: SFPro-Semibold, 'SF Pro';
+        font-size: 4.49px;
+        font-variation-settings: 'wdth' 100, 'opsz' 28, 'wght' 590;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        stroke: #ef4136;
+        stroke-dasharray: 0 1;
+        stroke-width: .5px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #010101;
+        stroke-width: .25px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-3" d="m23.7,11.39s5.59-1.3,9.68-1.73h28.15s2.58.04,10.68,1.59c0,0,1.52,9.07,6.65,15.76,0,0,2.86,3.98,7.97,2.71l.87,39.41,1.07.19.3,11.52h-2.8s-4.02.98-11.92,3.77c0,0-4.82,1.22-13.01,1.74h-29.33s-6.04-.42-14.69-3.09c0,0-6.65-2.61-9.31-2.48l-1.45.06.32-11.45,1.13-.19.77-39.69s6.25,2.73,10.33-5.89l4.61-12.21Z"/>
+    <line class="cls-3" x1="47.82" y1="10.61" x2="47.82" y2="84.13"/>
+    <path class="cls-3" d="m24.53,12.36s5.6-1.64,10.01-1.58l27.01-.17s6.27.87,9.73,1.76c0,0,3.07,10.04,4.9,13.02,0,0,3.92,6.5,9.53,5.52l1.04,47.85h-1.4s-10.33,3.27-12.92,3.89c0,0-2.8,1-10.9,1.49h-22.01s-8.62-.08-11.11-.6c0,0-5.63-.56-11.16-2.59,0,0-5.19-1.97-7.53-2.23h-.93l1.17-47.74h2.03s4.52-.35,7.51-5.59c0,0,2.02-3.71,5.02-13Z"/>
+  </g>
+  <polyline class="cls-2" points="47.82 10.01 47.82 9.53 9.06 9.66 8.77 29.5"/>
+  <line class="cls-3" x1="47.82" y1="85.42" x2="47.82" y2="86.22"/>
+  <text class="cls-1" transform="translate(5.68 8.83)"><tspan x="0" y="0">A</tspan></text>
+  <text class="cls-1" transform="translate(86.86 9.15)"><tspan x="0" y="0">B</tspan></text>
+  <text class="cls-1" transform="translate(3.56 84.13)"><tspan x="0" y="0">C</tspan></text>
+  <text class="cls-1" transform="translate(89.08 84.18)"><tspan x="0" y="0">D</tspan></text>
+  <text class="cls-1" transform="translate(5.75 30.95)"><tspan x="0" y="0">E</tspan></text>
+  <text class="cls-1" transform="translate(88 32)"><tspan x="0" y="0">F</tspan></text>
+  <text class="cls-1" transform="translate(72.06 8.83)"><tspan x="0" y="0">H</tspan></text>
+  <text class="cls-1" transform="translate(21.54 10.01)"><tspan x="0" y="0">G</tspan></text>
+  <polyline class="cls-2" points="47.82 10.01 47.82 9.53 86.57 9.66 86.86 29.5"/>
+</svg>

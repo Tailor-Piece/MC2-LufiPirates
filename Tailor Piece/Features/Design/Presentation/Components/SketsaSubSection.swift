@@ -28,7 +28,6 @@ struct SketsaSubSection: View {
                 
                 Picker("Hello", selection: $sketsaCurrentTab) {
                     Text("Tampak Depan").tag(SketsaTab.tampakDepan)
-                    
                     Text("Tampak Belakang").tag(SketsaTab.tampakBelakang)
                 }
                 .pickerStyle(.segmented)

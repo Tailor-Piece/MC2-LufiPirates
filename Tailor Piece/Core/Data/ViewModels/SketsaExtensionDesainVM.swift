@@ -33,7 +33,7 @@ extension DesainViewModel {
         
         if leher == "Short Collar" {
             finalString += "SC"
-        } else if leher == "Cut-Away Colar" {
+        } else if leher == "Cut-Away Collar" {
             finalString += "CAC"
         } else {
             finalString += "CC"
@@ -129,13 +129,15 @@ extension DesainViewModel {
     }
     
     func getSketsaBawahan(celana:String) -> [String] {
-        if(celana == "1"){
-            setSketsa(tampakDepan: "", tampakBelakang: "")
-        } else if(celana == "2"){
-            setSketsa(tampakDepan: "", tampakBelakang: "")
+        var finalString = ""
+        if celana == "Loose Pants" {
+            finalString += "LP"
+        } else if celana == "Relaxed Pants" {
+            finalString += "RP"
         } else {
-            setSketsa(tampakDepan: "", tampakBelakang: "")
+            finalString += "SP"
         }
+        setSketsa(tampakDepan: "\(finalString)_Depan", tampakBelakang: "\(finalString)_Belakang")
         return [self.tampakSketsa["sketsaTampakDepan"]!, self.tampakSketsa["sketsaTampakBelakang"]!]
     }
     

@@ -24,7 +24,7 @@ class DesainViewModel: ObservableObject {
         "Atasan": [
             "Bentuk Pakaian": ["Classic Fit", "Modern Fit", "Slim Fit"],
             "Lengan": ["Long Sleeves", "3/4 Sleeves", "Short Sleeves"],
-            "Leher": ["Short Collar", "Cut-Away Colar", "Classic Colar"]
+            "Leher": ["Short Collar", "Cut-Away Collar", "Classic Collar"]
         ],
         "Bawahan": [
             "Celana": ["Loose Pants", "Relaxed Pants", "Standard Pants"]
@@ -38,10 +38,10 @@ class DesainViewModel: ObservableObject {
     @Published var tampakSketsa:[String:String] = ["tampakDepan":"", "tampakBelakang":""]
     
     //Pola
-    @Published var polaBentukPakaian: [String:[String:Int]]
-    @Published var polaLengan: [String:[String:Int]]
-    @Published var polaLeher: [String:[String:Int]]
-    @Published var polaCelana: [String:[String:Int]]
+    @Published var polaBentukPakaian: [String:[String:Double]]
+    @Published var polaLengan: [String:[String:Double]]
+    @Published var polaLeher: [String:[String:Double]]
+    @Published var polaCelana: [String:[String:Double]]
     
     //Loading & Success
     @Published var isLoading = false
@@ -64,7 +64,7 @@ class DesainViewModel: ObservableObject {
         proyek: ProyekModel? = nil,
         namaProyek: String = "",
         ukuranBadan: UkuranBadanModel? = nil,
-        dictUkuranBadan: [String:Int] = [:],
+        dictUkuranBadan: [String:Double?] = [:],
         tipeDesain: TipeDesainModel? = nil,
         tipeDesainChosen: [String:String] = ["Bentuk Pakaian": "Classic Fit", "Lengan": "Long Sleeves", "Leher": "Short Collar", "Celana": "Loose Pants"],
         sketsa: SketsaModel? = nil,

@@ -74,7 +74,11 @@ struct Homescreen: View {
                         
                     }
                     if homePageViewModel.isLoading {
-                        ProgressView()
+                        ForEach(1...5, id: \.self) { _ in
+                            RoundedRectangle(cornerRadius: 16)
+                                .frame(width: 144, height: 144)
+                                .shimmer(ShimmerConfig(tint: .gray.opacity(0.2), highlight: .white))
+                        }
                     } else {
                         ForEach(homePageViewModel.allProyek) { proyek in
                             VStack(alignment: .center){

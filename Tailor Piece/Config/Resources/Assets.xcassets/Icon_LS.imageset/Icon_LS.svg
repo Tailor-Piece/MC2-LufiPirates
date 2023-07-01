@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="LongSleeve-2" data-name="LongSleeve" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #010101;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g id="Lengan_Depan_Kiri" data-name="Lengan Depan Kiri">
+    <polygon id="Pergelangan_Tangen" data-name="Pergelangan Tangen" class="cls-1" points="91.97 77.76 84.63 80.78 82.48 76.5 89.91 72.77 91.97 77.76"/>
+    <path id="Lengan" class="cls-1" d="m67.43,15.34c-1.29,2.07-2.87,5.13-3.88,9.07-1.31,5.14-1.08,9.53-.72,12.28,6.49,13.3,12.82,26.69,19.31,39.99l7.87-3.97-22.59-57.36Z"/>
+  </g>
+  <g id="Lengan_Depan_Kanan" data-name="Lengan Depan Kanan">
+    <path id="Lengan-2" data-name="Lengan" class="cls-1" d="m28.85,15.22c1.28,2.08,2.85,5.14,3.84,9.09,1.29,5.14,1.04,9.54.66,12.28-1.75,3.53-14.68,30.16-19.49,39.9l-7.86-4L28.85,15.22Z"/>
+    <polygon id="Pergelangan_Tangan" data-name="Pergelangan Tangan" class="cls-1" points="4.04 77.54 11.36 80.58 13.53 76.32 6.12 72.55 4.04 77.54"/>
+  </g>
+</svg>
