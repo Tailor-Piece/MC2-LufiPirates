@@ -10,13 +10,28 @@ import CloudKit
 
 class DesainViewModel: ObservableObject {
     
-    @Published var proyek:ProyekModel?
-    @Published var namaProyek:String
+    @Published var proyek: ProyekModel?
+    @Published var namaProyek: String
+    
+    @Published var jenisPakaian: String?
+    
+    @Published var ukuranBadan: UkuranBadanModel?
+    @Published var dictUkuranBadan: [String:Double?]
     
     //Tipe Desain
-    @Published var tipeDesain:TipeDesainModel?
-    @Published var tipeDesainAtasan: [String:String] = ["bentukPakaian":"", "lengan":"", "leher":""]
-    @Published var tipeDesainBawahan: [String:String] = ["celana":""]
+    @Published var tipeDesain: TipeDesainModel?
+    @Published var dictTipeDesain:[String:[String:[String]]] = [
+        "Atasan": [
+            "Bentuk Pakaian": ["Classic Fit", "Modern Fit", "Slim Fit"],
+            "Lengan": ["Long Sleeves", "3/4 Sleeves", "Short Sleeves"],
+            "Leher": ["Short Collar", "Cut-Away Colar", "Classic Colar"]
+        ],
+        "Bawahan": [
+            "Celana": ["celana 1", "celana 2", "celana 2"]
+        ]
+    ]
+    @Published var tipeDesainChosen: [String:String] = ["Bentuk Pakaian":"", "Lengan":"", "Leher":"", "Celana":""]
+//    @Published var tipeDesainBawahanChosen: [String:String] = ["Celana":""]
     
     //Sketsa
     @Published var sketsa:SketsaModel?
@@ -28,32 +43,44 @@ class DesainViewModel: ObservableObject {
     @Published var polaLeher: [String:[String:Int]]
     @Published var polaCelana: [String:[String:Int]]
     
+    //Loading & Success
     @Published var isLoading = false
+    @Published var successAddUkuranBadan = false
     @Published var successAddTipeDesain = false
     @Published var successAddSketsa = false
     @Published var successAddProyek = false
     
-    @Published var listBentukPakaian:[String] = ["Classic Fit", "Modern Fit", "Slim Fit"]
-    @Published var listLengan:[String] = ["Long Sleeves", "3/4 Sleeves", "Short Sleeves"]
-    @Published var listLeher:[String] = ["Short Collar", "Cut-Away Colar", "Classic Colar"]
-    @Published var listCelana:[String] = ["celana 1", "celana 2", "celana 3"]
-
+    //BentukPakaian
+//    @Published var listBentukPakaian:[String] = ["Classic Fit", "Modern Fit", "Slim Fit"]
+//    @Published var listLengan:[String] = ["Long Sleeves", "3/4 Sleeves", "Short Sleeves"]
+//    @Published var listLeher:[String] = ["Short Collar", "Cut-Away Colar", "Classic Colar"]
+//    @Published var listCelana:[String] = ["celana 1", "celana 2", "celana 3"]
+//
+//    @Published var tipeDesain:[String:[]]
     
     private let proyekRepository = ProyekRepository()
     
     init(
+        proyek: ProyekModel? = nil,
         namaProyek: String = "",
-        tipeDesainAtasan: [String:String] = ["bentukPakaian":"", "lengan":"", "leher":""],
-        tipeDesainBawahan: [String:String] = ["celana":""],
-        tampakSketsa:[String:String] = ["tampakDepan":"", "tampakBelakang":""],
+        ukuranBadan: UkuranBadanModel? = nil,
+        dictUkuranBadan: [String:Int] = [:],
+        tipeDesain: TipeDesainModel? = nil,
+        tipeDesainChosen: [String:String] = ["bentukPakaian": "", "lengan": "", "leher": "", "celana": ""],
+        sketsa: SketsaModel? = nil,
+        tampakSketsa:[String:String] = ["tampakDepan": "", "tampakBelakang": ""],
         polaBentukPakaian:[String:[String:Int]] = ["":["":0]],
         polaLengan:[String:[String:Int]] = ["":["":0]],
         polaLeher:[String:[String:Int]] = ["":["":0]],
         polaCelana:[String:[String:Int]] = ["":["":0]]
     ) {
+        self.proyek = proyek
         self.namaProyek = ""
-        self.tipeDesainAtasan = ["bentukPakaian":"", "lengan":"", "leher":""]
-        self.tipeDesainBawahan = ["celana":""]
+        self.ukuranBadan = ukuranBadan
+        self.dictUkuranBadan = [:]
+        self.tipeDesain = tipeDesain
+        self.tipeDesainChosen = ["bentukPakaian": "", "lengan": "", "leher": "", "celana": ""]
+        self.sketsa = sketsa
         self.tampakSketsa = ["tampakDepan":"", "tampakBelakang":""]
         self.polaBentukPakaian = ["":["":0]]
         self.polaLengan = ["":["":0]]
@@ -71,7 +98,7 @@ extension DesainViewModel {
             self.isLoading = true
         }
         
-        if let tipeDesainNew = try? await proyekRepository.saveTipeDesain(bentukPakaian: tipeDesainAtasan["bentukPakaian"]!, lengan: tipeDesainAtasan["lengan"]!, leher:tipeDesainAtasan["leher"]!, celana:tipeDesainBawahan["celana"]!, completion: {
+        if let tipeDesainNew = try? await proyekRepository.saveTipeDesain(tipeDesain: tipeDesainChosen, completion: {
             
             results in
             switch results {
@@ -181,6 +208,29 @@ extension DesainViewModel {
 //                self.namaProyek = namaProyek
 //                print("Success")
 //            }
+//        }
+//    }
+    
+//    func updateNamaProyek(namaProyek:String) async {
+//        DispatchQueue.main.async {
+//            self.isLoading = true
+//        }
+//        
+//        if let id = proyek?.id {
+//            await proyekRepository.updateNamaProyek(id: id, namaProyek: namaProyek, completion: { results in
+//                switch results {
+//                case .success(_):
+//                    DispatchQueue.main.async {
+//                        self.isLoading = false
+//                        self.successAddProyek = true
+//                    }
+//                case .failure(let error):
+//                    DispatchQueue.main.async {
+//                        print("Error: \(error)")
+//                        self.isLoading = false
+//                    }
+//                }
+//            })
 //        }
 //    }
 }

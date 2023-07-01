@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4300540F2A43FD5700474828 /* SketsaSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4300540E2A43FD5700474828 /* SketsaSubSection.swift */; };
 		434A9EAA2A4ACA74002A5FF7 /* InputUkuranBadanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */; };
-		436AE7CE2A4EC4D700522D0E /* UkuranBadanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7BB2A4EC4D700522D0E /* UkuranBadanViewModel.swift */; };
 		436AE7CF2A4EC4D700522D0E /* PolaExtensionDesainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7BC2A4EC4D700522D0E /* PolaExtensionDesainVM.swift */; };
 		436AE7D02A4EC4D700522D0E /* DesainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7BD2A4EC4D700522D0E /* DesainViewModel.swift */; };
 		436AE7D12A4EC4D700522D0E /* SketsaExtensionDesainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7BE2A4EC4D700522D0E /* SketsaExtensionDesainVM.swift */; };
@@ -39,6 +38,7 @@
 		43874EE62A421338001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE52A421338001403E7 /* Placeholder.swift */; };
 		43874EE82A42133F001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE72A42133F001403E7 /* Placeholder.swift */; };
 		43BB82FA2A46FF490066EF55 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB82F92A46FF490066EF55 /* Placeholder.swift */; };
+		685B3DCD2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685B3DCC2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift */; };
 		68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */; };
 		781CD6082A421C8600C491BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6072A421C8600C491BC /* Router.swift */; };
 		781CD60A2A421CE500C491BC /* SelectJenisPakaianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */; };
@@ -54,7 +54,6 @@
 /* Begin PBXFileReference section */
 		4300540E2A43FD5700474828 /* SketsaSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketsaSubSection.swift; sourceTree = "<group>"; };
 		434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUkuranBadanView.swift; sourceTree = "<group>"; };
-		436AE7BB2A4EC4D700522D0E /* UkuranBadanViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UkuranBadanViewModel.swift; sourceTree = "<group>"; };
 		436AE7BC2A4EC4D700522D0E /* PolaExtensionDesainVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolaExtensionDesainVM.swift; sourceTree = "<group>"; };
 		436AE7BD2A4EC4D700522D0E /* DesainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesainViewModel.swift; sourceTree = "<group>"; };
 		436AE7BE2A4EC4D700522D0E /* SketsaExtensionDesainVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketsaExtensionDesainVM.swift; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		43874EE72A42133F001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43BB82F92A46FF490066EF55 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43F851C32A430297009AFBB3 /* Tailor Piece.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tailor Piece.entitlements"; sourceTree = "<group>"; };
+		685B3DCC2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UkuranBadanExtensionDesainVM.swift; sourceTree = "<group>"; };
 		687EDBDF2A42968F00C606C2 /* Tailor Piece.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tailor Piece.entitlements"; sourceTree = "<group>"; };
 		68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaPotonganSubSection.swift; sourceTree = "<group>"; };
 		781CD6072A421C8600C491BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -124,11 +124,11 @@
 		436AE7BA2A4EC4D700522D0E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				436AE7BB2A4EC4D700522D0E /* UkuranBadanViewModel.swift */,
-				436AE7BC2A4EC4D700522D0E /* PolaExtensionDesainVM.swift */,
+				436AE7BF2A4EC4D700522D0E /* HomePageViewModel.swift */,
 				436AE7BD2A4EC4D700522D0E /* DesainViewModel.swift */,
 				436AE7BE2A4EC4D700522D0E /* SketsaExtensionDesainVM.swift */,
-				436AE7BF2A4EC4D700522D0E /* HomePageViewModel.swift */,
+				436AE7BC2A4EC4D700522D0E /* PolaExtensionDesainVM.swift */,
+				685B3DCC2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -364,12 +364,12 @@
 		43874ECC2A4038BA001403E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				787B1DE62A4AF63500FA8A3F /* Homescreen.swift */,
-				43874EAD2A3C437D001403E7 /* DesignView.swift */,
-				434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */,
-				781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */,
-				787B1DEA2A4AF6A000FA8A3F /* OnboardingView.swift */,
 				787B1DEC2A4AF6C300FA8A3F /* RootView.swift */,
+				787B1DEA2A4AF6A000FA8A3F /* OnboardingView.swift */,
+				787B1DE62A4AF63500FA8A3F /* Homescreen.swift */,
+				781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */,
+				434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */,
+				43874EAD2A3C437D001403E7 /* DesignView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -491,7 +491,6 @@
 				43874ED42A420565001403E7 /* ColorTheme.swift in Sources */,
 				436AE7DC2A4EC4D700522D0E /* UkuranBadanModel.swift in Sources */,
 				787B1DEF2A4AF71F00FA8A3F /* ButtonComponent.swift in Sources */,
-				436AE7CE2A4EC4D700522D0E /* UkuranBadanViewModel.swift in Sources */,
 				781CD6082A421C8600C491BC /* Router.swift in Sources */,
 				68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */,
 				43874EAC2A3C437D001403E7 /* Tailor_PieceApp.swift in Sources */,
@@ -509,6 +508,7 @@
 				787B1DED2A4AF6C300FA8A3F /* RootView.swift in Sources */,
 				43BB82FA2A46FF490066EF55 /* Placeholder.swift in Sources */,
 				436AE7DB2A4EC4D700522D0E /* SketsaModel.swift in Sources */,
+				685B3DCD2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift in Sources */,
 				43874ED82A42074C001403E7 /* ShimmerEffect.swift in Sources */,
 				436AE7DA2A4EC4D700522D0E /* ProyekModel.swift in Sources */,
 			);
@@ -638,12 +638,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Tailor Piece/Tailor Piece.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tailor Piece/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P48RXXD7X;
+				DEVELOPMENT_TEAM = 6P48RXXD7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -660,7 +658,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salsaachinanti.Tailor-Piece";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = SaeProvisioningProfile;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -677,12 +674,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Tailor Piece/Tailor Piece.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tailor Piece/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P48RXXD7X;
+				DEVELOPMENT_TEAM = 6P48RXXD7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -699,7 +694,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.salsaachinanti.Tailor-Piece";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = SaeProvisioningProfile;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;

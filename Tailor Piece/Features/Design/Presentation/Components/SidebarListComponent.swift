@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SidebarListComponent: View {
+    let tipeDesain: String
     let items: [String]
     let frameSize: CGSize
     let borderColor: Color
@@ -17,7 +18,8 @@ struct SidebarListComponent: View {
     let fontSize: CGFloat
     let rowCount: Int
     
-    @State private var selectedItem: String? = nil
+    @EnvironmentObject var desainViewModel:DesainViewModel
+//    @State private var selectedItem: String? = nil
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -37,10 +39,10 @@ struct SidebarListComponent: View {
                             .frame(width: frameSize.width, height: frameSize.height)
                             .overlay(
                                 RoundedRectangle(cornerRadius: cornerRadius)
-                                    .stroke(selectedItem == item ? borderColor : ColorTheme.borderColor, lineWidth: 2)
+                                    .stroke(desainViewModel.tipeDesainChosen[self.tipeDesain] == item ? borderColor : ColorTheme.borderColor, lineWidth: 2)
                             )
                             .onTapGesture {
-                                selectedItem = selectedItem == item ? nil : item // Update selectedItem only if the current item is not selected or the same as the currently selected item
+                                desainViewModel.tipeDesainChosen[self.tipeDesain] = desainViewModel.tipeDesainChosen[self.tipeDesain] == item ? nil : item // Update selectedItem only if the current item is not selected or the same as the currently selected item
                             }
                             VStack {
                                 Spacer()
@@ -51,7 +53,7 @@ struct SidebarListComponent: View {
                                         Image(systemName: "checkmark.circle.fill")
                                             .padding(EdgeInsets(top: 0, leading: 8, bottom: 8, trailing: 8))
                                             .imageScale(.small)
-                                            .foregroundColor(selectedItem == item ? checkMarkColor : Color.clear)
+                                            .foregroundColor(desainViewModel.tipeDesainChosen[self.tipeDesain] == item ? checkMarkColor : Color.clear)
                                     }
                                 }
                             }
@@ -79,6 +81,7 @@ struct SidebarListComponent_Previews: PreviewProvider {
     static var previews: some View {
 //        let filteredTypeClothing = filterByClothingType(clothingType: "Bentuk Pakaian")
         SidebarListComponent(
+            tipeDesain: "bentukPakaian",
             items: ["Classic Fit", "Modern Fit", "Slim Fit"],
             frameSize: CGSize(width: 100, height: 100),
             borderColor: Color.blue,

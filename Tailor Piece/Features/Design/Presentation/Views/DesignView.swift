@@ -9,26 +9,19 @@ import SwiftUI
 
 struct DesignView: View {
     
-    @StateObject var desainViewModel = DesainViewModel()
-    
-    
+    @EnvironmentObject var desainViewModel: DesainViewModel
     @EnvironmentObject var router: Router
     
     var body: some View {
         NavigationSplitView{
             List{
-                Section(header: Text("Bentuk Pakaian")) {
-                    SidebarListComponent(
-                        items: desainViewModel.listBentukPakaian, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100,
-                        cornerRadius: 8, fontSize: 11, rowCount: 1)
-                }
-                
-                Section(header: Text("Panjang Lengan")) {
-                    SidebarListComponent(items: desainViewModel.listLengan, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100, cornerRadius: 8, fontSize: 11, rowCount: 1)
-                }
-                
-                Section(header: Text("Leher")) {
-                    SidebarListComponent(items: desainViewModel.listLeher, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true, checkMarkColor: ColorTheme.primary100, cornerRadius: 8, fontSize: 11, rowCount: 1)
+                ForEach((desainViewModel.dictTipeDesain[desainViewModel.jenisPakaian ?? "Bawahan"] ?? [:]).sorted(by: {$0.key > $1.key}), id: \.key) { key, value in
+                    
+                    Section(header: Text("\(key)")) {
+                        SidebarListComponent(
+                            tipeDesain: key, items: value, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100,
+                            cornerRadius: 8, fontSize: 11, rowCount: 1)
+                    }
                 }
             }
             .listStyle(.sidebar)

@@ -8,11 +8,12 @@
 import SwiftUI
 
 enum SketsaTab {
-case tampakDepan, tampakBelakang
+    case tampakDepan, tampakBelakang
 }
 
 struct SketsaSubSection: View {
     @State var sketsaCurrentTab: SketsaTab = .tampakDepan
+    @EnvironmentObject var desainViewModel: DesainViewModel
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
@@ -31,6 +32,7 @@ struct SketsaSubSection: View {
                 }
                 .pickerStyle(.segmented)
                 
+                // TODO: Ganti jadi foto
                 RoundedRectangle(cornerRadius: 8)
                     .frame(maxWidth: 436, maxHeight: 348)
                     .aspectRatio(contentMode: .fit)
@@ -43,6 +45,7 @@ struct SketsaSubSection: View {
                             .bold()
                         Spacer()
                         Button {
+                            // TODO: Add action to edit
                             print("Edit sketsa clicked!")
                         } label: {
                             Label("Edit", systemImage: "pencil")
@@ -54,12 +57,12 @@ struct SketsaSubSection: View {
                     }
                     
                     VStack(alignment: .leading, spacing: 12) {
-                        ForEach(0...5, id: \.self) { _ in
+                        ForEach((desainViewModel.toDictionary().sorted(by: {$0.key > $1.key})), id: \.key) { key, value in
                             HStack {
-                                Text("Lebar lengan")
+                                Text("\(key)")
                                     .frame(minWidth: 160, alignment: .leading)
                                 Text(":")
-                                Text("12 cm")
+                                Text("\(value ?? 0) cm")
                                     .bold()
                                 Spacer()
                             }

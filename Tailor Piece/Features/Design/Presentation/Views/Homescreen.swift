@@ -10,6 +10,7 @@ import SwiftUI
 struct Homescreen: View {
     @EnvironmentObject var router: Router
     @StateObject var homePageViewModel = HomePageViewModel()
+    @StateObject var desainViewModel: DesainViewModel = DesainViewModel()
     @State private var isEditing: Bool = false
     @State private var text: String = "Editable Text"
     @FocusState private var focusedField: FocusedField?
@@ -60,8 +61,11 @@ struct Homescreen: View {
                         .navigationDestination(for: Double.self, destination: { destination in
                             switch destination {
                             case 0.0: SelectJenisPakaianView().environmentObject(router)
+                                .environmentObject(desainViewModel)
                             case 1.0: InputUkuranBadanView().environmentObject(router)
+                                .environmentObject(desainViewModel)
                             case 2.0: DesignView().environmentObject(router)
+                                .environmentObject(desainViewModel)
                             default: EmptyView()
                             }
                         })

@@ -11,6 +11,9 @@ struct SelectJenisPakaianView: View {
     @EnvironmentObject var router: Router
     
     @State var selectedPakaian: String? = nil
+//    @EnvironmentObject var homepageViewModel: HomePageViewModel
+    @EnvironmentObject var desainViewModel: DesainViewModel
+
     
     var body: some View {
         VStack {
@@ -25,7 +28,6 @@ struct SelectJenisPakaianView: View {
                 ForEach(["Bawahan", "Atasan"], id: \.self) {jenisPakaian in
                     JenisPakaianCard(selectedPakaian: $selectedPakaian, jenisPakaian: jenisPakaian)
                 }
-                
             }
             Spacer()
         }
@@ -39,6 +41,9 @@ struct SelectJenisPakaianView: View {
                 .cornerRadius(999)
                 .buttonStyle(.borderedProminent)
             }
+        }
+        .onChange(of: selectedPakaian) { newValue in
+            desainViewModel.jenisPakaian = selectedPakaian
         }
     }
 }

@@ -17,14 +17,14 @@ class ProyekRepository {
         publicDB = container.publicCloudDatabase
     }
     
-    func saveTipeDesain(bentukPakaian: String, lengan: String, leher:String, celana:String, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> TipeDesainModel? {
+    func saveTipeDesain(tipeDesain: [String: String], completion: @escaping (Result<Bool, Error>) -> Void) async throws -> TipeDesainModel? {
         do {
             let newRecord = CKRecord(recordType: TipeDesainModel.recordType)
             newRecord.setValuesForKeys([
-                "bentukPakaian":  bentukPakaian,
-                "lengan":  lengan,
-                "leher":  leher,
-                "celana":  celana,
+                "bentukPakaian": tipeDesain["bentukPakaian"]!,
+                "lengan": tipeDesain["lengan"]!,
+                "leher": tipeDesain["leher"]!,
+                "celana": tipeDesain["celana"]!,
             ])
             let record = try await publicDB.save(newRecord)
             completion(Result.success(true))
@@ -103,5 +103,27 @@ class ProyekRepository {
             return nil
         }
     }
+    
+    func updateNamaProyek(id:CKRecord.ID, namaProyek:String, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> [ProyekModel]? {
+        do {
+            let predicate = NSPredicate(value: true)
+            let query = CKQuery(recordType: ProyekModel.recordType, predicate: predicate)
+            let results = try await publicDB.records(matching: query)
+            let records = results.matchResults.compactMap { try? $0.1.get() }
+                    
+            var allProyek = [ProyekModel]()
+            for record in records {
+                if let proyek = await ProyekModel(record: record) {
+                    allProyek.append(proyek)
+                }
+            }
+            completion(Result.success(true))
+            return allProyek
+        } catch {
+            completion(Result.failure(error))
+            return nil
+        }
+    }
+    
 }
 

@@ -13,6 +13,8 @@ class HomePageViewModel: ObservableObject {
     @Published var allProyek: [ProyekModel] = []
     @Published var isLoading = false
     
+//    @Published var jenisPakaian: String?
+    
     private let proyekRepository = ProyekRepository()
 }
 
@@ -39,8 +41,8 @@ extension HomePageViewModel {
         }){
             DispatchQueue.main.async {
                 self.isLoading = false
+                self.allProyek = allProyek
             }
-            self.allProyek = allProyek
         }
     }
 }
