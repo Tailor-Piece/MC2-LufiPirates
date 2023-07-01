@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Classic_Fit_Short_Sleeves_Short_Collar_Belakang" data-name="Classic Fit, Short Sleeves, Short Collar, Belakang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #010101;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g>
+    <g id="Baju_Belakang" data-name="Baju Belakang">
+      <path class="cls-1" d="m68.08,77.79c-13.37,8.09-26.69,8.13-39.98,0l2.66-39.99c.64-7.69-.38-14.94-4.59-21.34l13.68-5.56c5.32.78,10.93.72,16.77,0l13.23,5.45c-4.07,6.02-5.23,13.29-4.59,21.34l2.83,40.09Z"/>
+      <path class="cls-1" d="m30.04,25.53c11.99-1.47,23.97-1.52,35.92-.11"/>
+    </g>
+    <path id="Kerah_Belakang" data-name="Kerah Belakang" class="cls-1" d="m56.61,10.9c-5.91.75-11.5.75-16.77,0l1.92-3.03c4.28.43,8.5.44,12.67,0l2.17,3.03Z"/>
+  </g>
+  <g id="Lengan">
+    <path class="cls-1" d="m26.16,16.46l-8.97,22.54,10.81,4.46,2.76-5.66c.64-7.73-.39-14.98-4.59-21.34Z"/>
+    <path id="Lengan_Kiri" data-name="Lengan Kiri" class="cls-1" d="m69.7,16.32l8.97,22.54-10.81,4.46-2.76-5.66c-.64-7.73.39-14.98,4.59-21.34Z"/>
+  </g>
+</svg>

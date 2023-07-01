@@ -19,7 +19,6 @@ struct SidebarListComponent: View {
     let rowCount: Int
     
     @EnvironmentObject var desainViewModel:DesainViewModel
-//    @State private var selectedItem: String? = nil
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -42,7 +41,8 @@ struct SidebarListComponent: View {
                                     .stroke(desainViewModel.tipeDesainChosen[self.tipeDesain] == item ? borderColor : ColorTheme.borderColor, lineWidth: 2)
                             )
                             .onTapGesture {
-                                desainViewModel.tipeDesainChosen[self.tipeDesain] = desainViewModel.tipeDesainChosen[self.tipeDesain] == item ? nil : item // Update selectedItem only if the current item is not selected or the same as the currently selected item
+                                desainViewModel.tipeDesainChosen[self.tipeDesain] = item // Update selectedItem only if the current item is not selected or the same as the currently selected item
+                                changeSketsa()
                             }
                             VStack {
                                 Spacer()
@@ -64,6 +64,9 @@ struct SidebarListComponent: View {
                 }
             }
             .padding()
+            .onAppear {
+                changeSketsa()
+            }
         }
     }
     
@@ -73,6 +76,19 @@ struct SidebarListComponent: View {
             gridItems.append(GridItem(.fixed(frameSize.height)))
         }
         return gridItems
+    }
+    
+    func changeSketsa() {
+        let sketsa:[String]
+        if(desainViewModel.jenisPakaian == "Atasan") {
+            sketsa = desainViewModel.getSketsaAtasan(
+                bentukPakaian: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!,
+                lengan: desainViewModel.tipeDesainChosen["Lengan"]!,
+                leher: desainViewModel.tipeDesainChosen["Leher"]!)
+        } else {
+            sketsa = desainViewModel.getSketsaBawahan(celana: desainViewModel.tipeDesainChosen["Celana"]!)
+        }
+        desainViewModel.tampakSketsa = ["tampakDepan":sketsa[0], "tampakBelakang":sketsa[1]]
     }
 }
 

@@ -28,15 +28,39 @@ struct SketsaSubSection: View {
                 
                 Picker("Hello", selection: $sketsaCurrentTab) {
                     Text("Tampak Depan").tag(SketsaTab.tampakDepan)
+                    
                     Text("Tampak Belakang").tag(SketsaTab.tampakBelakang)
                 }
                 .pickerStyle(.segmented)
                 
-                // TODO: Ganti jadi foto
-                RoundedRectangle(cornerRadius: 8)
-                    .frame(maxWidth: 436, maxHeight: 348)
-                    .aspectRatio(contentMode: .fit)
-                    .shimmer(ShimmerConfig(tint: .gray.opacity(0.3), highlight: .white))
+                switch sketsaCurrentTab {
+                case .tampakDepan:
+                    Image("\(self.desainViewModel.tampakSketsa["tampakDepan"]!)")
+                        .resizable()
+                        .frame(maxWidth: 436, maxHeight: 348)
+                        .aspectRatio(contentMode: .fit)
+//                    if desainViewModel.jenisPakaian == "Atasan" {
+//                        desainViewModel.getSketsaAtasan(
+//                            bentukPakaian: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!,
+//                            lengan: desainViewModel.tipeDesainChosen["Lengan"]!,
+//                            leher: desainViewModel.tipeDesainChosen["Leher"]!)
+//                    } else {
+//                        desainViewModel.getSketsaBawahan(celana: desainViewModel.tipeDesainChosen["Celana"]!)
+//                    }[0]
+                case .tampakBelakang:
+                    Image("\(self.desainViewModel.tampakSketsa["tampakBelakang"]!)")
+                        .resizable()
+                        .frame(maxWidth: 436, maxHeight: 348)
+                        .aspectRatio(contentMode: .fit)
+//                    if desainViewModel.jenisPakaian == "Atasan" {
+//                        desainViewModel.getSketsaAtasan(
+//                            bentukPakaian: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!,
+//                            lengan: desainViewModel.tipeDesainChosen["Lengan"]!,
+//                            leher: desainViewModel.tipeDesainChosen["Leher"]!)
+//                    } else {
+//                        desainViewModel.getSketsaBawahan(celana: desainViewModel.tipeDesainChosen["Celana"]!)
+//                    }[1]
+                }
                 
                 VStack(spacing: 8) {
                     HStack {

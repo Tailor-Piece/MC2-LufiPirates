@@ -29,7 +29,7 @@
 //    func changeSketsa() {
 //        let sketsa:[String]
 //        if(jenisPakaian == "Atasan"){
-//            sketsa = desainViewModel.getSketsaAtasan(
+//            sketsa = desainViewModel.getSketsa(
 //                bentukPakaian: desainViewModel.tipeDesainAtasan["bentukPakaian"]!,
 //                lengan: desainViewModel.tipeDesainAtasan["lengan"]!,
 //                leher: desainViewModel.tipeDesainAtasan["leher"]!)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ClassicFit_LongSleeve_ShortCollar_Depan" data-name="ClassicFit/LongSleeve/ShortCollar/Depan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #010101;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g id="Lengan_Depan_Kiri" data-name="Lengan Depan Kiri">
+    <polygon id="Pergelangan_Tangen" data-name="Pergelangan Tangen" class="cls-1" points="94.06 78.42 86.72 81.44 84.57 77.16 92 73.43 94.06 78.42"/>
+    <path id="Lengan" class="cls-1" d="m69.52,16c-1.29,2.07-2.87,5.13-3.88,9.07-1.31,5.14-1.08,9.53-.72,12.28,6.49,13.3,12.82,26.69,19.31,39.99l7.87-3.97-22.59-57.36Z"/>
+  </g>
+  <g id="Lengan_Depan_Kanan" data-name="Lengan Depan Kanan">
+    <path id="Lengan-2" data-name="Lengan" class="cls-1" d="m26.68,15.67c1.28,2.08,2.85,5.14,3.84,9.09,1.29,5.14,1.04,9.54.66,12.28-1.75,3.53-14.68,30.16-19.49,39.9l-7.86-4L26.68,15.67Z"/>
+    <polygon id="Pergelangan_Tangan" data-name="Pergelangan Tangan" class="cls-1" points="1.86 77.98 9.18 81.03 11.36 76.77 3.94 73 1.86 77.98"/>
+  </g>
+  <path id="Baju_Depan" data-name="Baju Depan" class="cls-1" d="m56.36,10.28l13.16,5.72c-4.11,6.14-5.23,13.41-4.59,21.34l2,39.64-2.28.03c-10.37,5.11-21.33,4.5-32.64.39l-2.89.03,2.06-40.4c.68-7.58-.26-14.82-4.5-21.36l12.68-5.53"/>
+  <path id="Shilouete_Baju_Belakang" data-name="Shilouete Baju Belakang" class="cls-1" d="m29.87,62.6l-2.68,14.83h1.93c12.83,8.66,25.39,6.98,37.82-.45l1.48-.05-2.09-12.18"/>
+  <g id="Kancing_Baju" data-name="Kancing Baju">
+    <rect class="cls-1" x="46.62" y="17.4" width="2.73" height="63.26"/>
+    <circle class="cls-1" cx="47.9" cy="22.02" r=".59"/>
+    <circle class="cls-1" cx="47.99" cy="30.66" r=".59"/>
+    <circle class="cls-1" cx="47.99" cy="39.56" r=".59"/>
+    <circle class="cls-1" cx="47.99" cy="48" r=".59"/>
+    <circle class="cls-1" cx="47.99" cy="56.96" r=".59"/>
+    <circle class="cls-1" cx="47.99" cy="65.92" r=".59"/>
+  </g>
+  <g id="Kerah">
+    <path class="cls-1" d="m41.86,7.32s-.23,4.06,4.76,6.96l-2.98,3.79s-3.77-2.98-4.29-7.92l2.51-2.82Z"/>
+    <path class="cls-1" d="m53.86,7.15s.49,3.88-4.51,7.18l3.03,3.74s4.48-4.34,3.98-7.79l-2.5-3.13Z"/>
+    <line class="cls-1" x1="52.88" y1="11.04" x2="43.07" y2="11.04"/>
+    <path class="cls-1" d="m51.4,16.86c-2.19.75-4.43.73-6.72-.11l1.94-2.47,2.73.05,2.05,2.53Z"/>
+    <line class="cls-1" x1="42.03" y1="7.15" x2="53.92" y2="7.15"/>
+  </g>
+</svg>

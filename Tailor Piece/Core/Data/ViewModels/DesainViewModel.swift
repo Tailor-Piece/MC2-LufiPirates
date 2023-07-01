@@ -27,10 +27,10 @@ class DesainViewModel: ObservableObject {
             "Leher": ["Short Collar", "Cut-Away Colar", "Classic Colar"]
         ],
         "Bawahan": [
-            "Celana": ["celana 1", "celana 2", "celana 2"]
+            "Celana": ["Loose Pants", "Relaxed Pants", "Standard Pants"]
         ]
     ]
-    @Published var tipeDesainChosen: [String:String] = ["Bentuk Pakaian":"", "Lengan":"", "Leher":"", "Celana":""]
+    @Published var tipeDesainChosen: [String:String]
 //    @Published var tipeDesainBawahanChosen: [String:String] = ["Celana":""]
     
     //Sketsa
@@ -66,7 +66,7 @@ class DesainViewModel: ObservableObject {
         ukuranBadan: UkuranBadanModel? = nil,
         dictUkuranBadan: [String:Int] = [:],
         tipeDesain: TipeDesainModel? = nil,
-        tipeDesainChosen: [String:String] = ["bentukPakaian": "", "lengan": "", "leher": "", "celana": ""],
+        tipeDesainChosen: [String:String] = ["Bentuk Pakaian": "Classic Fit", "Lengan": "Long Sleeves", "Leher": "Short Collar", "Celana": "Loose Pants"],
         sketsa: SketsaModel? = nil,
         tampakSketsa:[String:String] = ["tampakDepan": "", "tampakBelakang": ""],
         polaBentukPakaian:[String:[String:Int]] = ["":["":0]],
@@ -79,7 +79,7 @@ class DesainViewModel: ObservableObject {
         self.ukuranBadan = ukuranBadan
         self.dictUkuranBadan = [:]
         self.tipeDesain = tipeDesain
-        self.tipeDesainChosen = ["bentukPakaian": "", "lengan": "", "leher": "", "celana": ""]
+        self.tipeDesainChosen = tipeDesainChosen
         self.sketsa = sketsa
         self.tampakSketsa = ["tampakDepan":"", "tampakBelakang":""]
         self.polaBentukPakaian = ["":["":0]]

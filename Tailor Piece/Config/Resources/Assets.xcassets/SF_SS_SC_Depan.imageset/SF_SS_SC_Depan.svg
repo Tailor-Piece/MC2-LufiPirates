@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="ClassicFit_LongSleeve_ClassicCollar_Depan" data-name="ClassicFit/LongSleeve/ClassicCollar/Depan">
+    <circle class="cls-1" cx="47.49" cy="24.35" r=".47"/>
+    <circle class="cls-1" cx="47.49" cy="33.78" r=".47"/>
+    <circle class="cls-1" cx="47.49" cy="43.22" r=".47"/>
+    <circle class="cls-1" cx="47.49" cy="52.47" r=".47"/>
+    <circle class="cls-1" cx="47.49" cy="61.22" r=".47"/>
+    <circle class="cls-1" cx="47.49" cy="70.47" r=".47"/>
+  </g>
+  <g id="Layer_12" data-name="Layer 12">
+    <polyline class="cls-2" points="41.05 9 53.63 9 56.49 12.22 69.87 18.21 79.6 42.03 68.62 46.83 65.22 39.54"/>
+    <polyline class="cls-2" points="41.15 9 37.84 12.76 24.78 18.34 14.55 41.63 26.08 46.49 29.49 40.01"/>
+    <path class="cls-2" d="m69.69,18.24c-1.93,2.94-2.67,6.49-3.25,9.96-3,18.05-2.56,36.67,1.28,54.56"/>
+    <path class="cls-2" d="m25.31,18.23c2.02,3.56,2.71,7.7,3.22,11.76,2.21,17.51,1.74,35.36-1.38,52.74"/>
+    <line class="cls-2" x1="26.95" y1="82.72" x2="67.95" y2="82.99"/>
+    <path class="cls-2" d="m56.46,12.24c-.95,2.92-2.37,5.68-4.21,8.15-.57-1.14-1.26-2.24-2.25-3.04s-2.3-1.27-3.54-1.01c-1.83.38-3.01,2.14-3.88,3.8-1.45-2.67-3.03-5.26-4.75-7.76"/>
+    <path class="cls-2" d="m53.74,9.23c-.21,1.66-.69,3.32-1.69,4.67s-2.57,2.34-4.26,2.38c-2.11.05-4.02-1.38-5.16-3.13-.81-1.25-1.32-2.68-1.48-4.15"/>
+    <path class="cls-2" d="m43.51,18.72c1.21.47,2.48.84,3.78.93s2.64-.14,3.77-.8"/>
+    <line class="cls-2" x1="41.49" y1="9.94" x2="53.64" y2="9.86"/>
+    <line class="cls-2" x1="42.52" y1="12.92" x2="52.73" y2="12.93"/>
+    <line class="cls-2" x1="48.79" y1="19.63" x2="48.92" y2="82.77"/>
+    <line class="cls-2" x1="46.07" y1="19.6" x2="46.19" y2="82.37"/>
+    <path class="cls-2" d="m46.1,19.46c-.15-.55-.09-1.14.05-1.69.09-.33.2-.66.4-.94s.48-.5.81-.57"/>
+  </g>
+</svg>
