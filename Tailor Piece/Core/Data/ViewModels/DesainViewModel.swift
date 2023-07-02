@@ -38,10 +38,10 @@ class DesainViewModel: ObservableObject {
     @Published var tampakSketsa:[String:String] = ["tampakDepan":"", "tampakBelakang":""]
     
     //Pola
-    @Published var polaBentukPakaian: [String:[String:Double]]
-    @Published var polaLengan: [String:[String:Double]]
-    @Published var polaLeher: [String:[String:Double]]
-    @Published var polaCelana: [String:[String:Double]]
+    @Published var polaBentukPakaian: [String:[String:Double?]?]
+    @Published var polaLengan: [String:[String:Double?]?]
+    @Published var polaLeher: [String:[String:Double?]?]
+    @Published var polaCelana: [String:[String:Double?]?]
     
     //Loading & Success
     @Published var isLoading = false
@@ -92,6 +92,36 @@ class DesainViewModel: ObservableObject {
 
 //MARK: SAVE SKETSA
 extension DesainViewModel {
+    
+    func saveUkuranBadan() async {
+        
+        DispatchQueue.main.async {
+            self.isLoading = true
+        }
+        
+        if let ukuranBadanNew = try? await proyekRepository.saveUkuranBadan(dictukuranBadan: dictUkuranBadan, completion: {
+            
+            results in
+            switch results {
+            case .success(_):
+                DispatchQueue.main.async {
+                    self.successAddUkuranBadan = true
+                    self.isLoading = false
+                    print("Success")
+                }
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    print("Error: \(error)")
+                }
+            }
+        }) {
+            DispatchQueue.main.async {
+                self.ukuranBadan = ukuranBadanNew
+                print("Success")
+            }
+        }
+    }
+    
     func saveTipeDesain() async {
         
         DispatchQueue.main.async {
@@ -149,13 +179,15 @@ extension DesainViewModel {
         }
     }
     
-    func saveProyek(jenisPakaian: String, ukuranBadan:UkuranBadanModel) async {
+    func saveFinalProyek() async {
         
         DispatchQueue.main.async {
             self.isLoading = true
         }
         
-        if let proyekNew = try? await proyekRepository.save(namaProyek:namaProyek, dateCreated: Date(), jenisPakaian: jenisPakaian, ukuranBadan: ukuranBadan, tipeDesain: tipeDesain, sketsa: sketsa, completion: {
+        self.namaProyek = "kak sae pasomba"
+        
+        if let proyekNew = try? await proyekRepository.saveProyek(namaProyek: namaProyek, dateCreated: Date(), jenisPakaian: jenisPakaian!, ukuranBadan: ukuranBadan, tipeDesain: tipeDesain, sketsa: sketsa, completion: {
             
             results in
             switch results {

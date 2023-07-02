@@ -14,14 +14,14 @@ extension DesainViewModel {
         if(jenisPakaian == "Atasan"){
             dict = [
                 "Lingkar Badan" : dictUkuranBadan["Lingkar Badan"]!,
-                "Panjang Dada" : dictUkuranBadan["Panjang Dada"]!,
                 "Lebar Dada" : dictUkuranBadan["Lebar Dada"]!,
-                "Tinggi Dada" : dictUkuranBadan["Tinggi Dada"]!,
                 "Panjang Punggung" : dictUkuranBadan["Panjang Punggung"]!,
                 "Lebar Punggung" : dictUkuranBadan["Lebar Punggung"]!,
                 "Lebar Bahu" : dictUkuranBadan["Lebar Bahu"]!,
-                "Lingkar Pinggang" : dictUkuranBadan["Lingkar Pinggang"]!,
-                "Lingkar Pinggul" : dictUkuranBadan["Lingkar Pinggul"]!
+                "Lingkar Pangkal Lengan" : dictUkuranBadan["Lingkar Pangkal Lengan"]!,
+                "Lingkar Lengan Bawah" : dictUkuranBadan["Lingkar Lengan Bawah"]!,
+                "Panjang Lengan" : dictUkuranBadan["Panjang Lengan"]!
+                
             ]
         }
         else {

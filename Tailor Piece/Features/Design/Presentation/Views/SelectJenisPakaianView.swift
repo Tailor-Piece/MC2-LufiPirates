@@ -25,7 +25,7 @@ struct SelectJenisPakaianView: View {
             Spacer()
             
             HStack(spacing: 32) {
-                ForEach(["Bawahan", "Atasan"], id: \.self) {jenisPakaian in
+                ForEach(["Atasan", "Bawahan"], id: \.self) {jenisPakaian in
                     JenisPakaianCard(selectedPakaian: $selectedPakaian, jenisPakaian: jenisPakaian)
                 }
             }
@@ -38,8 +38,10 @@ struct SelectJenisPakaianView: View {
                 Button("Selanjutnya") {
                     router.path.append(1.0)
                 }
+                .disabled(selectedPakaian == nil)
                 .cornerRadius(999)
                 .buttonStyle(.borderedProminent)
+                .animation(.linear(duration: 0.1), value: selectedPakaian)
             }
         }
         .onChange(of: selectedPakaian) { newValue in

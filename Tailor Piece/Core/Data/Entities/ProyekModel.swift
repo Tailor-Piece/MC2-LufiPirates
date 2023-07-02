@@ -19,7 +19,7 @@ class ProyekModel : Identifiable {
     var sketsa: SketsaModel? = nil
     
     init?(record: CKRecord) async {
-        
+    
         guard
             let namaProyek = record["namaProyek"] as? String,
             let dateCreated = record["dateCreated"] as? Date,

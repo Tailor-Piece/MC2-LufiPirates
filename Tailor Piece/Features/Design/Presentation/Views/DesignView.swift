@@ -39,7 +39,6 @@ struct DesignView: View {
                 }
                 .padding(.horizontal, 20)
             }
-            .navigationBarBackButtonHidden()
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Text("Projek Tanpa Nama")
@@ -57,6 +56,12 @@ struct DesignView: View {
                     .cornerRadius(999)
                     
                     Button {
+                        Task {
+                            await desainViewModel.saveUkuranBadan()
+                            await desainViewModel.saveTipeDesain()
+                            await desainViewModel.saveSketsa()
+                            await desainViewModel.saveFinalProyek()
+                        }
                         router.reset()
                     } label: {
                         Text("Simpan")
@@ -67,6 +72,7 @@ struct DesignView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 

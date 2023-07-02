@@ -13,6 +13,7 @@ enum SketsaTab {
 
 struct SketsaSubSection: View {
     @State var sketsaCurrentTab: SketsaTab = .tampakDepan
+    @EnvironmentObject var router: Router
     @EnvironmentObject var desainViewModel: DesainViewModel
     
     var body: some View {
@@ -70,6 +71,7 @@ struct SketsaSubSection: View {
                         Button {
                             // TODO: Add action to edit
                             print("Edit sketsa clicked!")
+                            router.path.removeLast()
                         } label: {
                             Label("Edit", systemImage: "pencil")
                         }

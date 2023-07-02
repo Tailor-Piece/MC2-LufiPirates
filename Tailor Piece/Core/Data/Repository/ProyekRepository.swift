@@ -17,14 +17,50 @@ class ProyekRepository {
         publicDB = container.publicCloudDatabase
     }
     
+    func saveUkuranBadan(dictukuranBadan:[String:Double?], completion: @escaping (Result<Bool, Error>) -> Void) async throws -> UkuranBadanModel? {
+        do {
+            let newRecord = CKRecord(recordType: UkuranBadanModel.recordType)
+            newRecord.setValuesForKeys(setValueUkuranBadan(dictUkuranBadan: dictukuranBadan))
+            let record = try await publicDB.save(newRecord)
+            completion(Result.success(true))
+            return UkuranBadanModel(record: record)
+        } catch {
+            completion(Result.failure(error))
+            return nil
+        }
+    }
+    
+    func setValueUkuranBadan(dictUkuranBadan:[String:Double?]) -> [String:Double?] {
+        var dictRecord: [String: Double?] = [
+            "lingkarBadan": dictUkuranBadan["Lingkar Badan"] ?? 0,
+            "lebarDada": dictUkuranBadan["Lebar Dada"] ?? 0,
+            "panjangPunggung": dictUkuranBadan["Panjang Punggung"] ?? 0,
+            "lebarPunggung": dictUkuranBadan["Lebar Punggung"] ?? 0,
+            "lebarBahu": dictUkuranBadan["Lebar Bahu"] ?? 0,
+            "lingkarPangkalLengan": dictUkuranBadan["Lingkar Pangkal Lengan"] ?? 0,
+            "lingkarLenganBawah": dictUkuranBadan["Lingkar Lengan Bawah"] ?? 0,
+            "panjangLengan": dictUkuranBadan["Panjang Lengan"] ?? 0,
+            "panjangCelana": dictUkuranBadan["Panjang Celana"] ?? 0,
+            "panjangLutut": dictUkuranBadan["Panjang Lutut"] ?? 0,
+            "lingkarPanggul": dictUkuranBadan["Lingkar Panggul"] ?? 0,
+            "lingkarPesak": dictUkuranBadan["Lingkar Pesak"] ?? 0,
+            "setengahLingkarPaha": dictUkuranBadan["Setengah Lingkar Paha"] ?? 0,
+            "setengahLingkarLutut": dictUkuranBadan["Setengah Lingkar Lutut"] ?? 0,
+            "setengahLingkarKaki": dictUkuranBadan["Setengah Lingkar Kaki"] ?? 0,
+            "lingkarPinggang": dictUkuranBadan["Lingkar Pinggang"] ?? 0,
+            "lingkarPinggul": dictUkuranBadan["Lingkar Pinggul"] ?? 0
+        ]
+        return dictRecord
+    }
+    
     func saveTipeDesain(tipeDesain: [String: String], completion: @escaping (Result<Bool, Error>) -> Void) async throws -> TipeDesainModel? {
         do {
             let newRecord = CKRecord(recordType: TipeDesainModel.recordType)
             newRecord.setValuesForKeys([
-                "bentukPakaian": tipeDesain["bentukPakaian"]!,
-                "lengan": tipeDesain["lengan"]!,
-                "leher": tipeDesain["leher"]!,
-                "celana": tipeDesain["celana"]!,
+                "bentukPakaian": tipeDesain["Bentuk Pakaian"]!,
+                "lengan": tipeDesain["Lengan"]!,
+                "leher": tipeDesain["Leher"]!,
+                "celana": tipeDesain["Celana"]!,
             ])
             let record = try await publicDB.save(newRecord)
             completion(Result.success(true))
@@ -52,8 +88,17 @@ class ProyekRepository {
         }
     }
         
-    func save(namaProyek:String, dateCreated: Date, jenisPakaian: String, ukuranBadan: UkuranBadanModel?, tipeDesain:TipeDesainModel?, sketsa: SketsaModel?, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> ProyekModel? {
+    func saveProyek(namaProyek:String, dateCreated: Date, jenisPakaian: String, ukuranBadan: UkuranBadanModel?, tipeDesain:TipeDesainModel?, sketsa: SketsaModel?, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> ProyekModel? {
         do {
+            
+            print("\n test")
+            print(namaProyek)
+            print(dateCreated)
+            print(jenisPakaian)
+            print("\(ukuranBadan?.recordId.recordName)")
+            print("\(tipeDesain?.recordId.recordName)")
+            print("\(sketsa?.recordId.recordName)")
+            
             let newProyek = CKRecord(recordType: ProyekModel.recordType)
             newProyek.setValue(namaProyek, forKey: "namaProyek")
             newProyek.setValue(dateCreated, forKey: "dateCreated")

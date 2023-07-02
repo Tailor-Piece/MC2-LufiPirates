@@ -15,27 +15,26 @@ struct InputUkuranBadanView: View {
 //    @StateObject var ukuranBadanViewModel: UkuranBadanViewModel = UkuranBadanViewModel()
     
     @State var ukuranBadanAtasan: [String: Double?] = [
-        "Lingkar Badan": 0,
-        "Panjang Dada": 0,
-        "Lebar Dada": 0,
-        "Tinggi Dada": 0,
-        "Panjang Punggung": 0,
-        "Lebar Punggung": 0,
-        "Lebar Bahu": 0,
-        "Lingkar Pinggang": 0,
-        "Lingkar Pinggul": 0
+        "Lingkar Badan" : nil,
+        "Lebar Dada" : nil,
+        "Panjang Punggung" : nil,
+        "Lebar Punggung" : nil,
+        "Lebar Bahu" : nil,
+        "Lingkar Pangkal Lengan" : nil,
+        "Lingkar Lengan Bawah" : nil,
+        "Panjang Lengan" : nil
     ]
     
     @State var ukuranBadanBawahan: [String: Double?] = [
-        "Panjang Celana": 0,
-        "Panjang Lutut": 0,
-        "Lingkar Panggul": 0,
-        "Lingkar Pesak": 0,
-        "1/2 Lingkar Paha": 0,
-        "1/2 Lingkar Lutut": 0,
-        "1/2 Lingkar Kaki": 0,
-        "Lingkar Pinggang": 0,
-        "Lingkar Pinggul": 0,
+        "Panjang Celana": 1,
+        "Panjang Lutut": 1,
+        "Lingkar Panggul": 1,
+        "Lingkar Pesak": 1,
+        "1/2 Lingkar Paha": 1,
+        "1/2 Lingkar Lutut": 1,
+        "1/2 Lingkar Kaki": 1,
+        "Lingkar Pinggang": 1,
+        "Lingkar Pinggul": 1,
     ]
     
     @State var misc: Double = 0
@@ -56,29 +55,50 @@ struct InputUkuranBadanView: View {
                         .resizable()
                         .frame(maxWidth: 332, maxHeight: 332)
                         .aspectRatio(contentMode: .fit)
-//                        .shimmer(ShimmerConfig(tint: .gray.opacity(0.2), highlight: .white))
                     Text(desainViewModel.jenisPakaian ?? "Atasan")
                         .font(.title.bold())
                 }
-                VStack {
-                    ForEach(Array((desainViewModel.jenisPakaian?.lowercased() ?? "atasan" == "atasan" ? ukuranBadanAtasan : ukuranBadanBawahan ).keys.sorted()), id: \.self) { key in
-                        HStack(spacing: 16) {
-                            Text("\(key)")
-                                .foregroundColor(.secondary)
-                                .frame(maxWidth: .infinity, alignment: .leading)
-                            // TODO: Fix texfield issue
-//                            TextField("Value", value: (desainViewModel.jenisPakaian ?? "Atasan") == "Atasan" ? $ukuranBadanAtasan[key] : $ukuranBadanBawahan[key], format: .number)
-//                                .frame(width: 75)
-//                                .multilineTextAlignment(.trailing)
-                            Text("cm")
-                                .foregroundColor(.secondary)
+                
+                ScrollView(.vertical) {
+                    VStack {
+                        ForEach(Array((desainViewModel.jenisPakaian?.lowercased() ?? "atasan" == "atasan" ? ukuranBadanAtasan : ukuranBadanBawahan ).keys.sorted()), id: \.self) { key in
+                            HStack(spacing: 16) {
+                                Text("\(key)")
+                                    .foregroundColor(.secondary)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                
+                                TextField(
+                                    "Value",
+                                    value: Binding<Double?>(
+                                        get: { desainViewModel.jenisPakaian ?? "Atasan" == "Atasan"
+                                            ? ukuranBadanAtasan[key] ?? 0.0
+                                            : ukuranBadanBawahan[key] ?? 0.0
+                                        },
+                                        set: { newValue in
+                                            if let safeJenisPakaian = desainViewModel.jenisPakaian {
+                                                if safeJenisPakaian == "Atasan" {
+                                                    ukuranBadanAtasan[key] = newValue
+                                                } else {
+                                                    ukuranBadanBawahan[key] = newValue
+                                                }
+                                            }
+                                        }
+                                    ),
+                                    format: .number
+                                )
+                                .frame(width: 75)
+                                .multilineTextAlignment(.trailing)
+                                
+                                Text("cm")
+                                    .foregroundColor(.secondary)
+                            }
+                            .padding(.top, 24)
+                            .padding(.bottom, 12)
+                            Divider()
                         }
-                        .padding(.top, 24)
-                        .padding(.bottom, 12)
-                        Divider()
                     }
+                    .frame(maxWidth: 320)
                 }
-                .frame(maxWidth: 320)
             }
             
             Spacer()
@@ -91,6 +111,20 @@ struct InputUkuranBadanView: View {
                     desainViewModel.dictUkuranBadan = desainViewModel.jenisPakaian == "Atasan" ? ukuranBadanAtasan : ukuranBadanBawahan
                     router.path.append(2.0)
                 }
+                .disabled({
+                    if let safeJenisPakaian = desainViewModel.jenisPakaian {
+                        if safeJenisPakaian == "Atasan" {
+                            if ukuranBadanAtasan.filter({ $1 == nil }).isEmpty {
+                                return false
+                            }
+                        } else {
+                            if ukuranBadanBawahan.filter({ $1 == nil }).isEmpty {
+                                return false
+                            }
+                        }
+                    }
+                    return true
+                }())
                 .cornerRadius(999)
                 .buttonStyle(.borderedProminent)
             }

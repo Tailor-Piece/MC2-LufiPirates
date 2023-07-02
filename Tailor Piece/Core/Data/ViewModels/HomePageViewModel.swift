@@ -13,8 +13,6 @@ class HomePageViewModel: ObservableObject {
     @Published var allProyek: [ProyekModel] = []
     @Published var isLoading = false
     
-//    @Published var jenisPakaian: String?
-    
     private let proyekRepository = ProyekRepository()
 }
 

@@ -42,6 +42,7 @@ struct SidebarListComponent: View {
                             )
                             .onTapGesture {
                                 desainViewModel.tipeDesainChosen[self.tipeDesain] = item
+                                changeSketsa()
                                 changePolaPotongan()
                             }
                             VStack {
@@ -66,7 +67,7 @@ struct SidebarListComponent: View {
             .padding()
             .onAppear {
                 changeSketsa()
-//                changePolaPotongan()
+                changePolaPotongan()
             }
         }
     }
@@ -93,7 +94,24 @@ struct SidebarListComponent: View {
     }
     
     func changePolaPotongan() {
-        desainViewModel.setPola(ukuranBadan: desainViewModel.dictUkuranBadan)
+        
+        var newUkuranBadan: [String: Double] = desainViewModel.dictUkuranBadan.mapValues { value in
+            return value!
+        }
+//        var newUkuranBadan: [String: Double] = desainViewModel.dictUkuranBadan.map({ (key: String, value: Double?) in
+//            newUkuranBadan[key] = value!
+//        })
+        
+        if(desainViewModel.jenisPakaian == "Atasan") {
+            
+            
+            desainViewModel.polaBentukPakaian = desainViewModel.getPolaBentukPakaian(ukuranBadan: newUkuranBadan, tipeDesain: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!)
+            desainViewModel.polaLengan = desainViewModel.getPolaLengan(ukuranBadan: newUkuranBadan, tipeDesain: desainViewModel.tipeDesainChosen["Lengan"]!)
+            desainViewModel.polaLeher = desainViewModel.getPolaLeher(ukuranBadan: newUkuranBadan, tipeDesain: desainViewModel.tipeDesainChosen["Leher"]!)
+        } else {
+            desainViewModel.polaCelana = desainViewModel.getPolaCelana(ukuranBadan: newUkuranBadan, tipeDesain: desainViewModel.tipeDesainChosen["Celana"]!)
+            print(desainViewModel.polaCelana.keys.sorted())
+        }
     }
     
     func getIconSVG(item: String) -> String {
