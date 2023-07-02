@@ -146,17 +146,14 @@ class ProyekRepository {
 //        }
 //    }
     
-    func updateNamaProyek(id:CKRecord.ID,namaProyek: String) async -> Void{
+    func updateNamaProyek(id:CKRecord.ID, namaProyek: String) async -> Void {
 
         let predicate = NSPredicate(format: "recordID == %@", id)
         // Record typenya berdasarkan apa
-        let query = CKQuery(recordType: "DataUser", predicate: predicate)
-
+        let query = CKQuery(recordType: ProyekModel.recordType, predicate: predicate)
+        
         do{
             let resultRecords = try await publicDB.records(matching: query, desiredKeys: nil)
-
-
-
             guard let record = resultRecords.matchResults.first else {
                 // Data user not found
                 return
@@ -171,7 +168,6 @@ class ProyekRepository {
             return
         }
     }
-//
     
 }
 

@@ -14,8 +14,8 @@ struct TextFieldComponent: View {
     
     @State var editedText: String = "Editable Text"
     @State var isEditing: Bool = false
-
     
+    @EnvironmentObject var desainViewModel: DesainViewModel
     
     @FocusState var focusedField: FocusedField?
     
@@ -49,10 +49,12 @@ struct TextFieldComponent: View {
                         .disableAutocorrection(true)
                         .autocapitalization(.none)
                         .onSubmit {
-                            editedText.removeLast()
                             focusedField = nil
                             text = editedText
                             isEditing = false
+                            Task {
+                                await desainViewModel.updateNamaProyek(proyek:proyek, namaProyek:text)
+                            }
                         }
                 } else {
                     Text(text)

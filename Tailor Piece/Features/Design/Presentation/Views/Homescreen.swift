@@ -11,10 +11,10 @@ struct Homescreen: View {
     @EnvironmentObject var router: Router
     @StateObject var homePageViewModel = HomePageViewModel()
     @StateObject var desainViewModel: DesainViewModel = DesainViewModel()
-    @State private var isEditing: Bool = false
-    @State private var text: String = "Editable Text"
-    @FocusState private var focusedField: FocusedField?
-    @State private var editedText: String = "Editable Text"
+//    @State private var isEditing: Bool = false
+//    @State private var text: String = "Editable Text"
+//    @FocusState private var focusedField: FocusedField?
+//    @State private var editedText: String = "Editable Text"
    
     let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     let itemsPerRow = 6
@@ -98,7 +98,8 @@ struct Homescreen: View {
                             
                         } else {
                             ForEach(homePageViewModel.allProyek) { proyek in
-                                TextFieldComponent(proyek: proyek, image: "baju", text: proyek.namaProyek )
+                                TextFieldComponent(proyek: proyek, image: "baju", text: proyek.namaProyek)
+                                    .environmentObject(desainViewModel)
                             }
                         }
                     }
@@ -120,12 +121,6 @@ struct Homescreen: View {
             
         }
         .navigationBarBackButtonHidden(true)
-        .onTapGesture {
-            focusedField = nil
-            text = editedText
-            isEditing = true
-           
-        }
       
         .onAppear {
             Task {

@@ -211,11 +211,23 @@ extension DesainViewModel {
 //        }
 //    }
     
+    public func updateNamaProyek(proyek:ProyekModel, namaProyek: String) async {
+        DispatchQueue.main.async { self.isLoading = true }
+        
+//        if let id = proyek?.id {
+        await proyekRepository.updateNamaProyek(id: proyek.recordId!, namaProyek: namaProyek)
+//        }
+        
+//        await proyekRepository.updateNamaProyek(id: proyek?.id, namaProyek: namaProyek)
+        DispatchQueue.main.async { self.isLoading = false }
+        print("Update nih highscore bos")
+    }
+    
 //    func updateNamaProyek(namaProyek:String) async {
 //        DispatchQueue.main.async {
 //            self.isLoading = true
 //        }
-//        
+//
 //        if let id = proyek?.id {
 //            await proyekRepository.updateNamaProyek(id: id, namaProyek: namaProyek, completion: { results in
 //                switch results {
