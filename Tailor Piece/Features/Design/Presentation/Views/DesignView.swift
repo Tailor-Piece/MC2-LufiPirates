@@ -41,7 +41,7 @@ struct DesignView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Projek Tanpa Nama")
+                    Text("Projek Tanpa Judul")
                         .bold()
                         .font(.headline)
                 }

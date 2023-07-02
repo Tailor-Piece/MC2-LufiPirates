@@ -98,9 +98,6 @@ struct SidebarListComponent: View {
         var newUkuranBadan: [String: Double] = desainViewModel.dictUkuranBadan.mapValues { value in
             return value!
         }
-//        var newUkuranBadan: [String: Double] = desainViewModel.dictUkuranBadan.map({ (key: String, value: Double?) in
-//            newUkuranBadan[key] = value!
-//        })
         
         if(desainViewModel.jenisPakaian == "Atasan") {
             

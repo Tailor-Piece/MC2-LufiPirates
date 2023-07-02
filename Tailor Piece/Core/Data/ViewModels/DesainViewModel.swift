@@ -212,57 +212,84 @@ extension DesainViewModel {
     }
     
     //MARK: NOT DONE
-//    func changeNamaProyek(namaProyek: String) async {
-//
-//        DispatchQueue.main.async {
-//            self.isLoading = true
-//        }
-//
-//        if let newProyek = try? await proyekRepository.changeNamaProyek(namaProyek:namaProyek, completion: {
-//
-//            results in
-//            switch results {
-//            case .success(_):
-//                DispatchQueue.main.async {
-//                    self.successAdd = true
-//                    self.isLoading = false
-//                    print("Success")
-//                }
-//            case .failure(let error):
-//                DispatchQueue.main.async {
-//                    print("Error: \(error)")
-//                }
-//            }
-//        }) {
-//
-//            DispatchQueue.main.async {
-//                self.proyek = newProyek
-//                self.namaProyek = namaProyek
-//                print("Success")
-//            }
-//        }
-//    }
+    //    func changeNamaProyek(namaProyek: String) async {
+    //
+    //        DispatchQueue.main.async {
+    //            self.isLoading = true
+    //        }
+    //
+    //        if let newProyek = try? await proyekRepository.changeNamaProyek(namaProyek:namaProyek, completion: {
+    //
+    //            results in
+    //            switch results {
+    //            case .success(_):
+    //                DispatchQueue.main.async {
+    //                    self.successAdd = true
+    //                    self.isLoading = false
+    //                    print("Success")
+    //                }
+    //            case .failure(let error):
+    //                DispatchQueue.main.async {
+    //                    print("Error: \(error)")
+    //                }
+    //            }
+    //        }) {
+    //
+    //            DispatchQueue.main.async {
+    //                self.proyek = newProyek
+    //                self.namaProyek = namaProyek
+    //                print("Success")
+    //            }
+    //        }
+    //    }
     
-//    func updateNamaProyek(namaProyek:String) async {
-//        DispatchQueue.main.async {
-//            self.isLoading = true
-//        }
-//        
-//        if let id = proyek?.id {
-//            await proyekRepository.updateNamaProyek(id: id, namaProyek: namaProyek, completion: { results in
-//                switch results {
-//                case .success(_):
-//                    DispatchQueue.main.async {
-//                        self.isLoading = false
-//                        self.successAddProyek = true
-//                    }
-//                case .failure(let error):
-//                    DispatchQueue.main.async {
-//                        print("Error: \(error)")
-//                        self.isLoading = false
-//                    }
-//                }
-//            })
-//        }
-//    }
+    //    func updateNamaProyek(namaProyek:String) async {
+    //        DispatchQueue.main.async {
+    //            self.isLoading = true
+    //        }
+    //
+    //        if let id = proyek?.id {
+    //            await proyekRepository.updateNamaProyek(id: id, namaProyek: namaProyek, completion: { results in
+    //                switch results {
+    //                case .success(_):
+    //                    DispatchQueue.main.async {
+    //                        self.isLoading = false
+    //                        self.successAddProyek = true
+    //                    }
+    //                case .failure(let error):
+    //                    DispatchQueue.main.async {
+    //                        print("Error: \(error)")
+    //                        self.isLoading = false
+    //                    }
+    //                }
+    //            })
+    //        }
+    //    }
+    
+    func changeSketsa() {
+        let sketsa: [String]
+        if(jenisPakaian == "Atasan") {
+            sketsa = getSketsaAtasan(
+                bentukPakaian: tipeDesainChosen["Bentuk Pakaian"]!,
+                lengan: tipeDesainChosen["Lengan"]!,
+                leher: tipeDesainChosen["Leher"]!)
+        } else {
+            sketsa = getSketsaBawahan(celana: tipeDesainChosen["Celana"]!)
+        }
+        tampakSketsa = ["tampakDepan":sketsa[0], "tampakBelakang":sketsa[1]]
+    }
+    
+    func changePolaPotongan() {
+        var newUkuranBadan: [String: Double] = dictUkuranBadan.mapValues { value in
+            return value!
+        }
+        if(jenisPakaian == "Atasan") {
+            polaBentukPakaian = getPolaBentukPakaian(ukuranBadan: newUkuranBadan, tipeDesain: tipeDesainChosen["Bentuk Pakaian"]!)
+            polaLengan = getPolaLengan(ukuranBadan: newUkuranBadan, tipeDesain: tipeDesainChosen["Lengan"]!)
+            polaLeher = getPolaLeher(ukuranBadan: newUkuranBadan, tipeDesain: tipeDesainChosen["Leher"]!)
+        } else {
+            polaCelana = getPolaCelana(ukuranBadan: newUkuranBadan, tipeDesain: tipeDesainChosen["Celana"]!)
+            print(polaCelana.keys.sorted())
+        }
+    }
 }

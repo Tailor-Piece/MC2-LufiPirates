@@ -39,27 +39,11 @@ struct SketsaSubSection: View {
                         .resizable()
                         .frame(maxWidth: 436, maxHeight: 348)
                         .aspectRatio(contentMode: .fit)
-//                    if desainViewModel.jenisPakaian == "Atasan" {
-//                        desainViewModel.getSketsaAtasan(
-//                            bentukPakaian: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!,
-//                            lengan: desainViewModel.tipeDesainChosen["Lengan"]!,
-//                            leher: desainViewModel.tipeDesainChosen["Leher"]!)
-//                    } else {
-//                        desainViewModel.getSketsaBawahan(celana: desainViewModel.tipeDesainChosen["Celana"]!)
-//                    }[0]
                 case .tampakBelakang:
                     Image("\(self.desainViewModel.tampakSketsa["tampakBelakang"]!)")
                         .resizable()
                         .frame(maxWidth: 436, maxHeight: 348)
                         .aspectRatio(contentMode: .fit)
-//                    if desainViewModel.jenisPakaian == "Atasan" {
-//                        desainViewModel.getSketsaAtasan(
-//                            bentukPakaian: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!,
-//                            lengan: desainViewModel.tipeDesainChosen["Lengan"]!,
-//                            leher: desainViewModel.tipeDesainChosen["Leher"]!)
-//                    } else {
-//                        desainViewModel.getSketsaBawahan(celana: desainViewModel.tipeDesainChosen["Celana"]!)
-//                    }[1]
                 }
                 
                 VStack(spacing: 8) {

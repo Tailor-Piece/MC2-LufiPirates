@@ -38,6 +38,7 @@
 		43874EE62A421338001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE52A421338001403E7 /* Placeholder.swift */; };
 		43874EE82A42133F001403E7 /* Placeholder.swift in Resources */ = {isa = PBXBuildFile; fileRef = 43874EE72A42133F001403E7 /* Placeholder.swift */; };
 		43BB82FA2A46FF490066EF55 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BB82F92A46FF490066EF55 /* Placeholder.swift */; };
+		43BCD5492A52277700904162 /* HistoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BCD5482A52277700904162 /* HistoryDetailView.swift */; };
 		685B3DCD2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685B3DCC2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift */; };
 		68D2F44F2A44AAE9001D6F33 /* PolaPotonganSubSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */; };
 		781CD6082A421C8600C491BC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781CD6072A421C8600C491BC /* Router.swift */; };
@@ -84,6 +85,7 @@
 		43874EE52A421338001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43874EE72A42133F001403E7 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		43BB82F92A46FF490066EF55 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
+		43BCD5482A52277700904162 /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		43F851C32A430297009AFBB3 /* Tailor Piece.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tailor Piece.entitlements"; sourceTree = "<group>"; };
 		685B3DCC2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UkuranBadanExtensionDesainVM.swift; sourceTree = "<group>"; };
 		687EDBDF2A42968F00C606C2 /* Tailor Piece.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tailor Piece.entitlements"; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 				781CD6092A421CE500C491BC /* SelectJenisPakaianView.swift */,
 				434A9EA92A4ACA74002A5FF7 /* InputUkuranBadanView.swift */,
 				43874EAD2A3C437D001403E7 /* DesignView.swift */,
+				43BCD5482A52277700904162 /* HistoryDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				781D6FF32A43F8B80063FF9C /* UIColor.swift in Sources */,
 				436AE7D52A4EC4D700522D0E /* PilihJenisPakaianView.swift in Sources */,
 				781D6FE52A436AEF0063FF9C /* SidebarListComponent.swift in Sources */,
+				43BCD5492A52277700904162 /* HistoryDetailView.swift in Sources */,
 				787B1DE72A4AF63500FA8A3F /* Homescreen.swift in Sources */,
 				436AE7D32A4EC4D700522D0E /* UkuranBadanRepository.swift in Sources */,
 				43874ED22A40394F001403E7 /* DesignViewModel.swift in Sources */,

@@ -13,7 +13,7 @@ class UkuranBadanModel : Identifiable {
     
     //for atasan
     var lingkarBadan: Double
-    var panjangDada: Double
+    var lebarDada: Double
     var panjangPunggung: Double
     var lebarPunggung: Double
     var lebarBahu: Double
@@ -37,7 +37,7 @@ class UkuranBadanModel : Identifiable {
         guard
             //for atasan
             let lingkarBadan = record["lingkarBadan"] as? Double,
-            let panjangDada = record["panjangDada"] as? Double,
+            let lebarDada = record["lebarDada"] as? Double,
             let panjangPunggung = record["panjangPunggung"] as? Double,
             let lebarPunggung = record["lebarPunggung"] as? Double,
             let lebarBahu = record["lebarBahu"] as? Double,
@@ -61,7 +61,7 @@ class UkuranBadanModel : Identifiable {
         
         //for atasan
         self.lingkarBadan = lingkarBadan
-        self.panjangDada = panjangDada
+        self.lebarDada = lebarDada
         self.panjangPunggung = panjangPunggung
         self.lebarPunggung = lebarPunggung
         self.lebarBahu = lebarBahu
@@ -89,6 +89,37 @@ extension UkuranBadanModel : Hashable {
     
     func hash(into hasher: inout Hasher) {
         hasher.combine(recordId)
+    }
+    
+    func toDictionary(jenisPakaian:String) -> [String:Double?] {
+        var dict : [String:Double?] = [:]
+        if(jenisPakaian == "Atasan"){
+            dict = [
+                "Lingkar Badan" : lingkarBadan,
+                "Lebar Dada" : lebarDada,
+                "Panjang Punggung" : panjangPunggung,
+                "Lebar Punggung" : lebarPunggung,
+                "Lebar Bahu" : lebarBahu,
+                "Lingkar Pangkal Lengan" : lingkarPangkalLengan,
+                "Lingkar Lengan Bawah" : lingkarLenganBawah,
+                "Panjang Lengan" : panjangLengan
+                
+            ]
+        }
+        else {
+            dict = [
+                "Panjang Celana" : panjangCelana,
+                "Panjang Lutut" : panjangLutut,
+                "Lingkar Panggul" : lingkarPanggul,
+                "Lingkar Pesak" : lingkarPesak,
+                "1/2 Lingkar Paha" : setengahLingkarPaha,
+                "1/2 Lingkar Lutut" : setengahLingkarLutut,
+                "1/2 Lingkar Kaki" : setengahLingkarKaki,
+                "Lingkar Pinggang" : lingkarPinggang,
+                "Lingkar Pinggul" : lingkarPinggul
+            ]
+        }
+        return dict
     }
     
 //    func toDictionaryAtasan() -> [String:Int] {
