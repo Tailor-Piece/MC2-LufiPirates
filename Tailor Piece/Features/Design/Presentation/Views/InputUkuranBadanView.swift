@@ -11,8 +11,8 @@ struct InputUkuranBadanView: View {
     
     @EnvironmentObject var router: Router
     @EnvironmentObject var desainViewModel: DesainViewModel
-//    @EnvironmentObject var homepageViewModel: HomePageViewModel
-//    @StateObject var ukuranBadanViewModel: UkuranBadanViewModel = UkuranBadanViewModel()
+    //    @EnvironmentObject var homepageViewModel: HomePageViewModel
+    //    @StateObject var ukuranBadanViewModel: UkuranBadanViewModel = UkuranBadanViewModel()
     
     @State var ukuranBadanAtasan: [String: Double?] = [
         "Lingkar Badan": 0,
@@ -56,7 +56,7 @@ struct InputUkuranBadanView: View {
                         .resizable()
                         .frame(maxWidth: 332, maxHeight: 332)
                         .aspectRatio(contentMode: .fit)
-//                        .shimmer(ShimmerConfig(tint: .gray.opacity(0.2), highlight: .white))
+                    //                        .shimmer(ShimmerConfig(tint: .gray.opacity(0.2), highlight: .white))
                     Text(desainViewModel.jenisPakaian ?? "Atasan")
                         .font(.title.bold())
                 }
@@ -67,9 +67,28 @@ struct InputUkuranBadanView: View {
                                 .foregroundColor(.secondary)
                                 .frame(maxWidth: .infinity, alignment: .leading)
                             // TODO: Fix texfield issue
-//                            TextField("Value", value: (desainViewModel.jenisPakaian ?? "Atasan") == "Atasan" ? $ukuranBadanAtasan[key] : $ukuranBadanBawahan[key], format: .number)
-//                                .frame(width: 75)
-//                                .multilineTextAlignment(.trailing)
+                            
+                            TextField(
+                                "Value",
+                                value: Binding<Double?>(
+                                    get: { desainViewModel.jenisPakaian ?? "Atasan" == "Atasan"
+                                        ? ukuranBadanAtasan[key] ?? 0.0
+                                        : ukuranBadanBawahan[key] ?? 0.0
+                                    },
+                                    set: { newValue in
+                                        if let safeJenisPakaian = desainViewModel.jenisPakaian {
+                                            if safeJenisPakaian == "Atasan" {
+                                                ukuranBadanAtasan[key] = newValue
+                                            } else {
+                                                ukuranBadanBawahan[key] = newValue
+                                            }
+                                        }
+                                    }
+                                ),
+                                format: .number
+                            )
+                            .frame(width: 75)
+                            .multilineTextAlignment(.trailing)
                             Text("cm")
                                 .foregroundColor(.secondary)
                         }
@@ -89,6 +108,7 @@ struct InputUkuranBadanView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Selanjutnya") {
                     desainViewModel.dictUkuranBadan = desainViewModel.jenisPakaian == "Atasan" ? ukuranBadanAtasan : ukuranBadanBawahan
+                    print(ukuranBadanAtasan)
                     router.path.append(2.0)
                 }
                 .cornerRadius(999)
