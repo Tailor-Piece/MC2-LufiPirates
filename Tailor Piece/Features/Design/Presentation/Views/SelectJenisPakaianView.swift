@@ -57,10 +57,11 @@ struct JenisPakaianCard: View {
         
         ZStack(alignment: .bottomTrailing) {
             VStack(spacing: 36) {
-                RoundedRectangle(cornerRadius: 16)
+                Image(jenisPakaian == "Atasan" ? "CF_3-4S_CAC_Depan" : "SP_Depan")
+                    .resizable()
                     .frame(maxWidth: 220, maxHeight: 220)
                     .aspectRatio(contentMode: .fit)
-                    .shimmer(ShimmerConfig(tint: .gray.opacity(0.05), highlight: .white))
+//                    .shimmer(ShimmerConfig(tint: .gray.opacity(0.05), highlight: .white))
                 Text("\(jenisPakaian)")
                     .foregroundColor(isSelected ? .indigo : nil)
                     .bold(isSelected)
