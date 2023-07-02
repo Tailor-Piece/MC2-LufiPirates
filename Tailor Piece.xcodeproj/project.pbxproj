@@ -49,6 +49,7 @@
 		787B1DEB2A4AF6A000FA8A3F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B1DEA2A4AF6A000FA8A3F /* OnboardingView.swift */; };
 		787B1DED2A4AF6C300FA8A3F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B1DEC2A4AF6C300FA8A3F /* RootView.swift */; };
 		787B1DEF2A4AF71F00FA8A3F /* ButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B1DEE2A4AF71F00FA8A3F /* ButtonComponent.swift */; };
+		78CBD5C22A51E05C00406E6A /* TextFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CBD5C12A51E05C00406E6A /* TextFieldComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		787B1DEA2A4AF6A000FA8A3F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		787B1DEC2A4AF6C300FA8A3F /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		787B1DEE2A4AF71F00FA8A3F /* ButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComponent.swift; sourceTree = "<group>"; };
+		78CBD5C12A51E05C00406E6A /* TextFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +382,7 @@
 				781D6FE42A436AEF0063FF9C /* SidebarListComponent.swift */,
 				4300540E2A43FD5700474828 /* SketsaSubSection.swift */,
 				68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */,
+				78CBD5C12A51E05C00406E6A /* TextFieldComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -483,6 +486,7 @@
 				436AE7D72A4EC4D700522D0E /* HistoryView.swift in Sources */,
 				43874EAE2A3C437D001403E7 /* DesignView.swift in Sources */,
 				436AE7D82A4EC4D700522D0E /* DesignViewMock.swift in Sources */,
+				78CBD5C22A51E05C00406E6A /* TextFieldComponent.swift in Sources */,
 				436AE7D22A4EC4D700522D0E /* HomePageViewModel.swift in Sources */,
 				436AE7D42A4EC4D700522D0E /* ProyekRepository.swift in Sources */,
 				43874EDA2A420F4C001403E7 /* DummyView.swift in Sources */,
