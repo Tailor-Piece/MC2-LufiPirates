@@ -10,13 +10,17 @@ import SwiftUI
 struct TextFieldComponent: View {
     let proyek: ProyekModel
     @State var image: String
-    @State var editedText: String
+    @State var text: String
     
+    @State var editedText: String = "Editable Text"
     @State var isEditing: Bool = false
-    @State var text: String = "Editable Text"
+
+    
+    
     @FocusState var focusedField: FocusedField?
     
     var body: some View {
+        // TODO: Bikin if dlu
         VStack(alignment: .center){
             ZStack{
                 RoundedRectangle(cornerRadius: 4)
@@ -33,7 +37,7 @@ struct TextFieldComponent: View {
             Spacer().frame(height: 20)
             VStack (alignment: .center) {
                 if isEditing {
-                    TextField("", text: $editedText,axis: .vertical)
+                    TextField("", text: $editedText, axis: .vertical)
                         .focused($focusedField, equals: .text)
                         .font(.system(size: 17))
                         .multilineTextAlignment(.center)
@@ -44,24 +48,14 @@ struct TextFieldComponent: View {
                         .cornerRadius(4)
                         .disableAutocorrection(true)
                         .autocapitalization(.none)
-                        .onChange(of: editedText) { newValue in
-                            let filteredText = newValue.filter { $0 != "\n" }
-                            editedText = filteredText
-                            guard let newValueLastChar = newValue.last else { return }
-                            if newValueLastChar == "\n" {
-                                editedText.removeLast()
-                                focusedField = nil
-                                text = editedText
-                                isEditing = false
-                            }
-                            if newValue.contains("\n"){
-                                focusedField = nil
-                                text = editedText
-                                isEditing = false
-                            }
+                        .onSubmit {
+                            editedText.removeLast()
+                            focusedField = nil
+                            text = editedText
+                            isEditing = false
                         }
                 } else {
-                    Text(editedText)
+                    Text(text)
                         .font(.system(size: 17))
                         .fontWeight(.regular)
                         .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
@@ -71,6 +65,7 @@ struct TextFieldComponent: View {
                             focusedField = .text
                             editedText = text
                             isEditing = true
+
                         }
 
 
@@ -80,6 +75,9 @@ struct TextFieldComponent: View {
             .frame(width: 144)
         }
         .frame(height: 250)
+       
+        
+        
     }
 }
 

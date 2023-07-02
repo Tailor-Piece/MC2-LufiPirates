@@ -103,14 +103,14 @@ class ProyekRepository {
             return nil
         }
     }
-    
+//
 //    func updateNamaProyek(id:CKRecord.ID, namaProyek:String, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> [ProyekModel]? {
 //        do {
 //            let predicate = NSPredicate(value: true)
 //            let query = CKQuery(recordType: ProyekModel.recordType, predicate: predicate)
 //            let results = try await publicDB.records(matching: query)
 //            let records = results.matchResults.compactMap { try? $0.1.get() }
-//                    
+//
 //            var allProyek = [ProyekModel]()
 //            for record in records {
 //                if let proyek = await ProyekModel(record: record) {
@@ -124,6 +124,54 @@ class ProyekRepository {
 //            return nil
 //        }
 //    }
+    
+//    func updateNamaProyek(id: CKRecord.ID, namaProyek: String, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> [ProyekModel]? {
+//        do {
+//            let predicate = NSPredicate(format: "recordID == %@", id)
+//            let query = CKQuery(recordType: ProyekModel.recordType, predicate: predicate)
+//            let results = try await publicDB.records(matching: query)
+//            let records = results.matchResults.compactMap { try? $0.1.get() }
+//                    
+//            
+//            records.setValuesForKeys([
+//                "namaProyek": namaProyek,
+//            ])
+//            try await publicDB.save(records)
+//            
+//            completion(.success(true))
+//            return allProyek
+//        } catch {
+//            completion(.failure(error))
+//            return nil
+//        }
+//    }
+    
+    func updateNamaProyek(id:CKRecord.ID,namaProyek: String) async -> Void{
+
+        let predicate = NSPredicate(format: "recordID == %@", id)
+        // Record typenya berdasarkan apa
+        let query = CKQuery(recordType: "DataUser", predicate: predicate)
+
+        do{
+            let resultRecords = try await publicDB.records(matching: query, desiredKeys: nil)
+
+
+
+            guard let record = resultRecords.matchResults.first else {
+                // Data user not found
+                return
+            }
+            let finalRecord = try record.1.get()
+            finalRecord.setValuesForKeys([
+                "namaProyek": namaProyek,
+            ])
+            try await publicDB.save(finalRecord)
+        }catch let err{
+            print("Error fetching data from CloudKit: \(err.localizedDescription)")
+            return
+        }
+    }
+//
     
 }
 
