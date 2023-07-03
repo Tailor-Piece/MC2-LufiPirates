@@ -140,5 +140,28 @@ class ProyekRepository {
         }
     }
     
+    func updateNamaProyek(id:CKRecord.ID, namaProyek: String) async -> Void {
+
+        let predicate = NSPredicate(format: "recordID == %@", id)
+        // Record typenya berdasarkan apa
+        let query = CKQuery(recordType: ProyekModel.recordType, predicate: predicate)
+        
+        do{
+            let resultRecords = try await publicDB.records(matching: query, desiredKeys: nil)
+            guard let record = resultRecords.matchResults.first else {
+                // Data user not found
+                return
+            }
+            let finalRecord = try record.1.get()
+            finalRecord.setValuesForKeys([
+                "namaProyek": namaProyek,
+            ])
+            try await publicDB.save(finalRecord)
+        }catch let err{
+            print("Error fetching data from CloudKit: \(err.localizedDescription)")
+            return
+        }
+    }
+    
 }
 
