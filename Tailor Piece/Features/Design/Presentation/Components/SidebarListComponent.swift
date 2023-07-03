@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct SidebarListComponent: View {
-    let items: [MockDesignType]
+    let tipeDesain: String
+    let items: [String]
     let frameSize: CGSize
     let borderColor: Color
     let showCheckmark: Bool
@@ -17,16 +18,16 @@ struct SidebarListComponent: View {
     let fontSize: CGFloat
     let rowCount: Int
     
-    @State private var selectedItem: String? = nil
+    @EnvironmentObject var desainViewModel:DesainViewModel
     
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHGrid(rows: generateGridItems(), spacing: 16) {
-                ForEach(items, id: \.name) { item in
+                ForEach(items, id: \.self) { item in
                     VStack {
                         ZStack {
                             VStack {
-                                Image(item.image)
+                                Image("Icon_\(getIconSVG(item: item))")
                                     .resizable()
                                     .frame(
                                         width: 62,
@@ -37,10 +38,12 @@ struct SidebarListComponent: View {
                             .frame(width: frameSize.width, height: frameSize.height)
                             .overlay(
                                 RoundedRectangle(cornerRadius: cornerRadius)
-                                    .stroke(selectedItem == item.name ? borderColor : ColorTheme.borderColor, lineWidth: 2)
+                                    .stroke(desainViewModel.tipeDesainChosen[self.tipeDesain] == item ? borderColor : ColorTheme.borderColor, lineWidth: 2)
                             )
                             .onTapGesture {
-                                selectedItem = selectedItem == item.name ? nil : item.name // Update selectedItem only if the current item is not selected or the same as the currently selected item
+                                desainViewModel.tipeDesainChosen[self.tipeDesain] = item
+                                changeSketsa()
+                                changePolaPotongan()
                             }
                             VStack {
                                 Spacer()
@@ -51,17 +54,21 @@ struct SidebarListComponent: View {
                                         Image(systemName: "checkmark.circle.fill")
                                             .padding(EdgeInsets(top: 0, leading: 8, bottom: 8, trailing: 8))
                                             .imageScale(.small)
-                                            .foregroundColor(selectedItem == item.name ? checkMarkColor : Color.clear)
+                                            .foregroundColor(desainViewModel.tipeDesainChosen[self.tipeDesain] == item ? checkMarkColor : Color.clear)
                                     }
                                 }
                             }
                         }
-                        Text(item.name)
+                        Text(item)
                             .font(.system(size: fontSize))
                     }
                 }
             }
             .padding()
+            .onAppear {
+                changeSketsa()
+                changePolaPotongan()
+            }
         }
     }
     
@@ -71,5 +78,83 @@ struct SidebarListComponent: View {
             gridItems.append(GridItem(.fixed(frameSize.height)))
         }
         return gridItems
+    }
+    
+    func changeSketsa() {
+        let sketsa: [String]
+        if(desainViewModel.jenisPakaian == "Atasan") {
+            sketsa = desainViewModel.getSketsaAtasan(
+                bentukPakaian: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!,
+                lengan: desainViewModel.tipeDesainChosen["Lengan"]!,
+                leher: desainViewModel.tipeDesainChosen["Leher"]!)
+        } else {
+            sketsa = desainViewModel.getSketsaBawahan(celana: desainViewModel.tipeDesainChosen["Celana"]!)
+        }
+        desainViewModel.tampakSketsa = ["tampakDepan":sketsa[0], "tampakBelakang":sketsa[1]]
+    }
+    
+    func changePolaPotongan() {
+        
+        var newUkuranBadan: [String: Double] = desainViewModel.dictUkuranBadan.mapValues { value in
+            return value!
+        }
+        
+        if(desainViewModel.jenisPakaian == "Atasan") {
+            
+            
+            desainViewModel.polaBentukPakaian = desainViewModel.getPolaBentukPakaian(ukuranBadan: newUkuranBadan, tipeDesain: desainViewModel.tipeDesainChosen["Bentuk Pakaian"]!)
+            desainViewModel.polaLengan = desainViewModel.getPolaLengan(ukuranBadan: newUkuranBadan, tipeDesain: desainViewModel.tipeDesainChosen["Lengan"]!)
+            desainViewModel.polaLeher = desainViewModel.getPolaLeher(ukuranBadan: newUkuranBadan, tipeDesain: desainViewModel.tipeDesainChosen["Leher"]!)
+        } else {
+            desainViewModel.polaCelana = desainViewModel.getPolaCelana(ukuranBadan: newUkuranBadan, tipeDesain: desainViewModel.tipeDesainChosen["Celana"]!)
+            print(desainViewModel.polaCelana.keys.sorted())
+        }
+    }
+    
+    func getIconSVG(item: String) -> String {
+        if(item == "Classic Fit") {
+            return "CF"
+        } else if(item == "Modern Fit") {
+            return "MF"
+        } else if(item == "Slim Fit") {
+            return "SF"
+        } else if(item == "Long Sleeves") {
+            return "LS"
+        } else if(item == "3/4 Sleeves") {
+            return "3-4Sl"
+        } else if(item == "Short Sleeves") {
+            return "SS"
+        } else if(item == "Short Collar") {
+            return "SC"
+        } else if(item == "Cut-Away Collar") {
+            return "CAC"
+        } else if(item == "Classic Collar"){
+            return "CC"
+        } else if(item == "Loose Pants"){
+            return "LP"
+        } else if(item == "Relaxed Pants"){
+            return "RP"
+        } else {
+            return "SP"
+        }
+    }
+
+}
+
+struct SidebarListComponent_Previews: PreviewProvider {
+    
+    static var previews: some View {
+//        let filteredTypeClothing = filterByClothingType(clothingType: "Bentuk Pakaian")
+        SidebarListComponent(
+            tipeDesain: "bentukPakaian",
+            items: ["Classic Fit", "Modern Fit", "Slim Fit"],
+            frameSize: CGSize(width: 100, height: 100),
+            borderColor: Color.blue,
+            showCheckmark: true,
+            checkMarkColor: ColorTheme.primary100,
+            cornerRadius: 8,
+            fontSize: 20,
+            rowCount: 1
+        )
     }
 }

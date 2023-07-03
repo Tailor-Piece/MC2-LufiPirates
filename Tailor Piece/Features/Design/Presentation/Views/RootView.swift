@@ -9,29 +9,25 @@ import SwiftUI
 
 struct RootView: View {
     // Ubah ke user default atau nyimpan ke app storage
-    @State private var firstLogin = 1
+//    @State private var firstLogin = 1
     @EnvironmentObject var router: Router
-    @State private var isOnBoarding = true
+//    @AppStorage("isOnBoarding") private var isOnBoarding = true
+    
     var body: some View {
         NavigationStack(path: $router.path){
-            ZStack{
-                if isOnBoarding {
+            VStack {
+                if UserDefaults.standard.bool(forKey: "isOnBoarding") {
                     OnboardingView()
-                }else{
+//                    UserDefaults.standard.set(false, forKey: "isOnBoarding")
+                } else {
                     Homescreen().environmentObject(router)
                 }
-               
-            }.onAppear{
-                // TODO: ubah pake user default
-                if firstLogin == 1{
-                    isOnBoarding = true
-                }else{
-                    isOnBoarding = false
-                }
+                
             }
         }
-      
-       
+        .tint(.indigo)
+        
+        
     }
 }
 

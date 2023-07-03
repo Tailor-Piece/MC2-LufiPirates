@@ -87,20 +87,20 @@ struct ButtonComponent<Content: View>: View {
     }
 }
 
-struct ButtonComponent_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonComponent(
-            text: "Press me",
-            textColor: .white,
-            frameSize: CGSize(width: 200, height: 50),
-            frameColor: .blue,
-            isButtonFullWidth: false,
-            cornerRadius: 10,
-            fontSize: 18,
-            action: {
-                print("Button tapped")
-            },
-            targetView: SecondView()
-        )
-    }
-}
+//struct ButtonComponent_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ButtonComponent(
+//            text: "Press me",
+//            textColor: .white,
+//            frameSize: CGSize(width: 200, height: 50),
+//            frameColor: .blue,
+//            isButtonFullWidth: false,
+//            cornerRadius: 10,
+//            fontSize: 18,
+//            action: {
+//                print("Button tapped")
+//            },
+//            targetView: InputUkuranBadanView()
+//        )
+//    }
+//}

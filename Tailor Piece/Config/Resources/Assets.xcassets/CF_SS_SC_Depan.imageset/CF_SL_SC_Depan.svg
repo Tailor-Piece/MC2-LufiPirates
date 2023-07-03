@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Classic_Fit_Short_Sleeves_Short_Collar_Depan" data-name="Classic Fit, Short Sleeves, Short Collar, Depan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #010101;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g id="Baju">
+    <path id="Baju_Depan" data-name="Baju Depan" class="cls-1" d="m56.26,11.88l13.96,6.07c-3.65,7.08-4.73,14.88-4.87,22.65l2.12,42.06-2.42.03c-11,5.42-22.63,4.78-34.64.41l-3.07.04,2.19-42.86c.14-8.06-.55-15.31-4.5-22.24l13.18-6.29"/>
+    <path id="Shilouete_Baju_Belakang" data-name="Shilouete Baju Belakang" class="cls-1" d="m28.14,67.4l-2.85,15.74h2.04c13.61,9.19,26.94,7.41,40.13-.48l1.57-.05-2.22-12.92"/>
+  </g>
+  <g id="Kancing_Baju" data-name="Kancing Baju">
+    <rect class="cls-1" x="45.92" y="19.43" width="2.9" height="67.12"/>
+    <circle class="cls-1" cx="47.28" cy="24.34" r=".63"/>
+    <circle class="cls-1" cx="47.37" cy="33.5" r=".63"/>
+    <circle class="cls-1" cx="47.37" cy="42.95" r=".63"/>
+    <circle class="cls-1" cx="47.37" cy="51.9" r=".63"/>
+    <circle class="cls-1" cx="47.37" cy="61.41" r=".63"/>
+    <circle class="cls-1" cx="47.37" cy="70.92" r=".63"/>
+  </g>
+  <g id="Kerah">
+    <path class="cls-1" d="m40.87,8.74s-.24,4.31,5.05,7.38l-3.16,4.02s-4-3.16-4.56-8.41l2.67-2.99Z"/>
+    <path class="cls-1" d="m53.6,8.56s.52,4.12-4.78,7.62l3.22,3.96s4.76-4.6,4.22-8.26l-2.66-3.32Z"/>
+    <line class="cls-1" x1="52.56" y1="12.68" x2="42.16" y2="12.68"/>
+    <path class="cls-1" d="m50.99,18.86c-2.32.79-4.7.77-7.13-.12l2.06-2.62,2.9.05,2.18,2.68Z"/>
+    <line class="cls-1" x1="41.05" y1="8.56" x2="53.66" y2="8.56"/>
+  </g>
+  <g id="Lengan">
+    <path id="Lengan_Kiri" data-name="Lengan Kiri" class="cls-1" d="m25.03,18.03l-10.55,23.7,10.82,5.18,4.23-6.64c.69-7.76-.94-15.16-4.5-22.24Z"/>
+    <path id="Lengan_Kanan" data-name="Lengan Kanan" class="cls-1" d="m70.3,18.04l10.55,23.7-10.82,5.18-4.68-6.68c.04-7.76,1.38-15.12,4.95-22.2Z"/>
+  </g>
+</svg>

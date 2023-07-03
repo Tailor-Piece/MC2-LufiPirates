@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+        font-family: SFPro-Semibold, 'SF Pro';
+        font-size: 4.49px;
+        font-variation-settings: 'wdth' 100, 'opsz' 28, 'wght' 590;
+        font-weight: 600;
+      }
+
+      .cls-3 {
+        stroke: #ed1c24;
+        stroke-dasharray: 0 1;
+        stroke-width: .5px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 21.66px;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.06em;
+      }
+
+      .cls-4 {
+        stroke: #010101;
+        stroke-width: .25px;
+      }
+
+      .cls-13 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <g id="PergelanganTangan">
+    <g>
+      <polygon class="cls-4" points="15.76 37.61 79.22 37.61 79.22 20.44 75.27 16.38 19.56 16.38 15.57 20.29 15.76 37.61"/>
+      <polygon class="cls-4" points="17.23 35.67 77.62 35.76 77.62 21.28 74.24 17.9 20.4 17.9 17.11 21.28 17.23 35.67"/>
+      <circle class="cls-4" cx="19.32" cy="29.63" r=".94"/>
+      <circle class="cls-4" cx="19.32" cy="23.72" r=".94"/>
+      <line class="cls-4" x1="71.82" y1="29.72" x2="74.47" y2="29.72"/>
+      <line class="cls-4" x1="71.82" y1="23.67" x2="74.47" y2="23.67"/>
+      <line class="cls-4" x1="72.21" y1="37.61" x2="72.21" y2="36.56"/>
+      <line class="cls-4" x1="72.21" y1="35.75" x2="72.21" y2="34.56"/>
+    </g>
+    <g>
+      <rect class="cls-4" x="65.78" y="56.02" width="5.77" height="24.98" transform="translate(137.33 137.01) rotate(180)"/>
+      <polygon class="cls-4" points="71.55 52.7 74.1 50.84 76.66 52.7 76.66 80.99 71.55 80.99 71.55 52.7"/>
+      <polygon class="cls-4" points="63.92 53.7 69.18 53.7 69.18 52.7 74.1 48 79.18 52.7 79.18 83.34 63.92 83.34 63.92 53.7"/>
+      <line class="cls-4" x1="74.1" y1="69.6" x2="74.1" y2="67.73"/>
+    </g>
+    <g>
+      <rect class="cls-4" x="22.04" y="49.8" width="6.41" height="29.75"/>
+      <rect class="cls-4" x="22.04" y="77.41" width="6.41" height="2.15"/>
+      <rect class="cls-4" x="22.04" y="49.8" width="6.41" height="2.5"/>
+      <circle class="cls-4" cx="23.5" cy="64.99" r=".68"/>
+    </g>
+    <polyline class="cls-3" points="15.57 20.29 15.57 16 79.51 16 79.51 20.44"/>
+    <text class="cls-2" transform="translate(11 16.38)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-2" transform="translate(80.04 16.17)"><tspan x="0" y="0">B</tspan></text>
+    <text class="cls-2" transform="translate(11.06 39.34)"><tspan x="0" y="0">C</tspan></text>
+    <text class="cls-2" transform="translate(80.32 38.57)"><tspan x="0" y="0">D</tspan></text>
+    <polyline class="cls-3" points="63.92 52.7 64 48 79.14 48 79.18 53.56"/>
+    <text class="cls-2" transform="translate(59.62 84)"><tspan x="0" y="0">C</tspan></text>
+    <text class="cls-2" transform="translate(79.5 84.06)"><tspan x="0" y="0">D</tspan></text>
+    <text class="cls-2" transform="translate(59.79 48.58)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-2" transform="translate(80.04 48.58)"><tspan x="0" y="0">B</tspan></text>
+    <text class="cls-2" transform="translate(67.53 59.57)"><tspan x="0" y="0">G</tspan></text>
+    <text class="cls-2" transform="translate(79.5 54.1)"><tspan x="0" y="0">F</tspan></text>
+    <text class="cls-2" transform="translate(18.38 50.94)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-2" transform="translate(29.01 50.8)"><tspan x="0" y="0">B</tspan></text>
+    <text class="cls-2" transform="translate(18.18 81.26)"><tspan x="0" y="0">C</tspan></text>
+    <text class="cls-2" transform="translate(28.81 81.12)"><tspan x="0" y="0">D</tspan></text>
+  </g>
+  <g id="ModernFit">
+    <text class="cls-5" transform="translate(1.64 -18.74)"><tspan class="cls-6" x="0" y="0">P</tspan><tspan class="cls-11" x="10.98" y="0">e</tspan><tspan class="cls-10" x="21.83" y="0">r</tspan><tspan class="cls-11" x="28.74" y="0">gelangan</tspan><tspan class="cls-1" x="113.84" y="0"> </tspan><tspan class="cls-12" x="117.54" y="0">T</tspan><tspan x="126.92" y="0">angan (</tspan><tspan class="cls-7" x="194.69" y="0">K</tspan><tspan class="cls-8" x="206.65" y="0">husus </tspan><tspan class="cls-9" x="264.28" y="0">L</tspan><tspan x="274.2" y="0">engan </tspan><tspan class="cls-13" x="336.23" y="0">P</tspan><tspan x="347.19" y="0">anjang</tspan></text>
+  </g>
+</svg>

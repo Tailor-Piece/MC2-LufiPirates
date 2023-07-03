@@ -9,28 +9,19 @@ import SwiftUI
 
 struct DesignView: View {
     
-    @StateObject var designViewModel = DesignViewModel()
-    
-    
+    @EnvironmentObject var desainViewModel: DesainViewModel
     @EnvironmentObject var router: Router
-    let filteredTypeClothing = filterByClothingType(clothingType: "Bentuk Pakaian")
-    let filteredTypeSleeve = filterByClothingType(clothingType: "Lengan")
-    let filteredTypeNeck = filterByClothingType(clothingType: "Leher")
+    
     var body: some View {
         NavigationSplitView{
             List{
-                Section(header: Text("Bentuk Pakaian")) {
-                    SidebarListComponent(
-                        items: filteredTypeClothing, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100,
-                        cornerRadius: 8, fontSize: 11, rowCount: 1)
-                }
-                
-                Section(header: Text("Panjang Lengan")) {
-                    SidebarListComponent(items: filteredTypeSleeve, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100, cornerRadius: 8, fontSize: 11, rowCount: 1)
-                }
-                
-                Section(header: Text("Leher")) {
-                    SidebarListComponent(items: filteredTypeNeck, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true, checkMarkColor: ColorTheme.primary100, cornerRadius: 8, fontSize: 11, rowCount: 1)
+                ForEach((desainViewModel.dictTipeDesain[desainViewModel.jenisPakaian ?? "Bawahan"] ?? [:]).sorted(by: {$0.key > $1.key}), id: \.key) { key, value in
+                    
+                    Section(header: Text("\(key)")) {
+                        SidebarListComponent(
+                            tipeDesain: key, items: value, frameSize: CGSize(width: 80, height: 70), borderColor: ColorTheme.primary100,  showCheckmark: true,checkMarkColor: ColorTheme.primary100,
+                            cornerRadius: 8, fontSize: 11, rowCount: 1)
+                    }
                 }
             }
             .listStyle(.sidebar)
@@ -50,33 +41,38 @@ struct DesignView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
-                    Text("Projek Tanpa Nama")
+                    Text("Projek Tanpa Judul")
                         .bold()
                         .font(.headline)
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    HStack(spacing: 16) {
-                        Button {
-                            print("Batal clicked")
-                        } label: {
-                            Text("Batal")
-                                .bold()
-                        }
-                        .cornerRadius(999)
-
-                        Button {
-                            print("Simpan clicked")
-                        } label: {
-                            Text("Simpan")
-                                .bold()
-                        }
-                        .cornerRadius(999)
-                        .buttonStyle(.borderedProminent)
+                
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Button {
+                        router.reset()
+                    } label: {
+                        Text("Batal")
+                            .bold()
                     }
+                    .cornerRadius(999)
+                    
+                    Button {
+                        Task {
+                            await desainViewModel.saveUkuranBadan()
+                            await desainViewModel.saveTipeDesain()
+                            await desainViewModel.saveSketsa()
+                            await desainViewModel.saveFinalProyek()
+                        }
+                        router.reset()
+                    } label: {
+                        Text("Simpan")
+                            .bold()
+                    }
+                    .cornerRadius(999)
+                    .buttonStyle(.borderedProminent)
                 }
             }
         }
-        .tint(.indigo)
+        .navigationBarBackButtonHidden()
     }
 }
 

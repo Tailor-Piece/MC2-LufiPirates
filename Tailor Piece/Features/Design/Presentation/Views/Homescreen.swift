@@ -9,10 +9,20 @@ import SwiftUI
 
 struct Homescreen: View {
     @EnvironmentObject var router: Router
-    @State private var isEditing: Bool = false
-    @State private var text: String = "Editable Text"
-    @FocusState private var focusedField: FocusedField?
-    @State private var editedText: String = "Editable Text"
+    @StateObject var homePageViewModel = HomePageViewModel()
+    @StateObject var desainViewModel: DesainViewModel = DesainViewModel()
+//    @State private var isEditing: Bool = false
+//    @State private var text: String = "Editable Text"
+//    @FocusState private var focusedField: FocusedField?
+//    @State private var editedText: String = "Editable Text"
+   
+    let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    let itemsPerRow = 6
+    
+    private let adaptiveColumns = [
+        GridItem(.adaptive(minimum: 144))
+    ]
+    
     var body: some View {
         VStack{
             Spacer().frame(height: 57)
@@ -29,100 +39,82 @@ struct Homescreen: View {
                     
                 }
                 Spacer().frame(height: 38)
-                HStack(alignment: .top, spacing: 40){
-                    VStack(alignment: .center){
-                        ZStack{
-                            Image(systemName: "plus")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 25, height: 25)
-                                .foregroundColor(.blue)
-                        }.frame(width: 144, height: 144)
-                            .background(Color(red: 0.87, green: 0.87, blue: 1))
-                            .cornerRadius(4)
-                        Spacer().frame(height: 20)
-                        VStack (alignment: .center) {
-                            Text("Buat Project")
-                                .font(.system(size: 17))
-                                .fontWeight(.semibold)
-                                .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
-                                .foregroundColor(ColorTheme.primary100)
-                                .multilineTextAlignment(.center)
-                            Spacer()
-                        }
-                        .frame(width: 144)
-                    }
-                    .frame(height: 250)
-                    
-                    VStack(alignment: .center){
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 4)
-                                .stroke(Color.secondary, lineWidth: 1)
-                                .overlay(
-                                    Image("dummy-project-image")
+                ScrollView{
+                    LazyVGrid(columns: adaptiveColumns, alignment: .center, spacing: 10){
+                        Button {
+                            router.path.append(0.0)
+                        } label: {
+                            VStack(alignment: .center){
+                                ZStack{
+                                    Image(systemName: "plus")
                                         .resizable()
-                                        .frame(width: 101, height: 101)
-                                        .aspectRatio(contentMode: .fit)
-                                )
+                                        .scaledToFit()
+                                        .frame(width: 25, height: 25)
+                                        .foregroundColor(.blue)
+                                }.frame(width: 144, height: 144)
+                                    .background(Color(red: 0.87, green: 0.87, blue: 1))
+                                    .cornerRadius(4)
+                                Spacer().frame(height: 20)
+                                VStack (alignment: .center) {
+                                    Text("Buat Project")
+                                        .font(.system(size: 17))
+                                        .fontWeight(.semibold)
+                                        .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
+                                        .foregroundColor(ColorTheme.primary100)
+                                        .multilineTextAlignment(.center)
+                                    Spacer()
+                                }
+                                .frame(width: 144)
+                            }
+                            .navigationDestination(for: Double.self, destination: { destination in
+                                switch destination {
+                                case 0.0: SelectJenisPakaianView().environmentObject(router)
+                                        .environmentObject(desainViewModel)
+                                case 1.0: InputUkuranBadanView().environmentObject(router)
+                                        .environmentObject(desainViewModel)
+                                case 2.0: DesignView().environmentObject(router)
+                                        .environmentObject(desainViewModel)
+                                default: EmptyView()
+                                }
+                            })
+                            
+                            .frame(height: 250)
                             
                         }
-                        .frame(width: 144, height: 144)
-                        Spacer().frame(height: 20)
-                        VStack (alignment: .center) {
-                            if isEditing {
-                                TextField("", text: $editedText,axis: .vertical)
-                                    .focused($focusedField, equals: .text)
-                                    .font(.system(size: 17))
-                                    .multilineTextAlignment(.center)
-                                    .padding()
-                                    .background(ColorTheme.secondary)
-                                    .lineLimit(3)
-                                    .frame(width: 144, height: 84)
-                                    .cornerRadius(4)
-                                    .disableAutocorrection(true)
-                                    .autocapitalization(.none)
-                                    .onChange(of: editedText) { newValue in
-                                        let filteredText = newValue.filter { $0 != "\n" }
-                                        editedText = filteredText
-                                        guard let newValueLastChar = newValue.last else { return }
-                                        if newValueLastChar == "\n" {
-                                            editedText.removeLast()
-                                            focusedField = nil
-                                            text = editedText
-                                            isEditing = false
-                                        }
-                                        if newValue.contains("\n"){
-                                            focusedField = nil
-                                            text = editedText
-                                            isEditing = false
-                                        }
-                                    }
-                            } else {
-                                Text(text)
-                                    .font(.system(size: 17))
-                                    .fontWeight(.regular)
-                                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 0, trailing: 0))
-                                    .foregroundColor(.black)
-                                    .multilineTextAlignment(.center)
-                                    .onTapGesture {
-                                        focusedField = .text
-                                        editedText = text
-                                        isEditing = true
-                                    }
-                                
-                                
-                                Spacer()
+                        
+                        if homePageViewModel.isLoading {
+                            ForEach(1...8, id: \.self) { _ in
+                                VStack {
+                                    RoundedRectangle(cornerRadius: 4)
+                                        .frame(width: 144, height: 144)
+                                        .shimmer(ShimmerConfig(tint: .gray.opacity(0.2), highlight: .white))
+                                    Spacer().frame(height: 106)
+                                }
+                            }
+                        } else {
+                            ForEach(homePageViewModel.allProyek) { proyek in
+                                NavigationLink {
+                                    HistoryDetailView(router: _router, proyek: proyek)
+                                } label: {
+                                    TextFieldComponent(proyek: proyek, image: "baju", text: proyek.namaProyek)
+                                        .environmentObject(desainViewModel)
+                                    
+                                }
+
                             }
                         }
-                        .frame(width: 144)
                         
+                        
+                        
+                        Spacer()
                     }
-                    .frame(height: 250)
-                    
-                    
-                    Spacer()
-                } .padding(EdgeInsets(top: 0, leading: 20, bottom: 12, trailing: 0))
-                
+                    .padding(EdgeInsets(top: 0, leading: 20, bottom: 12, trailing: 0))
+                }
+                .refreshable {
+                    Task {
+                        await homePageViewModel.getDataProyek()
+                    }
+                }
                 Spacer()
                 
             }.frame(
@@ -137,12 +129,24 @@ struct Homescreen: View {
             
         }
         .navigationBarBackButtonHidden(true)
-        .onTapGesture {
-            focusedField = nil
-            text = editedText
-            isEditing = false
+      
+        .onAppear {
+            Task {
+                await homePageViewModel.getDataProyek()
+            }
         }
-       
+        
+    }
+    
+    func generateGridRows<T>(items: [T], itemsPerRow: Int) -> [GridItem] {
+        let rowCount = (items.count + itemsPerRow - 1) / itemsPerRow
+        var gridRows = [GridItem]()
+        
+        for _ in 0..<rowCount {
+            gridRows.append(GridItem(.flexible(), spacing: 80))
+        }
+        
+        return gridRows
     }
     
 }
