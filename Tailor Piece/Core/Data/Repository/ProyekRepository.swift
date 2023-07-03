@@ -31,7 +31,7 @@ class ProyekRepository {
     }
     
     func setValueUkuranBadan(dictUkuranBadan:[String:Double?]) -> [String:Double?] {
-        var dictRecord: [String: Double?] = [
+        let dictRecord: [String: Double?] = [
             "lingkarBadan": dictUkuranBadan["Lingkar Badan"] ?? 0,
             "lebarDada": dictUkuranBadan["Lebar Dada"] ?? 0,
             "panjangPunggung": dictUkuranBadan["Panjang Punggung"] ?? 0,
@@ -90,15 +90,6 @@ class ProyekRepository {
         
     func saveProyek(namaProyek:String, dateCreated: Date, jenisPakaian: String, ukuranBadan: UkuranBadanModel?, tipeDesain:TipeDesainModel?, sketsa: SketsaModel?, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> ProyekModel? {
         do {
-            
-            print("\n test")
-            print(namaProyek)
-            print(dateCreated)
-            print(jenisPakaian)
-            print("\(ukuranBadan?.recordId.recordName)")
-            print("\(tipeDesain?.recordId.recordName)")
-            print("\(sketsa?.recordId.recordName)")
-            
             let newProyek = CKRecord(recordType: ProyekModel.recordType)
             newProyek.setValue(namaProyek, forKey: "namaProyek")
             newProyek.setValue(dateCreated, forKey: "dateCreated")
@@ -148,27 +139,6 @@ class ProyekRepository {
             return nil
         }
     }
-    
-//    func updateNamaProyek(id:CKRecord.ID, namaProyek:String, completion: @escaping (Result<Bool, Error>) -> Void) async throws -> [ProyekModel]? {
-//        do {
-//            let predicate = NSPredicate(value: true)
-//            let query = CKQuery(recordType: ProyekModel.recordType, predicate: predicate)
-//            let results = try await publicDB.records(matching: query)
-//            let records = results.matchResults.compactMap { try? $0.1.get() }
-//                    
-//            var allProyek = [ProyekModel]()
-//            for record in records {
-//                if let proyek = await ProyekModel(record: record) {
-//                    allProyek.append(proyek)
-//                }
-//            }
-//            completion(Result.success(true))
-//            return allProyek
-//        } catch {
-//            completion(Result.failure(error))
-//            return nil
-//        }
-//    }
     
 }
 

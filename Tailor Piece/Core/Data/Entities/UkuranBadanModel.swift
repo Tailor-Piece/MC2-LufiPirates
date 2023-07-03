@@ -122,34 +122,5 @@ extension UkuranBadanModel : Hashable {
         return dict
     }
     
-//    func toDictionaryAtasan() -> [String:Int] {
-//        let dict : [String:Int] = [
-//            "Lingkar Badan" : lingkarBadan,
-//            "Panjang Dada" : panjangDada,
-//            "Lebar Dada" : lebarDada,
-//            "Tinggi Dada" : tinggiDada,
-//            "Panjang Punggung" : panjangPunggung,
-//            "Lebar Punggung" : lebarPunggung,
-//            "Lebar Bahu" : lebarBahu,
-//            "Lingkar Pinggang" : lingkarPinggang,
-//            "Lingkar Pinggul" : lingkarPinggul
-//        ]
-//        return dict
-//    }
-//
-//    func toDictionaryBawahan() -> [String:Int] {
-//        let dict : [String:Int] = [
-//            "Panjang Celana" : panjangCelana,
-//            "Panjang Lutut" : panjangLutut,
-//            "Lingkar Panggul" : lingkarPanggul,
-//            "Lingkar Pesak" : lingkarPesak,
-//            "1/2 Lingkar Paha" : SetengahLingkarPaha,
-//            "1/2 Lingkar Lutut" : SetengahLingkarLutut,
-//            "1/2 Lingkar Kaki" : SetengahLingkarKaki,
-//            "Lingkar Pinggang" : lingkarPinggang,
-//            "Lingkar Pinggul" : lingkarPinggul
-//        ]
-//        return dict
-//    }
 }
 

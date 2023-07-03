@@ -10,7 +10,7 @@ import SwiftUI
 struct Homescreen: View {
     @EnvironmentObject var router: Router
     @StateObject var homePageViewModel = HomePageViewModel()
-    @StateObject var desainViewModel: DesainViewModel = DesainViewModel()
+    @StateObject var desainViewModel = DesainViewModel()
     @State private var isEditing: Bool = false
     @State private var text: String = "Editable Text"
     @FocusState private var focusedField: FocusedField?

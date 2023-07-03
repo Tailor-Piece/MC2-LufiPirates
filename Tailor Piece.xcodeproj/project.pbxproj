@@ -13,7 +13,6 @@
 		436AE7D02A4EC4D700522D0E /* DesainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7BD2A4EC4D700522D0E /* DesainViewModel.swift */; };
 		436AE7D12A4EC4D700522D0E /* SketsaExtensionDesainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7BE2A4EC4D700522D0E /* SketsaExtensionDesainVM.swift */; };
 		436AE7D22A4EC4D700522D0E /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7BF2A4EC4D700522D0E /* HomePageViewModel.swift */; };
-		436AE7D32A4EC4D700522D0E /* UkuranBadanRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7C12A4EC4D700522D0E /* UkuranBadanRepository.swift */; };
 		436AE7D42A4EC4D700522D0E /* ProyekRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7C22A4EC4D700522D0E /* ProyekRepository.swift */; };
 		436AE7D52A4EC4D700522D0E /* PilihJenisPakaianView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7C42A4EC4D700522D0E /* PilihJenisPakaianView.swift */; };
 		436AE7D62A4EC4D700522D0E /* MasukkanUkuranBadanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436AE7C52A4EC4D700522D0E /* MasukkanUkuranBadanView.swift */; };
@@ -59,7 +58,6 @@
 		436AE7BD2A4EC4D700522D0E /* DesainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesainViewModel.swift; sourceTree = "<group>"; };
 		436AE7BE2A4EC4D700522D0E /* SketsaExtensionDesainVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketsaExtensionDesainVM.swift; sourceTree = "<group>"; };
 		436AE7BF2A4EC4D700522D0E /* HomePageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
-		436AE7C12A4EC4D700522D0E /* UkuranBadanRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UkuranBadanRepository.swift; sourceTree = "<group>"; };
 		436AE7C22A4EC4D700522D0E /* ProyekRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProyekRepository.swift; sourceTree = "<group>"; };
 		436AE7C42A4EC4D700522D0E /* PilihJenisPakaianView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PilihJenisPakaianView.swift; sourceTree = "<group>"; };
 		436AE7C52A4EC4D700522D0E /* MasukkanUkuranBadanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasukkanUkuranBadanView.swift; sourceTree = "<group>"; };
@@ -138,7 +136,6 @@
 		436AE7C02A4EC4D700522D0E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				436AE7C12A4EC4D700522D0E /* UkuranBadanRepository.swift */,
 				436AE7C22A4EC4D700522D0E /* ProyekRepository.swift */,
 			);
 			path = Repository;
@@ -503,7 +500,6 @@
 				781D6FE52A436AEF0063FF9C /* SidebarListComponent.swift in Sources */,
 				43BCD5492A52277700904162 /* HistoryDetailView.swift in Sources */,
 				787B1DE72A4AF63500FA8A3F /* Homescreen.swift in Sources */,
-				436AE7D32A4EC4D700522D0E /* UkuranBadanRepository.swift in Sources */,
 				43874ED22A40394F001403E7 /* DesignViewModel.swift in Sources */,
 				787B1DEB2A4AF6A000FA8A3F /* OnboardingView.swift in Sources */,
 				787B1DE92A4AF66400FA8A3F /* FocusedField.swift in Sources */,
