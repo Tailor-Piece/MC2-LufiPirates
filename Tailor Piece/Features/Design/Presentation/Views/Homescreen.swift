@@ -83,22 +83,25 @@ struct Homescreen: View {
                         }
                         
                         if homePageViewModel.isLoading {
-                            ForEach(1...5, id: \.self) { _ in
+                            ForEach(1...8, id: \.self) { _ in
                                 VStack {
                                     RoundedRectangle(cornerRadius: 4)
                                         .frame(width: 144, height: 144)
                                         .shimmer(ShimmerConfig(tint: .gray.opacity(0.2), highlight: .white))
                                     Spacer().frame(height: 106)
                                 }
-                               
                             }
-                            
                         } else {
                             ForEach(homePageViewModel.allProyek) { proyek in
-                                TextFieldComponent(proyek: proyek, image: "baju", text: proyek.namaProyek)
-                                    .environmentObject(desainViewModel)
-                            }
+                                NavigationLink {
+                                    HistoryDetailView(router: _router, proyek: proyek)
+                                } label: {
+                                    TextFieldComponent(proyek: proyek, image: "baju", text: proyek.namaProyek)
+                                        .environmentObject(desainViewModel)
+                                    
+                                }
 
+                            }
                         }
                         
                         

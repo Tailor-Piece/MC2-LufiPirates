@@ -26,15 +26,15 @@ struct InputUkuranBadanView: View {
     ]
     
     @State var ukuranBadanBawahan: [String: Double?] = [
-        "Panjang Celana": 1,
-        "Panjang Lutut": 1,
-        "Lingkar Panggul": 1,
-        "Lingkar Pesak": 1,
-        "1/2 Lingkar Paha": 1,
-        "1/2 Lingkar Lutut": 1,
-        "1/2 Lingkar Kaki": 1,
-        "Lingkar Pinggang": 1,
-        "Lingkar Pinggul": 1,
+        "Panjang Celana": nil,
+        "Panjang Lutut": nil,
+        "Lingkar Panggul": nil,
+        "Lingkar Pesak": nil,
+        "1/2 Lingkar Paha": nil,
+        "1/2 Lingkar Lutut": nil,
+        "1/2 Lingkar Kaki": nil,
+        "Lingkar Pinggang": nil,
+        "Lingkar Pinggul": nil,
     ]
     
     @State var misc: Double = 0

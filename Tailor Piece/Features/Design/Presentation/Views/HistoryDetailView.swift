@@ -16,8 +16,6 @@ struct HistoryDetailView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            Divider()
-            Spacer()
 
             Divider()
 
