@@ -87,6 +87,7 @@
 		43BCD5482A52277700904162 /* HistoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetailView.swift; sourceTree = "<group>"; };
 		43F851C32A430297009AFBB3 /* Tailor Piece.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tailor Piece.entitlements"; sourceTree = "<group>"; };
 		685B3DCC2A501679004E26AF /* UkuranBadanExtensionDesainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UkuranBadanExtensionDesainVM.swift; sourceTree = "<group>"; };
+		68659A702A52520900C20AAB /* Tailor-Piece-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Tailor-Piece-Info.plist"; sourceTree = SOURCE_ROOT; };
 		687EDBDF2A42968F00C606C2 /* Tailor Piece.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tailor Piece.entitlements"; sourceTree = "<group>"; };
 		68D2F44E2A44AAE9001D6F33 /* PolaPotonganSubSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolaPotonganSubSection.swift; sourceTree = "<group>"; };
 		781CD6072A421C8600C491BC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -185,6 +186,7 @@
 		43874EAA2A3C437D001403E7 /* Tailor Piece */ = {
 			isa = PBXGroup;
 			children = (
+				68659A702A52520900C20AAB /* Tailor-Piece-Info.plist */,
 				43F851C32A430297009AFBB3 /* Tailor Piece.entitlements */,
 				687EDBDF2A42968F00C606C2 /* Tailor Piece.entitlements */,
 				43874EC22A40382F001403E7 /* Features */,
@@ -650,6 +652,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P48RXXD7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tailor-Piece-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -690,6 +693,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6P48RXXD7X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tailor-Piece-Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
